@@ -1,0 +1,3282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_11d06529d3436190595d0bb072088c6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_11d06529d3436190595d0bb072088c6a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_11d06529d3436190595d0bb072088c6a = L.map(
+                "map_11d06529d3436190595d0bb072088c6a",
+                {
+                    center: [31.9973, -102.0779],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fe65fa9ee43141611bc58fc780d03f14 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var marker_d249c203e42e96b9970ef93ea7ae1bf6 = L.marker(
+                [31.85641, -102.389699],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_bf7a1f869c9a7279ba4f7dc3fa7c550c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d249c203e42e96b9970ef93ea7ae1bf6.setIcon(icon_bf7a1f869c9a7279ba4f7dc3fa7c550c);
+        
+    
+        var popup_70ccff83674bd03b88473ce749afd161 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f0717b562bb39de4a23338590fb0e6ea = $(`<div id="html_f0717b562bb39de4a23338590fb0e6ea" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2262-San-Jacinto-Elementary-School/" target="_blank">1000 West 19th Street, Odessa, TX, 79763<br>{'Math': '45%', 'Reading': '50%', 'Science': '35%'}</a></div>`)[0];
+                popup_70ccff83674bd03b88473ce749afd161.setContent(html_f0717b562bb39de4a23338590fb0e6ea);
+            
+        
+
+        marker_d249c203e42e96b9970ef93ea7ae1bf6.bindPopup(popup_70ccff83674bd03b88473ce749afd161)
+        ;
+
+        
+    
+    
+            var marker_8ad1d4e8da2ba207a6a57c615d3cc702 = L.marker(
+                [32.524914, -101.710522],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_7850212cb3e86a32781a0c0815ac4168 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8ad1d4e8da2ba207a6a57c615d3cc702.setIcon(icon_7850212cb3e86a32781a0c0815ac4168);
+        
+    
+        var popup_78312d1a9c9ff18a8a56c54e035ddf6c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d04a47a8e452c05f29913a0bf84a5540 = $(`<div id="html_d04a47a8e452c05f29913a0bf84a5540" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/ackerly/6145-Sands-Cisd/" target="_blank">101 1st Street, Ackerly, TX, 79713<br>{'Math': '50%', 'Reading': '52%', 'Science': '47%', 'Biology I': '100%', 'Algebra I': '78%', 'English': '84%', 'English 2': '89%', 'Social Studies': '33%', 'US History': '100%'}</a></div>`)[0];
+                popup_78312d1a9c9ff18a8a56c54e035ddf6c.setContent(html_d04a47a8e452c05f29913a0bf84a5540);
+            
+        
+
+        marker_8ad1d4e8da2ba207a6a57c615d3cc702.bindPopup(popup_78312d1a9c9ff18a8a56c54e035ddf6c)
+        ;
+
+        
+    
+    
+            var marker_fb71ab330928ba38fe2b0faf7bf8be8a = L.marker(
+                [31.998586264852257, -102.11965694140164],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_1427b28d9cf9b031f93b6523bb9fb4ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fb71ab330928ba38fe2b0faf7bf8be8a.setIcon(icon_1427b28d9cf9b031f93b6523bb9fb4ff);
+        
+    
+        var popup_73a2a94583e7258061e78a71c8513ceb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5c878146bf546486e283e9682e4c96f9 = $(`<div id="html_5c878146bf546486e283e9682e4c96f9" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/8385-Midland-Montessori-School/" target="_blank">1011 Austin Street, Midland, TX, 79703<br>{}</a></div>`)[0];
+                popup_73a2a94583e7258061e78a71c8513ceb.setContent(html_5c878146bf546486e283e9682e4c96f9);
+            
+        
+
+        marker_fb71ab330928ba38fe2b0faf7bf8be8a.bindPopup(popup_73a2a94583e7258061e78a71c8513ceb)
+        ;
+
+        
+    
+    
+            var marker_e446170f34e9495ca822d81e1a71dc1a = L.marker(
+                [32.24580212244898, -101.47283624489796],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_950e2e976ef4f36828792781fa53f94c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e446170f34e9495ca822d81e1a71dc1a.setIcon(icon_950e2e976ef4f36828792781fa53f94c);
+        
+    
+        var popup_d8d59e7e0665df065ad294eb3fa773ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a838c3b68a5a910af54148b6f50b638 = $(`<div id="html_0a838c3b68a5a910af54148b6f50b638" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/26368-Runnels-Academy/" target="_blank">102 East 10th Street, Big Spring, TX, 79720<br>{}</a></div>`)[0];
+                popup_d8d59e7e0665df065ad294eb3fa773ad.setContent(html_0a838c3b68a5a910af54148b6f50b638);
+            
+        
+
+        marker_e446170f34e9495ca822d81e1a71dc1a.bindPopup(popup_d8d59e7e0665df065ad294eb3fa773ad)
+        ;
+
+        
+    
+    
+            var marker_e1ef74641e24635be0850bc8f70f800e = L.marker(
+                [31.588193, -102.877061],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_423f1834f2e3342ffd4230c15fd189d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e1ef74641e24635be0850bc8f70f800e.setIcon(icon_423f1834f2e3342ffd4230c15fd189d9);
+        
+    
+        var popup_d5b4c927335b78ac0b032a798fa10be9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d43808b932ad1bdea3ea6c2f16e13a6 = $(`<div id="html_7d43808b932ad1bdea3ea6c2f16e13a6" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/monahans/4885-George-Cullender-Kind/" target="_blank">1100 South Leon Avenue, Monahans, TX, 79756<br>{}</a></div>`)[0];
+                popup_d5b4c927335b78ac0b032a798fa10be9.setContent(html_7d43808b932ad1bdea3ea6c2f16e13a6);
+            
+        
+
+        marker_e1ef74641e24635be0850bc8f70f800e.bindPopup(popup_d5b4c927335b78ac0b032a798fa10be9)
+        ;
+
+        
+    
+    
+            var marker_b90f8c334c19d5458275a5a565f33f83 = L.marker(
+                [31.835967, -102.344428],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_f86e9ea9788af679ed6d9d24fe4744bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b90f8c334c19d5458275a5a565f33f83.setIcon(icon_f86e9ea9788af679ed6d9d24fe4744bc);
+        
+    
+        var popup_e7e6cd51eb819ec05b84e738a4f8c388 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fca7e753b54ac8b94949933643062785 = $(`<div id="html_fca7e753b54ac8b94949933643062785" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2250-El-Magnet-At-Hays/" target="_blank">1101 East Monahans Street, Odessa, TX, 79761<br>{'Reading': '70%', 'Math': '59%', 'Science': '31%'}</a></div>`)[0];
+                popup_e7e6cd51eb819ec05b84e738a4f8c388.setContent(html_fca7e753b54ac8b94949933643062785);
+            
+        
+
+        marker_b90f8c334c19d5458275a5a565f33f83.bindPopup(popup_e7e6cd51eb819ec05b84e738a4f8c388)
+        ;
+
+        
+    
+    
+            var marker_00163f4944550211a9c290e2ac18b874 = L.marker(
+                [31.85619557142857, -102.36918057142857],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_c367aae0f0995342fd3f4915516e3c01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_00163f4944550211a9c290e2ac18b874.setIcon(icon_c367aae0f0995342fd3f4915516e3c01);
+        
+    
+        var popup_a83721c3ae185e25d002850bdee06566 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_133e854d7a1fad4876322a57c92bb7f4 = $(`<div id="html_133e854d7a1fad4876322a57c92bb7f4" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/16979-Odessa-Jr-Serv-League-Day-Nrsy/" target="_blank">1106 North Tom Green Avenue, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_a83721c3ae185e25d002850bdee06566.setContent(html_133e854d7a1fad4876322a57c92bb7f4);
+            
+        
+
+        marker_00163f4944550211a9c290e2ac18b874.bindPopup(popup_a83721c3ae185e25d002850bdee06566)
+        ;
+
+        
+    
+    
+            var marker_056f7db03ffdf1704bbffc240532789c = L.marker(
+                [32.25623217679558, -101.49678898895027],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_52c2098f8887fdef0942e16d3bd3b1de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_056f7db03ffdf1704bbffc240532789c.setIcon(icon_52c2098f8887fdef0942e16d3bd3b1de);
+        
+    
+        var popup_53aa0f00cf2c9c1507bfd8931d2e116e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9acbb9e6ab04db7c3be7b7bda2f20bc7 = $(`<div id="html_9acbb9e6ab04db7c3be7b7bda2f20bc7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/13170-Lakeview-Head-Start/" target="_blank">1107 Northwest 7th Street, Big Spring, TX, 79720<br>{}</a></div>`)[0];
+                popup_53aa0f00cf2c9c1507bfd8931d2e116e.setContent(html_9acbb9e6ab04db7c3be7b7bda2f20bc7);
+            
+        
+
+        marker_056f7db03ffdf1704bbffc240532789c.bindPopup(popup_53aa0f00cf2c9c1507bfd8931d2e116e)
+        ;
+
+        
+    
+    
+            var marker_48c555a5cd298a5147630020ef2f96fa = L.marker(
+                [31.855916926174494, -102.51897476510067],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_832bf1a97916538efd73afc9f26e035c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_48c555a5cd298a5147630020ef2f96fa.setIcon(icon_832bf1a97916538efd73afc9f26e035c);
+        
+    
+        var popup_bb753640919370fd63dbe922cba6d2a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5bbf7c5dfa0657c882b3ed8b4b9f7f19 = $(`<div id="html_5bbf7c5dfa0657c882b3ed8b4b9f7f19" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2269-Murry-Fly-Elementary-School/" target="_blank">11688 West Westview Drive, Odessa, TX, 79764<br>{'Reading': '38%', 'Math': '36%', 'Science': '30%'}</a></div>`)[0];
+                popup_bb753640919370fd63dbe922cba6d2a1.setContent(html_5bbf7c5dfa0657c882b3ed8b4b9f7f19);
+            
+        
+
+        marker_48c555a5cd298a5147630020ef2f96fa.bindPopup(popup_bb753640919370fd63dbe922cba6d2a1)
+        ;
+
+        
+    
+    
+            var marker_65bfe4984642df127db450846e12c525 = L.marker(
+                [32.235253054899815, -101.48241840739362],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_6c2ee1afe25f00c49329d29ad4d3b801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_65bfe4984642df127db450846e12c525.setIcon(icon_6c2ee1afe25f00c49329d29ad4d3b801);
+        
+    
+        var popup_3fdfce5be5dc01101828db1f8d1a27c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_75325d51589b36d6b11f0ff74cc85d4c = $(`<div id="html_75325d51589b36d6b11f0ff74cc85d4c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/24834-Nazarene-Christian-Academy/" target="_blank">118 Cedar Rd, Big Spring, TX, 79720<br>{}</a></div>`)[0];
+                popup_3fdfce5be5dc01101828db1f8d1a27c5.setContent(html_75325d51589b36d6b11f0ff74cc85d4c);
+            
+        
+
+        marker_65bfe4984642df127db450846e12c525.bindPopup(popup_3fdfce5be5dc01101828db1f8d1a27c5)
+        ;
+
+        
+    
+    
+            var marker_f1fef4467bb4f7f0c139628db636521f = L.marker(
+                [32.235253054899815, -101.48241840739362],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_53d25b32e3b955d83c8febf02d468cc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f1fef4467bb4f7f0c139628db636521f.setIcon(icon_53d25b32e3b955d83c8febf02d468cc5);
+        
+    
+        var popup_990caf2563e74b085fa44dcc79add875 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_77f95fec9c1ac8cc6da052e0219ae34f = $(`<div id="html_77f95fec9c1ac8cc6da052e0219ae34f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/26045-Nazarene-Christian-Academy-Big-Spring/" target="_blank">118 Cedar Road, Big Spring, TX, 79720<br>{}</a></div>`)[0];
+                popup_990caf2563e74b085fa44dcc79add875.setContent(html_77f95fec9c1ac8cc6da052e0219ae34f);
+            
+        
+
+        marker_f1fef4467bb4f7f0c139628db636521f.bindPopup(popup_990caf2563e74b085fa44dcc79add875)
+        ;
+
+        
+    
+    
+            var marker_b20fb33af235125e97837ffffc2e30b4 = L.marker(
+                [32.235253054899815, -101.48241840739362],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_14e1bf022f5b2fab60bbdf0877f9515f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b20fb33af235125e97837ffffc2e30b4.setIcon(icon_14e1bf022f5b2fab60bbdf0877f9515f);
+        
+    
+        var popup_b0ec444908f9161f85915474dbe3e61e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_750085e9367d944be1c3ccf58af692a3 = $(`<div id="html_750085e9367d944be1c3ccf58af692a3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/7500-St.-Marys-Episcopal-School/" target="_blank">118 Cedar, Big Spring, TX, 79720<br>{}</a></div>`)[0];
+                popup_b0ec444908f9161f85915474dbe3e61e.setContent(html_750085e9367d944be1c3ccf58af692a3);
+            
+        
+
+        marker_b20fb33af235125e97837ffffc2e30b4.bindPopup(popup_b0ec444908f9161f85915474dbe3e61e)
+        ;
+
+        
+    
+    
+            var marker_fcf1f6fa22e758d76bf0ba4b3b74b0cc = L.marker(
+                [32.247926699999994, -101.44968849146919],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_2b47a35814ada6100a31fbb8aa2dd965 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_fcf1f6fa22e758d76bf0ba4b3b74b0cc.setIcon(icon_2b47a35814ada6100a31fbb8aa2dd965);
+        
+    
+        var popup_609b98486197308a74648e266eeaf02c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f9827cb6ed265f2082ec561876e55ca = $(`<div id="html_6f9827cb6ed265f2082ec561876e55ca" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/772-Washington-Elementary-School/" target="_blank">1201 Birdwell Lane, Big Spring, TX, 79720<br>{'Math': '39%', 'Reading': '36%'}</a></div>`)[0];
+                popup_609b98486197308a74648e266eeaf02c.setContent(html_6f9827cb6ed265f2082ec561876e55ca);
+            
+        
+
+        marker_fcf1f6fa22e758d76bf0ba4b3b74b0cc.bindPopup(popup_609b98486197308a74648e266eeaf02c)
+        ;
+
+        
+    
+    
+            var marker_2d47f421e12081eddee752f69d51ad2f = L.marker(
+                [31.832091, -102.377876],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_d9df912c770b1b1de3cfd08a4f4d39c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_2d47f421e12081eddee752f69d51ad2f.setIcon(icon_d9df912c770b1b1de3cfd08a4f4d39c5);
+        
+    
+        var popup_f21735d01b6097d58bbbab5e01bb0f06 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2067857eb5d1419ab7f056fc878d85d1 = $(`<div id="html_2067857eb5d1419ab7f056fc878d85d1" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2265-El-Magnet-At-Zavala/" target="_blank">1201 Clifford Street, Odessa, TX, 79763<br>{'Math': '27%', 'Reading': '21%', 'Science': '19%', 'Writing': '16%'}</a></div>`)[0];
+                popup_f21735d01b6097d58bbbab5e01bb0f06.setContent(html_2067857eb5d1419ab7f056fc878d85d1);
+            
+        
+
+        marker_2d47f421e12081eddee752f69d51ad2f.bindPopup(popup_f21735d01b6097d58bbbab5e01bb0f06)
+        ;
+
+        
+    
+    
+            var marker_d53609f12e255cf46bc68a54f99492e0 = L.marker(
+                [31.22797786741915, -101.94147406588836],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_75e6fb6b97d7a2705a80da9b22257688 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d53609f12e255cf46bc68a54f99492e0.setIcon(icon_75e6fb6b97d7a2705a80da9b22257688);
+        
+    
+        var popup_fcad0bc6f81a3c563312e32442dc15ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_08742fba29abae6b9dc43473e7d89f11 = $(`<div id="html_08742fba29abae6b9dc43473e7d89f11" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/rankin/5666-Rankin-School/" target="_blank">1201 Upton Street, Rankin, TX, 79778<br>{'Reading': '44%', 'Math': '46%', 'Science': '31%', 'US History': '73%', 'Social Studies': '17%', 'English': '54%', 'English 2': '45%', 'Biology I': '90%', 'Algebra I': '78%'}</a></div>`)[0];
+                popup_fcad0bc6f81a3c563312e32442dc15ad.setContent(html_08742fba29abae6b9dc43473e7d89f11);
+            
+        
+
+        marker_d53609f12e255cf46bc68a54f99492e0.bindPopup(popup_fcad0bc6f81a3c563312e32442dc15ad)
+        ;
+
+        
+    
+    
+            var marker_f8fa4cc1cceb6b9ef8a6b6d47f88ae7b = L.marker(
+                [31.998155, -102.06177],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_58ae1ec11b121e40381d92d6b2ffea66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_f8fa4cc1cceb6b9ef8a6b6d47f88ae7b.setIcon(icon_58ae1ec11b121e40381d92d6b2ffea66);
+        
+    
+        var popup_a74075b90a38ecad8e7f7d4994b45488 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32ea71de223f32d10151509c756b04a0 = $(`<div id="html_32ea71de223f32d10151509c756b04a0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/9156-Carver-Center/" target="_blank">1300 East Wall Street, Midland, TX, 79701<br>{'Math': '93%', 'Reading': '97%', 'Science': '86%'}</a></div>`)[0];
+                popup_a74075b90a38ecad8e7f7d4994b45488.setContent(html_32ea71de223f32d10151509c756b04a0);
+            
+        
+
+        marker_f8fa4cc1cceb6b9ef8a6b6d47f88ae7b.bindPopup(popup_a74075b90a38ecad8e7f7d4994b45488)
+        ;
+
+        
+    
+    
+            var marker_48f8a9a4f39603bc0454b5d76400e9fb = L.marker(
+                [31.832198, -102.359619],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_aafef3345306edce16c24e18ed6e633b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_48f8a9a4f39603bc0454b5d76400e9fb.setIcon(icon_aafef3345306edce16c24e18ed6e633b);
+        
+    
+        var popup_0d23178d295a577e7c68e8351c270181 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc57154406403046901ba75551297267 = $(`<div id="html_bc57154406403046901ba75551297267" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2263-El-Magnet-At-Travis/" target="_blank">1400 South Lee Avenue, Odessa, TX, 79761<br>{'Math': '18%', 'Reading': '23%', 'Science': '14%'}</a></div>`)[0];
+                popup_0d23178d295a577e7c68e8351c270181.setContent(html_bc57154406403046901ba75551297267);
+            
+        
+
+        marker_48f8a9a4f39603bc0454b5d76400e9fb.bindPopup(popup_0d23178d295a577e7c68e8351c270181)
+        ;
+
+        
+    
+    
+            var marker_14fb7b71a3867748ad899bb3825a6164 = L.marker(
+                [31.865676775510202, -102.34629362244897],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_cf6f08bbcde7c98dd07979325ef268f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_14fb7b71a3867748ad899bb3825a6164.setIcon(icon_cf6f08bbcde7c98dd07979325ef268f9);
+        
+    
+        var popup_2c128d4b11ecaf33b357f42edcaec20c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f138f449be42ca900df2681aad61a4aa = $(`<div id="html_f138f449be42ca900df2681aad61a4aa" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/26038-Montessori-Mastery-School-Of-Odessa/" target="_blank">1415 North Grandview Avenue, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_2c128d4b11ecaf33b357f42edcaec20c.setContent(html_f138f449be42ca900df2681aad61a4aa);
+            
+        
+
+        marker_14fb7b71a3867748ad899bb3825a6164.bindPopup(popup_2c128d4b11ecaf33b357f42edcaec20c)
+        ;
+
+        
+    
+    
+            var marker_c29e76de6b3ef9d1800b94867680da60 = L.marker(
+                [31.823022285714284, -102.50837004761905],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_38b183c0deb6fedddb22a2118f158ddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c29e76de6b3ef9d1800b94867680da60.setIcon(icon_38b183c0deb6fedddb22a2118f158ddb);
+        
+    
+        var popup_dc23764c23f447163ee51dd5c7909583 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_89d4bac4d6bd3061ea6e152c8c5a0ebf = $(`<div id="html_89d4bac4d6bd3061ea6e152c8c5a0ebf" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/24922-Edward-K-Downing-Elementary-School/" target="_blank">1480 North Knox Avenue, Odessa, TX, 79763<br>{'Reading': '25%', 'Math': '23%', 'Science': '9%'}</a></div>`)[0];
+                popup_dc23764c23f447163ee51dd5c7909583.setContent(html_89d4bac4d6bd3061ea6e152c8c5a0ebf);
+            
+        
+
+        marker_c29e76de6b3ef9d1800b94867680da60.bindPopup(popup_dc23764c23f447163ee51dd5c7909583)
+        ;
+
+        
+    
+    
+            var marker_aaa6a720a5e0f3167d57863c43f1314c = L.marker(
+                [32.703737, -102.640151],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_a0547dd233935ec052a7bf5c0513236e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_aaa6a720a5e0f3167d57863c43f1314c.setIcon(icon_a0547dd233935ec052a7bf5c0513236e);
+        
+    
+        var popup_22d7d12ccbd70b2240f1c8d837f6330a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b0c89424e2710d6335bf797408a0102f = $(`<div id="html_b0c89424e2710d6335bf797408a0102f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/seminole/26089-Seminole-Mennonite-School/" target="_blank">1500 Southeast 5th Street, Seminole, TX, 79360<br>{}</a></div>`)[0];
+                popup_22d7d12ccbd70b2240f1c8d837f6330a.setContent(html_b0c89424e2710d6335bf797408a0102f);
+            
+        
+
+        marker_aaa6a720a5e0f3167d57863c43f1314c.bindPopup(popup_22d7d12ccbd70b2240f1c8d837f6330a)
+        ;
+
+        
+    
+    
+            var marker_809b5601b86a5230b6b132714097cb10 = L.marker(
+                [31.866109979591837, -102.36100340816327],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_555cacd9b1f18497e81f16ef6cee578c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_809b5601b86a5230b6b132714097cb10.setIcon(icon_555cacd9b1f18497e81f16ef6cee578c);
+        
+    
+        var popup_28eb5287c69c47f404e998a0d04a299e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_18412f501fcd3a1c0ed2fbbca14f3e08 = $(`<div id="html_18412f501fcd3a1c0ed2fbbca14f3e08" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2245-Dowling-Elementary-School/" target="_blank">1510 East 17th Street, Odessa, TX, 79761<br>{'Math': '20%', 'Reading': '32%', 'Science': '12%'}</a></div>`)[0];
+                popup_28eb5287c69c47f404e998a0d04a299e.setContent(html_18412f501fcd3a1c0ed2fbbca14f3e08);
+            
+        
+
+        marker_809b5601b86a5230b6b132714097cb10.bindPopup(popup_28eb5287c69c47f404e998a0d04a299e)
+        ;
+
+        
+    
+    
+            var marker_2c9b3c90b43beba5da214d39d9fa5937 = L.marker(
+                [31.580717, -102.884273],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_144f218e4fffd739100371bdb44cf0e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c9b3c90b43beba5da214d39d9fa5937.setIcon(icon_144f218e4fffd739100371bdb44cf0e6);
+        
+    
+        var popup_0341b053209f3b3121ca940a4353bdb2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_758bb58deb7f76619628f2e205aa6eb3 = $(`<div id="html_758bb58deb7f76619628f2e205aa6eb3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/monahans/4889-Tatom-Elementary-School/" target="_blank">1600 South Calvin Avenue, Monahans, TX, 79756<br>{'Math': '52%', 'Reading': '58%'}</a></div>`)[0];
+                popup_0341b053209f3b3121ca940a4353bdb2.setContent(html_758bb58deb7f76619628f2e205aa6eb3);
+            
+        
+
+        marker_2c9b3c90b43beba5da214d39d9fa5937.bindPopup(popup_0341b053209f3b3121ca940a4353bdb2)
+        ;
+
+        
+    
+    
+            var marker_1aabaa4d3835f520e24fe797d6a7b8c0 = L.marker(
+                [32.025593566942426, -102.09953290739537],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_245c6ffc88bacc6df354ac055329326f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1aabaa4d3835f520e24fe797d6a7b8c0.setIcon(icon_245c6ffc88bacc6df354ac055329326f);
+        
+    
+        var popup_93e93bb73eead968424fcf411e396652 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a46ef2332d52249c62dd98ce19b8328 = $(`<div id="html_1a46ef2332d52249c62dd98ce19b8328" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/7573-The-Hillander-School/" target="_blank">1600 West Wadley Avenue, Midland, TX, 79705<br>{}</a></div>`)[0];
+                popup_93e93bb73eead968424fcf411e396652.setContent(html_1a46ef2332d52249c62dd98ce19b8328);
+            
+        
+
+        marker_1aabaa4d3835f520e24fe797d6a7b8c0.bindPopup(popup_93e93bb73eead968424fcf411e396652)
+        ;
+
+        
+    
+    
+            var marker_997f6feb120f9f5b6781b1e5f2e85563 = L.marker(
+                [31.847485, -102.390196],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_453fd8655f52d5b0e1397b0404e19773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_997f6feb120f9f5b6781b1e5f2e85563.setIcon(icon_453fd8655f52d5b0e1397b0404e19773);
+        
+    
+        var popup_e55dd149ddd6af0ff75afe33609c2cdd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e965ef2799f6089cb3c24cc7beadafe = $(`<div id="html_6e965ef2799f6089cb3c24cc7beadafe" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/16982-Joe-Pinner-Branch-Ymca/" target="_blank">1601 West 13th Street, Odessa, TX, 79763<br>{}</a></div>`)[0];
+                popup_e55dd149ddd6af0ff75afe33609c2cdd.setContent(html_6e965ef2799f6089cb3c24cc7beadafe);
+            
+        
+
+        marker_997f6feb120f9f5b6781b1e5f2e85563.bindPopup(popup_e55dd149ddd6af0ff75afe33609c2cdd)
+        ;
+
+        
+    
+    
+            var marker_30dba199ead6f5776b5e7a669204baf3 = L.marker(
+                [32.025087, -102.061321],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_9bed831018c1f8824004b831a9f11b11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_30dba199ead6f5776b5e7a669204baf3.setIcon(icon_9bed831018c1f8824004b831a9f11b11);
+        
+    
+        var popup_854ee339935b32eba5943a951ca41c5c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de4506d59b59125f28c1ebfd14d7f937 = $(`<div id="html_de4506d59b59125f28c1ebfd14d7f937" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/9157-Pease-Communications-Technology-Ac/" target="_blank">1700 Magnolia Avenue, Midland, TX, 79705<br>{'Reading': '49%', 'Math': '42%', 'Science': '44%'}</a></div>`)[0];
+                popup_854ee339935b32eba5943a951ca41c5c.setContent(html_de4506d59b59125f28c1ebfd14d7f937);
+            
+        
+
+        marker_30dba199ead6f5776b5e7a669204baf3.bindPopup(popup_854ee339935b32eba5943a951ca41c5c)
+        ;
+
+        
+    
+    
+            var marker_1f5d96489062de21c2c94822d2233586 = L.marker(
+                [31.862526020408165, -102.37104324489795],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_6d56be78506a086349179fce55e524d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1f5d96489062de21c2c94822d2233586.setIcon(icon_6d56be78506a086349179fce55e524d3);
+        
+    
+        var popup_413f297b1f83595c07337b8701eae80d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f157859a42e669ea9876b27c83152e9 = $(`<div id="html_1f157859a42e669ea9876b27c83152e9" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/7441-St-Marys-Central-Catholic-School/" target="_blank">1703 Adams Avenue, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_413f297b1f83595c07337b8701eae80d.setContent(html_1f157859a42e669ea9876b27c83152e9);
+            
+        
+
+        marker_1f5d96489062de21c2c94822d2233586.bindPopup(popup_413f297b1f83595c07337b8701eae80d)
+        ;
+
+        
+    
+    
+            var marker_7a659389a8d688ceb028f0aa1c05662f = L.marker(
+                [31.9384361, -102.3825334],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_74b2117d8e8b804c72e3a3e12eca0e6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7a659389a8d688ceb028f0aa1c05662f.setIcon(icon_74b2117d8e8b804c72e3a3e12eca0e6a);
+        
+    
+        var popup_bba460e7098273b15c5a3973eda69df0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3805b6b871f1d7ab710f811a5aae48ee = $(`<div id="html_3805b6b871f1d7ab710f811a5aae48ee" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/25010-Lee-Buice-Elementary-School/" target="_blank">1800 E 87TH ST, Odessa, TX, 79765<br>{'Reading': '50%', 'Math': '39%', 'Science': '49%'}</a></div>`)[0];
+                popup_bba460e7098273b15c5a3973eda69df0.setContent(html_3805b6b871f1d7ab710f811a5aae48ee);
+            
+        
+
+        marker_7a659389a8d688ceb028f0aa1c05662f.bindPopup(popup_bba460e7098273b15c5a3973eda69df0)
+        ;
+
+        
+    
+    
+            var marker_4d81e1cf2655ebc90a7652fc5055f11a = L.marker(
+                [31.999756, -102.054847],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_c4dd225c78e4f1bbc0149a47c7d2331e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4d81e1cf2655ebc90a7652fc5055f11a.setIcon(icon_c4dd225c78e4f1bbc0149a47c7d2331e);
+        
+    
+        var popup_d447f2e7d8bb4e328e1acc0243988ab8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5233840a5f23cce28d041beb74fb935 = $(`<div id="html_d5233840a5f23cce28d041beb74fb935" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/9155-Washington-Math-Science-Institute/" target="_blank">1800 East Wall Street, Midland, TX, 79701<br>{'Reading': '40%', 'Math': '28%', 'Science': '41%'}</a></div>`)[0];
+                popup_d447f2e7d8bb4e328e1acc0243988ab8.setContent(html_d5233840a5f23cce28d041beb74fb935);
+            
+        
+
+        marker_4d81e1cf2655ebc90a7652fc5055f11a.bindPopup(popup_d447f2e7d8bb4e328e1acc0243988ab8)
+        ;
+
+        
+    
+    
+            var marker_4b9141c10e42304614826775e4841293 = L.marker(
+                [31.853868, -102.404258],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_3e405c12fcba939923608e8e01b48df7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4b9141c10e42304614826775e4841293.setIcon(icon_3e405c12fcba939923608e8e01b48df7);
+        
+    
+        var popup_79db28a4b938b5432d6bb5bec5376920 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_68ae40ff6d8183b8fc175065f4028f76 = $(`<div id="html_68ae40ff6d8183b8fc175065f4028f76" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2257-Pease-Elementary-School/" target="_blank">1800 West 22nd Street, Odessa, TX, 79763<br>{'Reading': '22%', 'Math': '31%', 'Science': '11%', 'Writing': '18%'}</a></div>`)[0];
+                popup_79db28a4b938b5432d6bb5bec5376920.setContent(html_68ae40ff6d8183b8fc175065f4028f76);
+            
+        
+
+        marker_4b9141c10e42304614826775e4841293.bindPopup(popup_79db28a4b938b5432d6bb5bec5376920)
+        ;
+
+        
+    
+    
+            var marker_9f6410e8eabb9d64cd609d64e31962a2 = L.marker(
+                [31.888200918367346, -102.35862877551021],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_5d062706162f49da67ba4ddd33697efd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9f6410e8eabb9d64cd609d64e31962a2.setIcon(icon_5d062706162f49da67ba4ddd33697efd);
+        
+    
+        var popup_600c8b6bbb64f23a8cc1ac0b52c91917 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4817208424d638b7e7a343007a31002e = $(`<div id="html_4817208424d638b7e7a343007a31002e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/11597-Rainey-School-Of-Montessori/" target="_blank">1811 East 42nd Street, Odessa, TX, 79762<br>{}</a></div>`)[0];
+                popup_600c8b6bbb64f23a8cc1ac0b52c91917.setContent(html_4817208424d638b7e7a343007a31002e);
+            
+        
+
+        marker_9f6410e8eabb9d64cd609d64e31962a2.bindPopup(popup_600c8b6bbb64f23a8cc1ac0b52c91917)
+        ;
+
+        
+    
+    
+            var marker_b14c649428c0084685606252da583eae = L.marker(
+                [32.237565, -101.465366],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_7747f0467a2c093792506fff175fc38a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b14c649428c0084685606252da583eae.setIcon(icon_7747f0467a2c093792506fff175fc38a);
+        
+    
+        var popup_f5132de66ccf288de0bfa672d4443ceb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29a55c1cac70e36af6c48ff3da25dd81 = $(`<div id="html_29a55c1cac70e36af6c48ff3da25dd81" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/764-Goliad-Elementary-School/" target="_blank">1900 Goliad Street, Big Spring, TX, 79720<br>{'Reading': '44%', 'Math': '51%'}</a></div>`)[0];
+                popup_f5132de66ccf288de0bfa672d4443ceb.setContent(html_29a55c1cac70e36af6c48ff3da25dd81);
+            
+        
+
+        marker_b14c649428c0084685606252da583eae.bindPopup(popup_f5132de66ccf288de0bfa672d4443ceb)
+        ;
+
+        
+    
+    
+            var marker_d2904bce3a5b9bfff510d267606e8626 = L.marker(
+                [31.8609647, -102.3803281],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_9b5399e7dbaf4107c2ccc22f3a1cd648 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d2904bce3a5b9bfff510d267606e8626.setIcon(icon_9b5399e7dbaf4107c2ccc22f3a1cd648);
+        
+    
+        var popup_fd6b2bd84ab3580960239e25fb8f12f3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ea164c1b81038e7ddbcfb2f54ad2d50 = $(`<div id="html_4ea164c1b81038e7ddbcfb2f54ad2d50" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/24388-Kiddie-Kollege-Kindergarten/" target="_blank">1919 North Lee Avenue, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_fd6b2bd84ab3580960239e25fb8f12f3.setContent(html_4ea164c1b81038e7ddbcfb2f54ad2d50);
+            
+        
+
+        marker_d2904bce3a5b9bfff510d267606e8626.bindPopup(popup_fd6b2bd84ab3580960239e25fb8f12f3)
+        ;
+
+        
+    
+    
+            var marker_14f767b9b526bc310eb618f93ddb26eb = L.marker(
+                [31.1299469, -102.2119145],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_ed696f4b31b7bda187ebbdb569c7c010 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_14f767b9b526bc310eb618f93ddb26eb.setIcon(icon_ed696f4b31b7bda187ebbdb569c7c010);
+        
+    
+        var popup_ffd33d7b6f37abfaceafa8ad77eac736 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_58e976f8888bc0ff751717f995fff800 = $(`<div id="html_58e976f8888bc0ff751717f995fff800" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/mccamey/4677-Mccamey-Middle-School/" target="_blank">200 East 11th Street, McCamey, TX, 79752<br>{'Reading': '37%', 'Math': '22%', 'Science': '16%', 'Social Studies': '5%'}</a></div>`)[0];
+                popup_ffd33d7b6f37abfaceafa8ad77eac736.setContent(html_58e976f8888bc0ff751717f995fff800);
+            
+        
+
+        marker_14f767b9b526bc310eb618f93ddb26eb.bindPopup(popup_ffd33d7b6f37abfaceafa8ad77eac736)
+        ;
+
+        
+    
+    
+            var marker_391bb4edfdb51e186a89c9d0e6e8243f = L.marker(
+                [31.871631, -102.355493],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_a79544f981e7f1b9a0fd1fca03a6b8f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_391bb4edfdb51e186a89c9d0e6e8243f.setIcon(icon_a79544f981e7f1b9a0fd1fca03a6b8f2);
+        
+    
+        var popup_f93fc9a6d90665c310801378a7f1517c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73fabed3c0378c33a9354b51fc1583f7 = $(`<div id="html_73fabed3c0378c33a9354b51fc1583f7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/7574-Odessa-Christian-School/" target="_blank">2000 Doran Drive, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_f93fc9a6d90665c310801378a7f1517c.setContent(html_73fabed3c0378c33a9354b51fc1583f7);
+            
+        
+
+        marker_391bb4edfdb51e186a89c9d0e6e8243f.bindPopup(popup_f93fc9a6d90665c310801378a7f1517c)
+        ;
+
+        
+    
+    
+            var marker_299b957e6ed4ee6bd38d8931c9f68a91 = L.marker(
+                [32.2363943, -101.46305758211233],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_a7700493a4121b76aa1e95acdc11a530 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_299b957e6ed4ee6bd38d8931c9f68a91.setIcon(icon_a7700493a4121b76aa1e95acdc11a530);
+        
+    
+        var popup_36381398bac75e14d6ea8528c76586b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ca165b597db204a60425fd886be8a63 = $(`<div id="html_3ca165b597db204a60425fd886be8a63" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/24875-Big-Spring-Intermediate-School/" target="_blank">2000 Goliad Street, Big Spring, TX, 79720<br>{'Math': '32%', 'Reading': '38%', 'Science': '30%'}</a></div>`)[0];
+                popup_36381398bac75e14d6ea8528c76586b0.setContent(html_3ca165b597db204a60425fd886be8a63);
+            
+        
+
+        marker_299b957e6ed4ee6bd38d8931c9f68a91.bindPopup(popup_36381398bac75e14d6ea8528c76586b0)
+        ;
+
+        
+    
+    
+            var marker_aa6cab4f99817d3303b7684f752df3b1 = L.marker(
+                [32.01737238709677, -102.07957387096774],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_4658c914155c290de75933a0565ca41d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_aa6cab4f99817d3303b7684f752df3b1.setIcon(icon_4658c914155c290de75933a0565ca41d);
+        
+    
+        var popup_2bf68e569f1d6e05650baf3352a27217 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_51f9ddaa5001a5cc9a75634d0951975c = $(`<div id="html_51f9ddaa5001a5cc9a75634d0951975c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/16735-Little-Red-Wagon-North/" target="_blank">2000 North Big Spring Street, Midland, TX, 79705<br>{}</a></div>`)[0];
+                popup_2bf68e569f1d6e05650baf3352a27217.setContent(html_51f9ddaa5001a5cc9a75634d0951975c);
+            
+        
+
+        marker_aa6cab4f99817d3303b7684f752df3b1.bindPopup(popup_2bf68e569f1d6e05650baf3352a27217)
+        ;
+
+        
+    
+    
+            var marker_2a810012700ea781ec1ed970ddc99382 = L.marker(
+                [32.7212245, -101.97270684787372],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_15388249d0ca67aee9e576f8a17d92c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2a810012700ea781ec1ed970ddc99382.setIcon(icon_15388249d0ca67aee9e576f8a17d92c7);
+        
+    
+        var popup_2c39a9e2b427c04aac45ea72ce0426ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e592d7ca1ff6aa9ad7b5e7789b0c1fd = $(`<div id="html_5e592d7ca1ff6aa9ad7b5e7789b0c1fd" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lamesa/4200-South-Elementary-School/" target="_blank">2000 South 8th Street, Lamesa, TX, 79331<br>{}</a></div>`)[0];
+                popup_2c39a9e2b427c04aac45ea72ce0426ca.setContent(html_5e592d7ca1ff6aa9ad7b5e7789b0c1fd);
+            
+        
+
+        marker_2a810012700ea781ec1ed970ddc99382.bindPopup(popup_2c39a9e2b427c04aac45ea72ce0426ca)
+        ;
+
+        
+    
+    
+            var marker_7c33bcedf813fe558a4228e7800ce6d9 = L.marker(
+                [32.000389549999994, -102.0985790815738],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_b1aee730f73c998fe05c44759113c536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7c33bcedf813fe558a4228e7800ce6d9.setIcon(icon_b1aee730f73c998fe05c44759113c536);
+        
+    
+        var popup_adc4e5c831ac18a88bfc4493a523c338 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4132bbee464e043a95ae282f1740adcd = $(`<div id="html_4132bbee464e043a95ae282f1740adcd" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4802-Houston-Elementary-School/" target="_blank">2000 West Louisiana Avenue, Midland, TX, 79701<br>{'Reading': '58%', 'Math': '42%', 'Science': '43%'}</a></div>`)[0];
+                popup_adc4e5c831ac18a88bfc4493a523c338.setContent(html_4132bbee464e043a95ae282f1740adcd);
+            
+        
+
+        marker_7c33bcedf813fe558a4228e7800ce6d9.bindPopup(popup_adc4e5c831ac18a88bfc4493a523c338)
+        ;
+
+        
+    
+    
+            var marker_37f27c2c16335494a7b983ca9c6656e2 = L.marker(
+                [31.995186, -102.09622],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_6df5ca2eb4ebbc20d4c5a023c570f825 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_37f27c2c16335494a7b983ca9c6656e2.setIcon(icon_6df5ca2eb4ebbc20d4c5a023c570f825);
+        
+    
+        var popup_e3ff11eb25dc880a71cc8870bb7e60a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_91330c2ed94ed3e06a6b9b9ea6b22812 = $(`<div id="html_91330c2ed94ed3e06a6b9b9ea6b22812" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/7442-St-Ann-S-School/" target="_blank">2000 West Texas Avenue, Midland, TX, 79701<br>{}</a></div>`)[0];
+                popup_e3ff11eb25dc880a71cc8870bb7e60a3.setContent(html_91330c2ed94ed3e06a6b9b9ea6b22812);
+            
+        
+
+        marker_37f27c2c16335494a7b983ca9c6656e2.bindPopup(popup_e3ff11eb25dc880a71cc8870bb7e60a3)
+        ;
+
+        
+    
+    
+            var marker_6533801290211bc4b9fc47fa429631c2 = L.marker(
+                [32.011575, -102.115679],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_0ea0fc3402b153be42f22cf61a3fd5a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6533801290211bc4b9fc47fa429631c2.setIcon(icon_0ea0fc3402b153be42f22cf61a3fd5a7);
+        
+    
+        var popup_4f71ec5a55af869d8187e892947c236b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ffe43191544ac7e8482993b6c11b88ae = $(`<div id="html_ffe43191544ac7e8482993b6c11b88ae" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/8330-Midland-Christian-School/" target="_blank">2001 Culver Drive, Midland, TX, 79705<br>{}</a></div>`)[0];
+                popup_4f71ec5a55af869d8187e892947c236b.setContent(html_ffe43191544ac7e8482993b6c11b88ae);
+            
+        
+
+        marker_6533801290211bc4b9fc47fa429631c2.bindPopup(popup_4f71ec5a55af869d8187e892947c236b)
+        ;
+
+        
+    
+    
+            var marker_73ed81efd00f20ef551f774b5565c316 = L.marker(
+                [31.86090506122449, -102.38127800000001],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_b86223d9570880c7a62660d04cce2646 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_73ed81efd00f20ef551f774b5565c316.setIcon(icon_b86223d9570880c7a62660d04cce2646);
+        
+    
+        var popup_614ca632b32f5fa0549de3493ae73af6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_82b2caf35c8c6290547ad06bea335763 = $(`<div id="html_82b2caf35c8c6290547ad06bea335763" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/7698-Christ-Lutheran-School/" target="_blank">2002 North Lincoln Ave, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_614ca632b32f5fa0549de3493ae73af6.setContent(html_82b2caf35c8c6290547ad06bea335763);
+            
+        
+
+        marker_73ed81efd00f20ef551f774b5565c316.bindPopup(popup_614ca632b32f5fa0549de3493ae73af6)
+        ;
+
+        
+    
+    
+            var marker_8dbad74e20600fa27788b7a2a4308298 = L.marker(
+                [31.8648512, -103.0840608],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_fc0d825cc90858bd929b131590f77a61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8dbad74e20600fa27788b7a2a4308298.setIcon(icon_fc0d825cc90858bd929b131590f77a61);
+        
+    
+        var popup_ba441eb13b86ce3b9e20d39e1714fc64 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5716ef97e3cee196db10af0f83bf707a = $(`<div id="html_5716ef97e3cee196db10af0f83bf707a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/kermit/19286-Kermit-Elementary-School/" target="_blank">201 North East Avenue, Kermit, TX, 79745<br>{'Reading': '26%', 'Math': '32%'}</a></div>`)[0];
+                popup_ba441eb13b86ce3b9e20d39e1714fc64.setContent(html_5716ef97e3cee196db10af0f83bf707a);
+            
+        
+
+        marker_8dbad74e20600fa27788b7a2a4308298.bindPopup(popup_ba441eb13b86ce3b9e20d39e1714fc64)
+        ;
+
+        
+    
+    
+            var marker_068143961166747f2f799517f14a27f0 = L.marker(
+                [31.987988, -102.075467],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_43c44e95805eb694974f699de7a19121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_068143961166747f2f799517f14a27f0.setIcon(icon_43c44e95805eb694974f699de7a19121);
+        
+    
+        var popup_29efb7152e29a68930dd67ba5ed3be02 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a4555479289577406669e282ea41a4f8 = $(`<div id="html_a4555479289577406669e282ea41a4f8" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4812-South-Elementary-School/" target="_blank">201 West Dakota Avenue, Midland, TX, 79701<br>{'Math': '27%', 'Reading': '22%', 'Science': '10%'}</a></div>`)[0];
+                popup_29efb7152e29a68930dd67ba5ed3be02.setContent(html_a4555479289577406669e282ea41a4f8);
+            
+        
+
+        marker_068143961166747f2f799517f14a27f0.bindPopup(popup_29efb7152e29a68930dd67ba5ed3be02)
+        ;
+
+        
+    
+    
+            var marker_848a54625dbc0f6bb6329e0d2e658d60 = L.marker(
+                [32.717841, -102.668868],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_e813c7454bc5ff3327f9870f13d246d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_848a54625dbc0f6bb6329e0d2e658d60.setIcon(icon_e813c7454bc5ff3327f9870f13d246d1);
+        
+    
+        var popup_6926fc8d0c89b1257b27bf3524834d56 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7acaa3b46173e3eda4e40112a3c80dff = $(`<div id="html_7acaa3b46173e3eda4e40112a3c80dff" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/seminole/6230-Young-Elementary-School/" target="_blank">2100 Southwest Avenue B, Seminole, TX, 79360<br>{}</a></div>`)[0];
+                popup_6926fc8d0c89b1257b27bf3524834d56.setContent(html_7acaa3b46173e3eda4e40112a3c80dff);
+            
+        
+
+        marker_848a54625dbc0f6bb6329e0d2e658d60.bindPopup(popup_6926fc8d0c89b1257b27bf3524834d56)
+        ;
+
+        
+    
+    
+            var marker_4be4d235189b906b3deee7f1fdaef729 = L.marker(
+                [32.21461165, -101.49029840788288],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_535ebf0fdc88a251b7582174301de789 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4be4d235189b906b3deee7f1fdaef729.setIcon(icon_535ebf0fdc88a251b7582174301de789);
+        
+    
+        var popup_5f77def60049de872456cc6785356186 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0fc8378066c7db79ee14141a35530f3c = $(`<div id="html_0fc8378066c7db79ee14141a35530f3c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/769-Marcy-Elementary-School/" target="_blank">2101 Wasson Road, Big Spring, TX, 79720<br>{'Reading': '19%', 'Math': '22%', 'Writing': '12%'}</a></div>`)[0];
+                popup_5f77def60049de872456cc6785356186.setContent(html_0fc8378066c7db79ee14141a35530f3c);
+            
+        
+
+        marker_4be4d235189b906b3deee7f1fdaef729.bindPopup(popup_5f77def60049de872456cc6785356186)
+        ;
+
+        
+    
+    
+            var marker_382339ca7598dbdbe27755cf2e014cd0 = L.marker(
+                [32.0005205, -102.10007391091733],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_e8ee8c2d859e576b3db03f3a87ba76b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_382339ca7598dbdbe27755cf2e014cd0.setIcon(icon_e8ee8c2d859e576b3db03f3a87ba76b7);
+        
+    
+        var popup_ce24b9aace6a6fe9728dad56648189a6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_48d197f1ee69458f579fec2df66ef88a = $(`<div id="html_48d197f1ee69458f579fec2df66ef88a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/8143-First-Baptist-Child-Development-Center/" target="_blank">2104 West Louisiana Avenue, Midland, TX, 79701<br>{}</a></div>`)[0];
+                popup_ce24b9aace6a6fe9728dad56648189a6.setContent(html_48d197f1ee69458f579fec2df66ef88a);
+            
+        
+
+        marker_382339ca7598dbdbe27755cf2e014cd0.bindPopup(popup_ce24b9aace6a6fe9728dad56648189a6)
+        ;
+
+        
+    
+    
+            var marker_0cdf9288c48574fc2de29f363ce05ba0 = L.marker(
+                [32.00165785, -102.16320904958133],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_ba8c4f782f3dc366c9f7ae2a70429572 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0cdf9288c48574fc2de29f363ce05ba0.setIcon(icon_ba8c4f782f3dc366c9f7ae2a70429572);
+        
+    
+        var popup_e360d25a080c22370fc39e4ecf2963f0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_df72947419097981e85f7622858794a8 = $(`<div id="html_df72947419097981e85f7622858794a8" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4820-Scharbauer-Elementary-School/" target="_blank">2115 Hereford Boulevard, Midland, TX, 79707<br>{'Math': '19%', 'Reading': '32%', 'Science': '28%'}</a></div>`)[0];
+                popup_e360d25a080c22370fc39e4ecf2963f0.setContent(html_df72947419097981e85f7622858794a8);
+            
+        
+
+        marker_0cdf9288c48574fc2de29f363ce05ba0.bindPopup(popup_e360d25a080c22370fc39e4ecf2963f0)
+        ;
+
+        
+    
+    
+            var marker_309307fca47236eeaacc12b44e22a86f = L.marker(
+                [31.86565, -102.407996],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_040207345d49db98e711823cda56d099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_309307fca47236eeaacc12b44e22a86f.setIcon(icon_040207345d49db98e711823cda56d099);
+        
+    
+        var popup_829913d13b59fb7da49ed4d100fac173 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_41ffc1eac5c63f3b412d80e9122f7f55 = $(`<div id="html_41ffc1eac5c63f3b412d80e9122f7f55" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2266-Noel-Elementary-School/" target="_blank">2200 Newcomb Drive, Odessa, TX, 79764<br>{'Math': '23%', 'Reading': '26%', 'Science': '14%'}</a></div>`)[0];
+                popup_829913d13b59fb7da49ed4d100fac173.setContent(html_41ffc1eac5c63f3b412d80e9122f7f55);
+            
+        
+
+        marker_309307fca47236eeaacc12b44e22a86f.bindPopup(popup_829913d13b59fb7da49ed4d100fac173)
+        ;
+
+        
+    
+    
+            var marker_a1dfd02fb5a38ba796e9d4bfc9dc8bfc = L.marker(
+                [31.841181365711673, -102.46548241197159],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_8ba5e80cb03a02bc1f5c78618e6fc9b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a1dfd02fb5a38ba796e9d4bfc9dc8bfc.setIcon(icon_8ba5e80cb03a02bc1f5c78618e6fc9b4);
+        
+    
+        var popup_537073c99ac17f0fae44d02e02e123b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_db7a85b0a85512fbaa1658db97548622 = $(`<div id="html_db7a85b0a85512fbaa1658db97548622" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/24938-G-E-Buddy-West-Elementary-School/" target="_blank">2225 Sycamore Drive, Odessa, TX, 79763<br>{'Math': '24%', 'Reading': '18%', 'Science': '18%'}</a></div>`)[0];
+                popup_537073c99ac17f0fae44d02e02e123b4.setContent(html_db7a85b0a85512fbaa1658db97548622);
+            
+        
+
+        marker_a1dfd02fb5a38ba796e9d4bfc9dc8bfc.bindPopup(popup_537073c99ac17f0fae44d02e02e123b4)
+        ;
+
+        
+    
+    
+            var marker_972a948a99c040ec73d833cfc6598d69 = L.marker(
+                [31.87016324489796, -102.349527],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_cb547997deb822cc6e99117a2fd7d14e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_972a948a99c040ec73d833cfc6598d69.setIcon(icon_cb547997deb822cc6e99117a2fd7d14e);
+        
+    
+        var popup_01070c29a7dade050b549927383344c9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b91dff96d475c2ef536ad94807406f0 = $(`<div id="html_8b91dff96d475c2ef536ad94807406f0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2259-El-Magnet-At-Reagan-Elementary-School/" target="_blank">2321 East 21st Street, Odessa, TX, 79761<br>{'Math': '81%', 'Reading': '86%', 'Science': '91%'}</a></div>`)[0];
+                popup_01070c29a7dade050b549927383344c9.setContent(html_8b91dff96d475c2ef536ad94807406f0);
+            
+        
+
+        marker_972a948a99c040ec73d833cfc6598d69.bindPopup(popup_01070c29a7dade050b549927383344c9)
+        ;
+
+        
+    
+    
+            var marker_695ea39a3aa326f604c0e05f119f143b = L.marker(
+                [31.867391984186362, -101.48040396137321],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_39d4ae1451106b361051f738d6b051a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_695ea39a3aa326f604c0e05f119f143b.setIcon(icon_39d4ae1451106b361051f738d6b051a7);
+        
+    
+        var popup_4b84304ee3db9390ed54a954603ffd89 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d8f8730e3a69305e6a806248fff3210 = $(`<div id="html_0d8f8730e3a69305e6a806248fff3210" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/garden-city/2948-Glasscock-County-Elementary-School/" target="_blank">240 Bearkat Avenue, Garden City, TX, 79739<br>{'Math': '72%', 'Reading': '84%', 'Science': '55%'}</a></div>`)[0];
+                popup_4b84304ee3db9390ed54a954603ffd89.setContent(html_0d8f8730e3a69305e6a806248fff3210);
+            
+        
+
+        marker_695ea39a3aa326f604c0e05f119f143b.bindPopup(popup_4b84304ee3db9390ed54a954603ffd89)
+        ;
+
+        
+    
+    
+            var marker_48927ddf997a52bc3c8fd1ba85fc5cc8 = L.marker(
+                [32.018071, -102.108976],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_2530534e30ae07ecacf193701d3fcf77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_48927ddf997a52bc3c8fd1ba85fc5cc8.setIcon(icon_2530534e30ae07ecacf193701d3fcf77);
+        
+    
+        var popup_6d7b8083bf272ee540b59238099df10b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6d92408b925d0f3b5aaa1e1338cdf96 = $(`<div id="html_d6d92408b925d0f3b5aaa1e1338cdf96" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4799-Fannin-Elementary-School/" target="_blank">2400 Fannin Avenue, Midland, TX, 79705<br>{'Reading': '49%', 'Math': '37%', 'Science': '34%'}</a></div>`)[0];
+                popup_6d7b8083bf272ee540b59238099df10b.setContent(html_d6d92408b925d0f3b5aaa1e1338cdf96);
+            
+        
+
+        marker_48927ddf997a52bc3c8fd1ba85fc5cc8.bindPopup(popup_6d7b8083bf272ee540b59238099df10b)
+        ;
+
+        
+    
+    
+            var marker_7c605f4199d21615681127c286c38e0b = L.marker(
+                [31.840217, -102.395938],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_9dde28c52892c4d2f2e9fce398c7989f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7c605f4199d21615681127c286c38e0b.setIcon(icon_9dde28c52892c4d2f2e9fce398c7989f);
+        
+    
+        var popup_e4c5e31a7ddba236356f2dadf2d5635c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c9a708309329479f09dee2bfe6d805a5 = $(`<div id="html_c9a708309329479f09dee2bfe6d805a5" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2243-Cameron-Dual-Language-Magnet/" target="_blank">2401 West 8th Street, Odessa, TX, 79763<br>{'Reading': '45%', 'Math': '48%', 'Science': '45%'}</a></div>`)[0];
+                popup_e4c5e31a7ddba236356f2dadf2d5635c.setContent(html_c9a708309329479f09dee2bfe6d805a5);
+            
+        
+
+        marker_7c605f4199d21615681127c286c38e0b.bindPopup(popup_e4c5e31a7ddba236356f2dadf2d5635c)
+        ;
+
+        
+    
+    
+            var marker_4a58f6a3dbb97ce7824fddd1ebaf0ae4 = L.marker(
+                [31.864421893454256, -102.34545271475704],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_00e241087aee6ff155a3b05a9685788e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4a58f6a3dbb97ce7824fddd1ebaf0ae4.setIcon(icon_00e241087aee6ff155a3b05a9685788e);
+        
+    
+        var popup_2963b8cf69fcee1c33e9cffe539038be = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1351150ee0b9f33671a022bcef333162 = $(`<div id="html_1351150ee0b9f33671a022bcef333162" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/16988-Lindas-Little-Angels/" target="_blank">2425 East 11th Street, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_2963b8cf69fcee1c33e9cffe539038be.setContent(html_1351150ee0b9f33671a022bcef333162);
+            
+        
+
+        marker_4a58f6a3dbb97ce7824fddd1ebaf0ae4.bindPopup(popup_2963b8cf69fcee1c33e9cffe539038be)
+        ;
+
+        
+    
+    
+            var marker_084533ac9a97a954855ca5a66e67db3d = L.marker(
+                [31.869173, -102.337071],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_e79ea6174075d7d6c6907abcb062798c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_084533ac9a97a954855ca5a66e67db3d.setIcon(icon_e79ea6174075d7d6c6907abcb062798c);
+        
+    
+        var popup_a42e57ef97e1b09776e0dab4a3fb44ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eadf4b4ac646477f3a7e240d04d7fcb8 = $(`<div id="html_eadf4b4ac646477f3a7e240d04d7fcb8" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2249-Gonzales-Elementary-School/" target="_blank">2700 Disney Street, Odessa, TX, 79761<br>{'Math': '33%', 'Reading': '34%', 'Science': '22%'}</a></div>`)[0];
+                popup_a42e57ef97e1b09776e0dab4a3fb44ec.setContent(html_eadf4b4ac646477f3a7e240d04d7fcb8);
+            
+        
+
+        marker_084533ac9a97a954855ca5a66e67db3d.bindPopup(popup_a42e57ef97e1b09776e0dab4a3fb44ec)
+        ;
+
+        
+    
+    
+            var marker_e98bc2faf79e390a4dd6bd8f862df45f = L.marker(
+                [31.876391272727272, -102.347657],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_60d11c7cfe68be424d9a10c9e723abc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e98bc2faf79e390a4dd6bd8f862df45f.setIcon(icon_60d11c7cfe68be424d9a10c9e723abc7);
+        
+    
+        var popup_c96cfde25bd985f298c1bf6cfe9c1690 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_832a4cf81a1fb9ad288c823d57de98a2 = $(`<div id="html_832a4cf81a1fb9ad288c823d57de98a2" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/24962-Harmony-Science-Academy---Odessa/" target="_blank">2755 North Grandview Avenue, Odessa, TX, 79762<br>{'Reading': '44%', 'Math': '34%', 'Science': '39%', 'Social Studies': '22%', 'Algebra I': '100%'}</a></div>`)[0];
+                popup_c96cfde25bd985f298c1bf6cfe9c1690.setContent(html_832a4cf81a1fb9ad288c823d57de98a2);
+            
+        
+
+        marker_e98bc2faf79e390a4dd6bd8f862df45f.bindPopup(popup_c96cfde25bd985f298c1bf6cfe9c1690)
+        ;
+
+        
+    
+    
+            var marker_0d27e7d9d3867ba14bf8c35bc8e7e67e = L.marker(
+                [32.029558, -102.119297],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_d73c88b8cc192c078ed22899f34322a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d27e7d9d3867ba14bf8c35bc8e7e67e.setIcon(icon_d73c88b8cc192c078ed22899f34322a2);
+        
+    
+        var popup_3bc79fde696ad1999a01d81c3d0b02fc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e37a84b0d7877944285ffe4229257794 = $(`<div id="html_e37a84b0d7877944285ffe4229257794" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4798-Emerson-Elementary-School/" target="_blank">2800 Moss Avenue, Midland, TX, 79705<br>{'Math': '61%', 'Reading': '67%', 'Science': '46%'}</a></div>`)[0];
+                popup_3bc79fde696ad1999a01d81c3d0b02fc.setContent(html_e37a84b0d7877944285ffe4229257794);
+            
+        
+
+        marker_0d27e7d9d3867ba14bf8c35bc8e7e67e.bindPopup(popup_3bc79fde696ad1999a01d81c3d0b02fc)
+        ;
+
+        
+    
+    
+            var marker_a957e00fbaa7efde70687a18892f97a2 = L.marker(
+                [32.024051033613446, -102.09059357142857],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_4e6f1b31c9fbb19b6849d7755b71ff66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a957e00fbaa7efde70687a18892f97a2.setIcon(icon_4e6f1b31c9fbb19b6849d7755b71ff66);
+        
+    
+        var popup_4bab06d2700668bd6ee6494b98389ee7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cd07a40b6810e16debb668680f4869f9 = $(`<div id="html_cd07a40b6810e16debb668680f4869f9" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/8106-Hillcrest-School/" target="_blank">2800 North A Street, Midland, TX, 79705<br>{}</a></div>`)[0];
+                popup_4bab06d2700668bd6ee6494b98389ee7.setContent(html_cd07a40b6810e16debb668680f4869f9);
+            
+        
+
+        marker_a957e00fbaa7efde70687a18892f97a2.bindPopup(popup_4bab06d2700668bd6ee6494b98389ee7)
+        ;
+
+        
+    
+    
+            var marker_19faf9364fe02d9e8cb15fb0ed54b527 = L.marker(
+                [31.884079, -102.363512],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_92a487cb52cb73fc60e7b38136837684 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_19faf9364fe02d9e8cb15fb0ed54b527.setIcon(icon_92a487cb52cb73fc60e7b38136837684);
+        
+    
+        var popup_845b0d1344a6f44d8c2bddab4f2308d4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28a8d414fdf1d90eb3df26178729123a = $(`<div id="html_28a8d414fdf1d90eb3df26178729123a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2261-Sam-Houston-Elementary-School/" target="_blank">300 East 37th Street, Odessa, TX, 79762<br>{'Math': '25%', 'Reading': '31%', 'Science': '11%'}</a></div>`)[0];
+                popup_845b0d1344a6f44d8c2bddab4f2308d4.setContent(html_28a8d414fdf1d90eb3df26178729123a);
+            
+        
+
+        marker_19faf9364fe02d9e8cb15fb0ed54b527.bindPopup(popup_845b0d1344a6f44d8c2bddab4f2308d4)
+        ;
+
+        
+    
+    
+            var marker_ae09b58e973f1a21c9091e6db10b12fb = L.marker(
+                [32.3329006, -102.54741427207614],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_95365c1ae1626c65e0bd96c13fe0e28a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ae09b58e973f1a21c9091e6db10b12fb.setIcon(icon_95365c1ae1626c65e0bd96c13fe0e28a);
+        
+    
+        var popup_552c2e60cb4757ed1541a1f89bfa5189 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ccb2e358680baf544510fbf9702ba4de = $(`<div id="html_ccb2e358680baf544510fbf9702ba4de" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/andrews/389-Clearfork-Elementary-School/" target="_blank">300 Northeast Avenue K, Andrews, TX, 79714<br>{}</a></div>`)[0];
+                popup_552c2e60cb4757ed1541a1f89bfa5189.setContent(html_ccb2e358680baf544510fbf9702ba4de);
+            
+        
+
+        marker_ae09b58e973f1a21c9091e6db10b12fb.bindPopup(popup_552c2e60cb4757ed1541a1f89bfa5189)
+        ;
+
+        
+    
+    
+            var marker_76e1223942338be729b37afc258712eb = L.marker(
+                [31.396402, -102.351222],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_7580934acb64da8c7e1bd03fded62d6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_76e1223942338be729b37afc258712eb.setIcon(icon_7580934acb64da8c7e1bd03fded62d6b);
+        
+    
+        var popup_8770f8f85f9b9c808fdf238fba73248b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f789e8f7e95e84c327957d3456e0d0f = $(`<div id="html_8f789e8f7e95e84c327957d3456e0d0f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/crane/1644-Crane-Elementary-School/" target="_blank">300 West 7th Street, Crane, TX, 79731<br>{'Math': '38%', 'Reading': '43%', 'Science': '28%'}</a></div>`)[0];
+                popup_8770f8f85f9b9c808fdf238fba73248b.setContent(html_8f789e8f7e95e84c327957d3456e0d0f);
+            
+        
+
+        marker_76e1223942338be729b37afc258712eb.bindPopup(popup_8770f8f85f9b9c808fdf238fba73248b)
+        ;
+
+        
+    
+    
+            var marker_2204d257a3886a35b0025f850c8e5110 = L.marker(
+                [32.0074792, -102.11583553869696],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_4883b9fc17ad8707dab2c6df0b47a805 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2204d257a3886a35b0025f850c8e5110.setIcon(icon_4883b9fc17ad8707dab2c6df0b47a805);
+        
+    
+        var popup_60073a1e14465f3fa9d8769711c5fa01 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_573ccd357afac399184d1f41441f2c95 = $(`<div id="html_573ccd357afac399184d1f41441f2c95" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/11544-Grace-Lutheran-Early-Child-Program/" target="_blank">3000 West Golf Course Road, Midland, TX, 79701<br>{}</a></div>`)[0];
+                popup_60073a1e14465f3fa9d8769711c5fa01.setContent(html_573ccd357afac399184d1f41441f2c95);
+            
+        
+
+        marker_2204d257a3886a35b0025f850c8e5110.bindPopup(popup_60073a1e14465f3fa9d8769711c5fa01)
+        ;
+
+        
+    
+    
+            var marker_684d2c85e7acbf9b108f8c5e91f50fbc = L.marker(
+                [32.027474, -102.078285],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_2eb95432b7ba10d5a8a1b5fc7f04f52a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_684d2c85e7acbf9b108f8c5e91f50fbc.setIcon(icon_2eb95432b7ba10d5a8a1b5fc7f04f52a);
+        
+    
+        var popup_889d282f2365f75c390114a72083265e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1188900aa0b2f5b88a1fe3ceaddc9b3 = $(`<div id="html_c1188900aa0b2f5b88a1fe3ceaddc9b3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4808-Milam-Elementary-School/" target="_blank">301 East Dormard Avenue, Midland, TX, 79705<br>{'Reading': '29%', 'Math': '26%', 'Science': '9%'}</a></div>`)[0];
+                popup_889d282f2365f75c390114a72083265e.setContent(html_c1188900aa0b2f5b88a1fe3ceaddc9b3);
+            
+        
+
+        marker_684d2c85e7acbf9b108f8c5e91f50fbc.bindPopup(popup_889d282f2365f75c390114a72083265e)
+        ;
+
+        
+    
+    
+            var marker_205c57a0102888a49e5ebc2769e3d6c5 = L.marker(
+                [31.98306365, -102.15142662886618],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_3a955ffd84600141443e90a5122d58cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_205c57a0102888a49e5ebc2769e3d6c5.setIcon(icon_3a955ffd84600141443e90a5122d58cb);
+        
+    
+        var popup_a398a1d3f5837fd13efeb8d293f1210c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2b805ad6add31f302adcfbaaa2dc308f = $(`<div id="html_2b805ad6add31f302adcfbaaa2dc308f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/24354-Crestview-Baptist-Early-Childhood-Center/" target="_blank">301 N LOOP 250 W, Midland, TX, 79703<br>{}</a></div>`)[0];
+                popup_a398a1d3f5837fd13efeb8d293f1210c.setContent(html_2b805ad6add31f302adcfbaaa2dc308f);
+            
+        
+
+        marker_205c57a0102888a49e5ebc2769e3d6c5.bindPopup(popup_a398a1d3f5837fd13efeb8d293f1210c)
+        ;
+
+        
+    
+    
+            var marker_4d3af046df91c94cd671c9e88beac41e = L.marker(
+                [31.986084908163267, -102.1090168367347],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_c145636c5b32c64f452f713601fd1660 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4d3af046df91c94cd671c9e88beac41e.setIcon(icon_c145636c5b32c64f452f713601fd1660);
+        
+    
+        var popup_be19c88f19f4f7bbb8dce03e10728616 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ffe6be6683a34864740d7705c67e106 = $(`<div id="html_5ffe6be6683a34864740d7705c67e106" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/7602-Midland-Odessa-SDA-School/" target="_blank">3112 Travis Ave, Midland, TX, 79701<br>{}</a></div>`)[0];
+                popup_be19c88f19f4f7bbb8dce03e10728616.setContent(html_5ffe6be6683a34864740d7705c67e106);
+            
+        
+
+        marker_4d3af046df91c94cd671c9e88beac41e.bindPopup(popup_be19c88f19f4f7bbb8dce03e10728616)
+        ;
+
+        
+    
+    
+            var marker_906d0571f76bebbc7577cbb7c4608749 = L.marker(
+                [32.31502336836385, -102.55165155144174],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_6f55820c076870d36b339db0d1e03620 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_906d0571f76bebbc7577cbb7c4608749.setIcon(icon_6f55820c076870d36b339db0d1e03620);
+        
+    
+        var popup_007c531cdc50283ef5ffc4502c97af21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_69d3ebd3a562f78f06d76ced9f6ceb5a = $(`<div id="html_69d3ebd3a562f78f06d76ced9f6ceb5a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/andrews/388-Underwood-Elementary-School/" target="_blank">316 Southwest 5th Street, Andrews, TX, 79714<br>{'Math': '37%', 'Reading': '53%', 'Science': '30%'}</a></div>`)[0];
+                popup_007c531cdc50283ef5ffc4502c97af21.setContent(html_69d3ebd3a562f78f06d76ced9f6ceb5a);
+            
+        
+
+        marker_906d0571f76bebbc7577cbb7c4608749.bindPopup(popup_007c531cdc50283ef5ffc4502c97af21)
+        ;
+
+        
+    
+    
+            var marker_7791a813448999ca96f84ec4c5f18705 = L.marker(
+                [32.2574398, -101.44189157861571],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_0d83397ccd4700911f7bda8cc389952e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7791a813448999ca96f84ec4c5f18705.setIcon(icon_0d83397ccd4700911f7bda8cc389952e);
+        
+    
+        var popup_bc3759901962bb699fd0473490b48945 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9675fca112880843193e3c35862fbd80 = $(`<div id="html_9675fca112880843193e3c35862fbd80" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/770-Moss-Elementary-School/" target="_blank">3200 Fordham Avenue, Big Spring, TX, 79720<br>{'Reading': '33%', 'Math': '43%', 'Writing': '26%'}</a></div>`)[0];
+                popup_bc3759901962bb699fd0473490b48945.setContent(html_9675fca112880843193e3c35862fbd80);
+            
+        
+
+        marker_7791a813448999ca96f84ec4c5f18705.bindPopup(popup_bc3759901962bb699fd0473490b48945)
+        ;
+
+        
+    
+    
+            var marker_f0dbd3fb4e93ed87eea111c22d4f4f02 = L.marker(
+                [31.993971, -102.105796],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_2d7fb740cbd7f028392edbe042dfbdf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_f0dbd3fb4e93ed87eea111c22d4f4f02.setIcon(icon_2d7fb740cbd7f028392edbe042dfbdf5);
+        
+    
+        var popup_6339ffb02f1d56c7ea52f93fbc46c906 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b3a6f9dcbcb9d85517fb47c45bc743a7 = $(`<div id="html_b3a6f9dcbcb9d85517fb47c45bc743a7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4804-Lamar-Elementary-School/" target="_blank">3200 Kessler Avenue, Midland, TX, 79701<br>{'Reading': '32%', 'Math': '25%', 'Science': '14%'}</a></div>`)[0];
+                popup_6339ffb02f1d56c7ea52f93fbc46c906.setContent(html_b3a6f9dcbcb9d85517fb47c45bc743a7);
+            
+        
+
+        marker_f0dbd3fb4e93ed87eea111c22d4f4f02.bindPopup(popup_6339ffb02f1d56c7ea52f93fbc46c906)
+        ;
+
+        
+    
+    
+            var marker_c2735f87c40b8d42d67607ecf35f9434 = L.marker(
+                [31.849560653061225, -102.34807104081632],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_eba0b0033dca2abd9400a1b3ac9c3277 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c2735f87c40b8d42d67607ecf35f9434.setIcon(icon_eba0b0033dca2abd9400a1b3ac9c3277);
+        
+    
+        var popup_1c1ba37c1e1f6ed6914f071474cb428f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a653444fa3db8e2e87a27bb8eae3109a = $(`<div id="html_a653444fa3db8e2e87a27bb8eae3109a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/16994-Just-For-Me-Child-Care/" target="_blank">330 Patterson Avenue, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_1c1ba37c1e1f6ed6914f071474cb428f.setContent(html_a653444fa3db8e2e87a27bb8eae3109a);
+            
+        
+
+        marker_c2735f87c40b8d42d67607ecf35f9434.bindPopup(popup_1c1ba37c1e1f6ed6914f071474cb428f)
+        ;
+
+        
+    
+    
+            var marker_8237c9169258d9b2de7e582341b203c4 = L.marker(
+                [31.988922, -102.115109],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_2704848bc38773ff1eb2de36fcb0ee72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8237c9169258d9b2de7e582341b203c4.setIcon(icon_2704848bc38773ff1eb2de36fcb0ee72);
+        
+    
+        var popup_28e19e97275441cf0504bf57b731a677 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2372d14c9b93c3cb3f9b80207d45ff1 = $(`<div id="html_e2372d14c9b93c3cb3f9b80207d45ff1" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/san-angelo/24672-Texas-Leadership-Of-Midland/" target="_blank">3300 Thomas Avenue, Midland, TX, 79703<br>{'Reading': '25%', 'Math': '16%', 'Science': '28%', 'Social Studies': '6%', 'English': '18%', 'Algebra I': '13%', 'English 2': '62%', 'US History': '69%', 'Biology I': '66%'}</a></div>`)[0];
+                popup_28e19e97275441cf0504bf57b731a677.setContent(html_e2372d14c9b93c3cb3f9b80207d45ff1);
+            
+        
+
+        marker_8237c9169258d9b2de7e582341b203c4.bindPopup(popup_28e19e97275441cf0504bf57b731a677)
+        ;
+
+        
+    
+    
+            var marker_417cf01028a8f93aeeeab700b59c582b = L.marker(
+                [32.03153250181818, -102.07527696363636],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_7fd42135d3074d39e6e06e90e85d7ee1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_417cf01028a8f93aeeeab700b59c582b.setIcon(icon_7fd42135d3074d39e6e06e90e85d7ee1);
+        
+    
+        var popup_850e1d891ea41abcc9d6889e2eec0a9b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0daf5287572649cde6c21fe0d42c7518 = $(`<div id="html_0daf5287572649cde6c21fe0d42c7518" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/16751-Wee-Care-Child-Care-Center/" target="_blank">3309 North Lamesa Road, Midland, TX, 79705<br>{}</a></div>`)[0];
+                popup_850e1d891ea41abcc9d6889e2eec0a9b.setContent(html_0daf5287572649cde6c21fe0d42c7518);
+            
+        
+
+        marker_417cf01028a8f93aeeeab700b59c582b.bindPopup(popup_850e1d891ea41abcc9d6889e2eec0a9b)
+        ;
+
+        
+    
+    
+            var marker_bca89a4d7542cef480cf1901b8ce6312 = L.marker(
+                [32.0193356, -102.13141021837978],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_b9e048a05bfc4d93b3459a01f00c771d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_bca89a4d7542cef480cf1901b8ce6312.setIcon(icon_b9e048a05bfc4d93b3459a01f00c771d);
+        
+    
+        var popup_ec009caeb6d4daf480f0c19183af50d2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78b63e436fb5b45f2c165d8270035461 = $(`<div id="html_78b63e436fb5b45f2c165d8270035461" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/10587-Trinity-School/" target="_blank">3500 West Wadley Avenue, Midland, TX, 79707<br>{}</a></div>`)[0];
+                popup_ec009caeb6d4daf480f0c19183af50d2.setContent(html_78b63e436fb5b45f2c165d8270035461);
+            
+        
+
+        marker_bca89a4d7542cef480cf1901b8ce6312.bindPopup(popup_ec009caeb6d4daf480f0c19183af50d2)
+        ;
+
+        
+    
+    
+            var marker_b569b6f97257f2bae0a7416fd21eddca = L.marker(
+                [31.884219, -102.363455],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_704e8636d09e27faef508c6dd67eab3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b569b6f97257f2bae0a7416fd21eddca.setIcon(icon_704e8636d09e27faef508c6dd67eab3a);
+        
+    
+        var popup_f48e3399b57f5e08c3e4ac0023064972 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff895a1a9e6b8079fb8d9b633c5c6737 = $(`<div id="html_ff895a1a9e6b8079fb8d9b633c5c6737" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2242-Burnet-Elementary-School/" target="_blank">3700 Permian Drive, Odessa, TX, 79762<br>{'Math': '34%', 'Reading': '42%', 'Science': '31%'}</a></div>`)[0];
+                popup_f48e3399b57f5e08c3e4ac0023064972.setContent(html_ff895a1a9e6b8079fb8d9b633c5c6737);
+            
+        
+
+        marker_b569b6f97257f2bae0a7416fd21eddca.bindPopup(popup_f48e3399b57f5e08c3e4ac0023064972)
+        ;
+
+        
+    
+    
+            var marker_c206542ad6d1724ed261915406e6fdf2 = L.marker(
+                [32.022708, -102.140165],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_bf57de2992ed5624c50dae2a1ebd31cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c206542ad6d1724ed261915406e6fdf2.setIcon(icon_bf57de2992ed5624c50dae2a1ebd31cf);
+        
+    
+        var popup_e6edcc5fc2fb62ab1a94b8c0894ed628 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b0de9a1b93738f7ec553a1edbae5121 = $(`<div id="html_5b0de9a1b93738f7ec553a1edbae5121" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4818-Parker-Elementary-School/" target="_blank">3800 Norwood Street, Midland, TX, 79707<br>{'Reading': '46%', 'Math': '38%', 'Science': '36%'}</a></div>`)[0];
+                popup_e6edcc5fc2fb62ab1a94b8c0894ed628.setContent(html_5b0de9a1b93738f7ec553a1edbae5121);
+            
+        
+
+        marker_c206542ad6d1724ed261915406e6fdf2.bindPopup(popup_e6edcc5fc2fb62ab1a94b8c0894ed628)
+        ;
+
+        
+    
+    
+            var marker_a1c0ce72813f9dd684c1f140a6dbc9b3 = L.marker(
+                [31.876995303030306, -102.39192217171717],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_bea77e206175b01c8e84ff81ab0e2dda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a1c0ce72813f9dd684c1f140a6dbc9b3.setIcon(icon_bea77e206175b01c8e84ff81ab0e2dda);
+        
+    
+        var popup_7bf301325ba4dd6394f0bd41a0c8a18c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_64e5bbc9f1e4aea28fab128780ba2fe0 = $(`<div id="html_64e5bbc9f1e4aea28fab128780ba2fe0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2241-Burleson-Elementary-School/" target="_blank">3900 North Golder Avenue, Odessa, TX, 79764<br>{'Reading': '21%', 'Math': '14%', 'Science': '15%'}</a></div>`)[0];
+                popup_7bf301325ba4dd6394f0bd41a0c8a18c.setContent(html_64e5bbc9f1e4aea28fab128780ba2fe0);
+            
+        
+
+        marker_a1c0ce72813f9dd684c1f140a6dbc9b3.bindPopup(popup_7bf301325ba4dd6394f0bd41a0c8a18c)
+        ;
+
+        
+    
+    
+            var marker_a72610dac7b47ffe26fb03e15fe6a83e = L.marker(
+                [31.1299469, -102.2119145],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_dcf2b6118e5ff78a66e03858c164f869 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a72610dac7b47ffe26fb03e15fe6a83e.setIcon(icon_dcf2b6118e5ff78a66e03858c164f869);
+        
+    
+        var popup_a09fd50de1725c0c9c7da233a851e89b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_01e52424f4225186ace9cf2dbd8e6ed2 = $(`<div id="html_01e52424f4225186ace9cf2dbd8e6ed2" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/mccamey/4678-Mccamey-Primary-School/" target="_blank">400 East 11th Street, McCamey, TX, 79752<br>{'Reading': '46%', 'Math': '35%'}</a></div>`)[0];
+                popup_a09fd50de1725c0c9c7da233a851e89b.setContent(html_01e52424f4225186ace9cf2dbd8e6ed2);
+            
+        
+
+        marker_a72610dac7b47ffe26fb03e15fe6a83e.bindPopup(popup_a09fd50de1725c0c9c7da233a851e89b)
+        ;
+
+        
+    
+    
+            var marker_1a7931537f74385ceae1e0b24464380f = L.marker(
+                [32.013364, -102.071572],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_234c0fb61a1588d40d435aaaa596f9d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1a7931537f74385ceae1e0b24464380f.setIcon(icon_234c0fb61a1588d40d435aaaa596f9d5);
+        
+    
+        var popup_61bf79d1c568d378e419967bd9bd8786 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6bace6d9a3d97350d5860a644578d11d = $(`<div id="html_6bace6d9a3d97350d5860a644578d11d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/25566-General-Tommy-Franks-Elementary-School/" target="_blank">401 East Parker Avenue, Midland, TX, 79701<br>{'Math': '48%', 'Reading': '51%', 'Science': '39%'}</a></div>`)[0];
+                popup_61bf79d1c568d378e419967bd9bd8786.setContent(html_6bace6d9a3d97350d5860a644578d11d);
+            
+        
+
+        marker_1a7931537f74385ceae1e0b24464380f.bindPopup(popup_61bf79d1c568d378e419967bd9bd8786)
+        ;
+
+        
+    
+    
+            var marker_93a312dfda1c23981b3b1a010d73ecbb = L.marker(
+                [32.717877, -102.648903],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_9c054aea2b03b35cb6fa6861122b6c04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_93a312dfda1c23981b3b1a010d73ecbb.setIcon(icon_9c054aea2b03b35cb6fa6861122b6c04);
+        
+    
+        var popup_057d4e5a4e8b7ac604703947254c0165 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f368f94d8d149a600d91dde7d7f6b307 = $(`<div id="html_f368f94d8d149a600d91dde7d7f6b307" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/seminole/6226-Seminole-Elementary-School/" target="_blank">401 Southwest Avenue B, Seminole, TX, 79360<br>{'Reading': '60%', 'Math': '61%', 'Science': '60%'}</a></div>`)[0];
+                popup_057d4e5a4e8b7ac604703947254c0165.setContent(html_f368f94d8d149a600d91dde7d7f6b307);
+            
+        
+
+        marker_93a312dfda1c23981b3b1a010d73ecbb.bindPopup(popup_057d4e5a4e8b7ac604703947254c0165)
+        ;
+
+        
+    
+    
+            var marker_a47f9e7e9e46399fe1b635f38b445a0a = L.marker(
+                [31.58890574103305, -102.89453627983187],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_f494bb56b715abfc056e4df2c8938f15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a47f9e7e9e46399fe1b635f38b445a0a.setIcon(icon_f494bb56b715abfc056e4df2c8938f15);
+        
+    
+        var popup_0390cb74397b54f752bd920b4b3231a6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_18fec5a174746ca5c45082d4bb739f60 = $(`<div id="html_18fec5a174746ca5c45082d4bb739f60" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/monahans/11210-Special-Education-Services/" target="_blank">402 W 6th St, Monahans, TX, 79756<br>{}</a></div>`)[0];
+                popup_0390cb74397b54f752bd920b4b3231a6.setContent(html_18fec5a174746ca5c45082d4bb739f60);
+            
+        
+
+        marker_a47f9e7e9e46399fe1b635f38b445a0a.bindPopup(popup_0390cb74397b54f752bd920b4b3231a6)
+        ;
+
+        
+    
+    
+            var marker_b1ffeec52811fd493cf75cdea01969b6 = L.marker(
+                [31.887647, -102.340305],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_99bf03ad82fb98c1720bd2db48f77a6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b1ffeec52811fd493cf75cdea01969b6.setIcon(icon_99bf03ad82fb98c1720bd2db48f77a6b);
+        
+    
+        var popup_4af49e4a4ded0cece4dd19f4cea34efe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f195f659b47f18d7d36e658ead30d658 = $(`<div id="html_f195f659b47f18d7d36e658ead30d658" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2267-Blanton-Elementary-School/" target="_blank">4101 Lynbrook Avenue, Odessa, TX, 79762<br>{'Reading': '51%', 'Math': '44%', 'Science': '19%'}</a></div>`)[0];
+                popup_4af49e4a4ded0cece4dd19f4cea34efe.setContent(html_f195f659b47f18d7d36e658ead30d658);
+            
+        
+
+        marker_b1ffeec52811fd493cf75cdea01969b6.bindPopup(popup_4af49e4a4ded0cece4dd19f4cea34efe)
+        ;
+
+        
+    
+    
+            var marker_8222ea37a2d48c5a5051d7e25fc33ccf = L.marker(
+                [31.98240015895855, -102.1273071191566],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_b874116bcebac901cf9fd8d39b0604ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8222ea37a2d48c5a5051d7e25fc33ccf.setIcon(icon_b874116bcebac901cf9fd8d39b0604ca);
+        
+    
+        var popup_f1fc8aee5893c82139a6e2b5a37bd31e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_875fa82af2a771c4d71a9afdd79f8c39 = $(`<div id="html_875fa82af2a771c4d71a9afdd79f8c39" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4806-Long-Elementary-School/" target="_blank">4200 Cedar Spring Drive, Midland, TX, 79703<br>{'Math': '40%', 'Reading': '36%', 'Science': '25%'}</a></div>`)[0];
+                popup_f1fc8aee5893c82139a6e2b5a37bd31e.setContent(html_875fa82af2a771c4d71a9afdd79f8c39);
+            
+        
+
+        marker_8222ea37a2d48c5a5051d7e25fc33ccf.bindPopup(popup_f1fc8aee5893c82139a6e2b5a37bd31e)
+        ;
+
+        
+    
+    
+            var marker_087a0781e0521e5bab7a7d8b7d067ea0 = L.marker(
+                [31.891717897959182, -102.3618737755102],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_568abcb04fb46f116c5cb62708872101 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_087a0781e0521e5bab7a7d8b7d067ea0.setIcon(icon_568abcb04fb46f116c5cb62708872101);
+        
+    
+        var popup_fb81cbf69209fab216a44be799214464 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_808bc90d73901d001b2cae2a54a9dccb = $(`<div id="html_808bc90d73901d001b2cae2a54a9dccb" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2252-El-Magnet-At-Ireland/" target="_blank">4301 Dawn Avenue, Odessa, TX, 79762<br>{'Reading': '43%', 'Math': '37%', 'Science': '29%'}</a></div>`)[0];
+                popup_fb81cbf69209fab216a44be799214464.setContent(html_808bc90d73901d001b2cae2a54a9dccb);
+            
+        
+
+        marker_087a0781e0521e5bab7a7d8b7d067ea0.bindPopup(popup_fb81cbf69209fab216a44be799214464)
+        ;
+
+        
+    
+    
+            var marker_24b514e7d0c9003c7b440ab6a7899f7d = L.marker(
+                [31.98839755102041, -102.13020936734695],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_f87718b715af59e2bc37c94a321bec9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_24b514e7d0c9003c7b440ab6a7899f7d.setIcon(icon_f87718b715af59e2bc37c94a321bec9f);
+        
+    
+        var popup_8125624fdf2ae45862cbef5abca7e633 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66d3c5dc7ab0421f4ebed57fe030e56d = $(`<div id="html_66d3c5dc7ab0421f4ebed57fe030e56d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/25709-CLASSICAL-ACADEMY---PERMIAN-BASIN/" target="_blank">4320 West Illinois Avenue, Midland, TX, 79703<br>{'Reading': '46%', 'Math': '16%', 'Science': '15%', 'Social Studies': '21%'}</a></div>`)[0];
+                popup_8125624fdf2ae45862cbef5abca7e633.setContent(html_66d3c5dc7ab0421f4ebed57fe030e56d);
+            
+        
+
+        marker_24b514e7d0c9003c7b440ab6a7899f7d.bindPopup(popup_8125624fdf2ae45862cbef5abca7e633)
+        ;
+
+        
+    
+    
+            var marker_dfeb597d897a8dc01d3a659e84e23f37 = L.marker(
+                [31.891484, -102.372577],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_666161eca2c70a59b6373c61b72f1b7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_dfeb597d897a8dc01d3a659e84e23f37.setIcon(icon_666161eca2c70a59b6373c61b72f1b7b);
+        
+    
+        var popup_782536d18f5ff5897a63bf790a5302fa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4259c03dea65138dbbfe35da08df52d9 = $(`<div id="html_4259c03dea65138dbbfe35da08df52d9" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2260-Ross-Elementary-School/" target="_blank">4600 North Everglade Avenue, Odessa, TX, 79762<br>{'Reading': '39%', 'Math': '27%', 'Science': '21%'}</a></div>`)[0];
+                popup_782536d18f5ff5897a63bf790a5302fa.setContent(html_4259c03dea65138dbbfe35da08df52d9);
+            
+        
+
+        marker_dfeb597d897a8dc01d3a659e84e23f37.bindPopup(popup_782536d18f5ff5897a63bf790a5302fa)
+        ;
+
+        
+    
+    
+            var marker_9a0943b6589b336da5129ed689096a2e = L.marker(
+                [31.976291, -102.139379],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_f7912040cea4b7871782dab633e54f89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_9a0943b6589b336da5129ed689096a2e.setIcon(icon_f7912040cea4b7871782dab633e54f89);
+        
+    
+        var popup_60669a3eb1a45423905040ea81f3a175 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22d7e7b9518bce156bde4e6d9ea40825 = $(`<div id="html_22d7e7b9518bce156bde4e6d9ea40825" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4801-Henderson-Elementary-School/" target="_blank">4800 Graceland Drive, Midland, TX, 79703<br>{'Reading': '51%', 'Math': '33%', 'Science': '50%'}</a></div>`)[0];
+                popup_60669a3eb1a45423905040ea81f3a175.setContent(html_22d7e7b9518bce156bde4e6d9ea40825);
+            
+        
+
+        marker_9a0943b6589b336da5129ed689096a2e.bindPopup(popup_60669a3eb1a45423905040ea81f3a175)
+        ;
+
+        
+    
+    
+            var marker_2fd82b5d28877c27b8b60c94481616d6 = L.marker(
+                [32.037479700000006, -102.12679539999999],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_01ef689d9d09d303685a939329d03e1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2fd82b5d28877c27b8b60c94481616d6.setIcon(icon_01ef689d9d09d303685a939329d03e1d);
+        
+    
+        var popup_c6a461e7f729cdad3c5fb95639519f7c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f01a98862b0374c278409d5ecfd7992 = $(`<div id="html_9f01a98862b0374c278409d5ecfd7992" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/16759-Paragon-Learning-Center/" target="_blank">4810 Billingsley Boulevard, Midland, TX, 79705<br>{}</a></div>`)[0];
+                popup_c6a461e7f729cdad3c5fb95639519f7c.setContent(html_9f01a98862b0374c278409d5ecfd7992);
+            
+        
+
+        marker_2fd82b5d28877c27b8b60c94481616d6.bindPopup(popup_c6a461e7f729cdad3c5fb95639519f7c)
+        ;
+
+        
+    
+    
+            var marker_122e2f2e4c4dffe0dd05fe77b3255c27 = L.marker(
+                [31.8868832, -102.32324393732543],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_837a9c08aa859c0afe1b3c3d7bec2dc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_122e2f2e4c4dffe0dd05fe77b3255c27.setIcon(icon_837a9c08aa859c0afe1b3c3d7bec2dc7);
+        
+    
+        var popup_95a226906d633fa5f1ff45baf73daf6c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a83c54a7eebcd75195aa481768c9d7f3 = $(`<div id="html_a83c54a7eebcd75195aa481768c9d7f3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/25144-Utpb-Stem-Academy/" target="_blank">4901 East University Boulevard, Odessa, TX, 79762<br>{'Reading': '52%', 'Math': '38%', 'Science': '45%', 'Social Studies': '47%', 'English': '81%', 'Algebra I': '45%', 'Biology I': '74%', 'English 2': '74%', 'US History': '76%'}</a></div>`)[0];
+                popup_95a226906d633fa5f1ff45baf73daf6c.setContent(html_a83c54a7eebcd75195aa481768c9d7f3);
+            
+        
+
+        marker_122e2f2e4c4dffe0dd05fe77b3255c27.bindPopup(popup_95a226906d633fa5f1ff45baf73daf6c)
+        ;
+
+        
+    
+    
+            var marker_6fcb4e1f88a34660ef4e4af817427597 = L.marker(
+                [31.98262645, -102.14364018784354],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_d734f96c44bf34ad6864c9181b4e4a16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6fcb4e1f88a34660ef4e4af817427597.setIcon(icon_d734f96c44bf34ad6864c9181b4e4a16);
+        
+    
+        var popup_950cede88927b05cc392601d39d8364a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc0237200748e6c9d842b97c94084566 = $(`<div id="html_dc0237200748e6c9d842b97c94084566" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4803-Jones-Elementary-School/" target="_blank">4919 Shadylane Drive, Midland, TX, 79703<br>{'Reading': '41%', 'Math': '33%', 'Science': '26%'}</a></div>`)[0];
+                popup_950cede88927b05cc392601d39d8364a.setContent(html_dc0237200748e6c9d842b97c94084566);
+            
+        
+
+        marker_6fcb4e1f88a34660ef4e4af817427597.bindPopup(popup_950cede88927b05cc392601d39d8364a)
+        ;
+
+        
+    
+    
+            var marker_e97c23fd1938da191dd6094946b9c440 = L.marker(
+                [32.001834, -102.073153],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_b11357c030b481b7e149dc918fb423b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e97c23fd1938da191dd6094946b9c440.setIcon(icon_b11357c030b481b7e149dc918fb423b7);
+        
+    
+        var popup_8b9c5b00b6057b8c9373afa97f1a9805 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a57174183f6431a68fa4979aa00157de = $(`<div id="html_a57174183f6431a68fa4979aa00157de" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/8576-Midland-Academy-Charter-School/" target="_blank">500 North Baird Street, Midland, TX, 79701<br>{'Reading': '71%', 'Math': '62%', 'Science': '70%', 'Social Studies': '55%', 'Algebra I': '100%'}</a></div>`)[0];
+                popup_8b9c5b00b6057b8c9373afa97f1a9805.setContent(html_a57174183f6431a68fa4979aa00157de);
+            
+        
+
+        marker_e97c23fd1938da191dd6094946b9c440.bindPopup(popup_8b9c5b00b6057b8c9373afa97f1a9805)
+        ;
+
+        
+    
+    
+            var marker_e7a0aaf4685e90e9a794f6c8b29c6f87 = L.marker(
+                [32.009876, -102.152163],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_8f856f200100764c84e0c3194b7bd6a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7a0aaf4685e90e9a794f6c8b29c6f87.setIcon(icon_8f856f200100764c84e0c3194b7bd6a3);
+        
+    
+        var popup_c7cf14893ec7c7a5bbb001b268f886dc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d4112f4145639131e266e2d97014b6ce = $(`<div id="html_d4112f4145639131e266e2d97014b6ce" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4824-Bush-Elementary-School/" target="_blank">5001 Preston Drive, Midland, TX, 79707<br>{'Reading': '48%', 'Math': '45%', 'Science': '70%'}</a></div>`)[0];
+                popup_c7cf14893ec7c7a5bbb001b268f886dc.setContent(html_d4112f4145639131e266e2d97014b6ce);
+            
+        
+
+        marker_e7a0aaf4685e90e9a794f6c8b29c6f87.bindPopup(popup_c7cf14893ec7c7a5bbb001b268f886dc)
+        ;
+
+        
+    
+    
+            var marker_e1c69371000b953d14e2c55553c6e496 = L.marker(
+                [31.894330540816327, -102.38083096938776],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_31d0c942e7db84903edfde77d723a17f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e1c69371000b953d14e2c55553c6e496.setIcon(icon_31d0c942e7db84903edfde77d723a17f);
+        
+    
+        var popup_a5e723082690ff79a36113b8541f29fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca069d71d0ec7429683f91a72c39d3da = $(`<div id="html_ca069d71d0ec7429683f91a72c39d3da" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2248-Goliad-Elementary-School/" target="_blank">501 East 52nd Street, Odessa, TX, 79762<br>{'Math': '22%', 'Reading': '30%', 'Science': '20%'}</a></div>`)[0];
+                popup_a5e723082690ff79a36113b8541f29fb.setContent(html_ca069d71d0ec7429683f91a72c39d3da);
+            
+        
+
+        marker_e1c69371000b953d14e2c55553c6e496.bindPopup(popup_a5e723082690ff79a36113b8541f29fb)
+        ;
+
+        
+    
+    
+            var marker_8bd3c6b732ba0d99b369f4faae02bce3 = L.marker(
+                [31.845410686560612, -102.35509222965936],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_0e0ee032e3891f571908ae79c1a9222a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8bd3c6b732ba0d99b369f4faae02bce3.setIcon(icon_0e0ee032e3891f571908ae79c1a9222a);
+        
+    
+        var popup_9f420f3e808b085b6a1b5f061a47defc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a31eca5be25835e4ee3253ffc67d816 = $(`<div id="html_0a31eca5be25835e4ee3253ffc67d816" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2270-El-Magnet-At-Blackshear/" target="_blank">501 South Dixie Boulevard, Odessa, TX, 79761<br>{'Math': '24%', 'Reading': '30%', 'Science': '15%'}</a></div>`)[0];
+                popup_9f420f3e808b085b6a1b5f061a47defc.setContent(html_0a31eca5be25835e4ee3253ffc67d816);
+            
+        
+
+        marker_8bd3c6b732ba0d99b369f4faae02bce3.bindPopup(popup_9f420f3e808b085b6a1b5f061a47defc)
+        ;
+
+        
+    
+    
+            var marker_c4f0455f3046a0fb4c3b8b5de2ff0588 = L.marker(
+                [32.715672081632654, -102.65019248979591],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_982a950bed188f65bc98118df22c934f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4f0455f3046a0fb4c3b8b5de2ff0588.setIcon(icon_982a950bed188f65bc98118df22c934f);
+        
+    
+        var popup_227c1f58adde7424a9569c76e13f7850 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_835b2025a4e1e2796627089035e4fcd0 = $(`<div id="html_835b2025a4e1e2796627089035e4fcd0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/seminole/6229-Seminole-Primary-School/" target="_blank">508 Southwest Avenue D, Seminole, TX, 79360<br>{'Reading': '52%', 'Math': '51%'}</a></div>`)[0];
+                popup_227c1f58adde7424a9569c76e13f7850.setContent(html_835b2025a4e1e2796627089035e4fcd0);
+            
+        
+
+        marker_c4f0455f3046a0fb4c3b8b5de2ff0588.bindPopup(popup_227c1f58adde7424a9569c76e13f7850)
+        ;
+
+        
+    
+    
+            var marker_b8a665aca37c2616415073fa974789e1 = L.marker(
+                [32.03052705, -102.15768077042262],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_357f50f140eb5c6ea2dfb97b982649e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b8a665aca37c2616415073fa974789e1.setIcon(icon_357f50f140eb5c6ea2dfb97b982649e3);
+        
+    
+        var popup_e8f91764e27384ec07f8c9b87892dda1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c0f7b7d27a1b48a2b273745ad9e05bae = $(`<div id="html_c0f7b7d27a1b48a2b273745ad9e05bae" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4816-Greathouse-Elementary-School/" target="_blank">5107 Greathouse Avenue, Midland, TX, 79707<br>{'Math': '43%', 'Reading': '50%', 'Science': '42%'}</a></div>`)[0];
+                popup_e8f91764e27384ec07f8c9b87892dda1.setContent(html_c0f7b7d27a1b48a2b273745ad9e05bae);
+            
+        
+
+        marker_b8a665aca37c2616415073fa974789e1.bindPopup(popup_e8f91764e27384ec07f8c9b87892dda1)
+        ;
+
+        
+    
+    
+            var marker_6cc798d0caf4b9492d5eb3b70f3400ec = L.marker(
+                [31.2278707, -101.9361849],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_fcf0e7ad2605849a55dc39ca9a0788cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6cc798d0caf4b9492d5eb3b70f3400ec.setIcon(icon_fcf0e7ad2605849a55dc39ca9a0788cc);
+        
+    
+        var popup_ea9e9f0dde1075902786b472c049a51a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0dcea41fc4a7f3f8097a92ae3c1a8d40 = $(`<div id="html_0dcea41fc4a7f3f8097a92ae3c1a8d40" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/rankin/25245-Gossett-Elementary-School/" target="_blank">511 12th Avenue, Rankin, TX, 79778<br>{'Reading': '39%', 'Math': '47%', 'Science': '38%', 'Writing': '41%'}</a></div>`)[0];
+                popup_ea9e9f0dde1075902786b472c049a51a.setContent(html_0dcea41fc4a7f3f8097a92ae3c1a8d40);
+            
+        
+
+        marker_6cc798d0caf4b9492d5eb3b70f3400ec.bindPopup(popup_ea9e9f0dde1075902786b472c049a51a)
+        ;
+
+        
+    
+    
+            var marker_4032d00f9610a4d0e16197be72f9f6e4 = L.marker(
+                [32.04505896913759, -102.12405049918532],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_e76bebef2cb3cf6e2424c199e1ce3c13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4032d00f9610a4d0e16197be72f9f6e4.setIcon(icon_e76bebef2cb3cf6e2424c199e1ce3c13);
+        
+    
+        var popup_f93d7a70ea46140d7346110b117b6b9c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_13a37ee184eed69b785a32239e5d958a = $(`<div id="html_13a37ee184eed69b785a32239e5d958a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4819-Santa-Rita-Elementary-School/" target="_blank">5306 Whitman Drive, Midland, TX, 79705<br>{'Reading': '56%', 'Math': '52%', 'Science': '46%'}</a></div>`)[0];
+                popup_f93d7a70ea46140d7346110b117b6b9c.setContent(html_13a37ee184eed69b785a32239e5d958a);
+            
+        
+
+        marker_4032d00f9610a4d0e16197be72f9f6e4.bindPopup(popup_f93d7a70ea46140d7346110b117b6b9c)
+        ;
+
+        
+    
+    
+            var marker_92f67746a28a7bd226a50a175571eb19 = L.marker(
+                [31.9109672, -102.3043018],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_699f1f62c84efc8b5d0b4b2611eb4e7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92f67746a28a7bd226a50a175571eb19.setIcon(icon_699f1f62c84efc8b5d0b4b2611eb4e7b);
+        
+    
+        var popup_af95de0a18ddd15295f41c64a038679c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_181137394fd30d622fea87ff100acd86 = $(`<div id="html_181137394fd30d622fea87ff100acd86" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/20501-Compass-Academy-Charter-School/" target="_blank">5530 Billy Hext Road, Odessa, TX, 79765<br>{'Math': '39%', 'Reading': '55%', 'Science': '37%', 'Social Studies': '45%', 'English 2': '65%', 'Biology I': '73%', 'English': '58%', 'Algebra I': '38%', 'US History': '78%'}</a></div>`)[0];
+                popup_af95de0a18ddd15295f41c64a038679c.setContent(html_181137394fd30d622fea87ff100acd86);
+            
+        
+
+        marker_92f67746a28a7bd226a50a175571eb19.bindPopup(popup_af95de0a18ddd15295f41c64a038679c)
+        ;
+
+        
+    
+    
+            var marker_dd1fe502b389c3aa2a527de9e41f8330 = L.marker(
+                [31.844336, -102.352394],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_df220c0681e91cdb8a1c4d0c91b59d39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_dd1fe502b389c3aa2a527de9e41f8330.setIcon(icon_df220c0681e91cdb8a1c4d0c91b59d39);
+        
+    
+        var popup_165fc1bb5acdaa6c2cee3c75bc22ea10 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83ae0418b990fd969b6172fa00f52cee = $(`<div id="html_83ae0418b990fd969b6172fa00f52cee" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2236-Carver-Early-Ee-Kg/" target="_blank">600 College Avenue, Odessa, TX, 79761<br>{}</a></div>`)[0];
+                popup_165fc1bb5acdaa6c2cee3c75bc22ea10.setContent(html_83ae0418b990fd969b6172fa00f52cee);
+            
+        
+
+        marker_dd1fe502b389c3aa2a527de9e41f8330.bindPopup(popup_165fc1bb5acdaa6c2cee3c75bc22ea10)
+        ;
+
+        
+    
+    
+            var marker_98ce016f18377d721d28306053cac992 = L.marker(
+                [32.746402950000004, -101.9594633162834],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_41f1dd3fdcadbde22c433c77c05a582c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_98ce016f18377d721d28306053cac992.setIcon(icon_41f1dd3fdcadbde22c433c77c05a582c);
+        
+    
+        var popup_d7baa0f06848eb8457fec508f64b645d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6879802e6a930c7b81b5ba4330a7c96a = $(`<div id="html_6879802e6a930c7b81b5ba4330a7c96a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lamesa/4196-Lamesa-High-School/" target="_blank">600 North 14th Street, Lamesa, TX, 79331<br>{'Math': '17%', 'Reading': '31%', 'Science': '12%', 'English': '23%', 'Algebra I': '20%', 'English 2': '40%', 'US History': '36%', 'Biology I': '48%', 'Social Studies': '11%'}</a></div>`)[0];
+                popup_d7baa0f06848eb8457fec508f64b645d.setContent(html_6879802e6a930c7b81b5ba4330a7c96a);
+            
+        
+
+        marker_98ce016f18377d721d28306053cac992.bindPopup(popup_d7baa0f06848eb8457fec508f64b645d)
+        ;
+
+        
+    
+    
+            var marker_5dc0292ff6e8329ccd1424574fd05a4c = L.marker(
+                [32.3029657, -101.30516822710405],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_91dd61fae42080ad45177dd5e8fe9581 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_5dc0292ff6e8329ccd1424574fd05a4c.setIcon(icon_91dd61fae42080ad45177dd5e8fe9581);
+        
+    
+        var popup_603daeca96bd95da270a3936f06d785f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9a8aa7a638f1637ea3bbcfc151b276a3 = $(`<div id="html_9a8aa7a638f1637ea3bbcfc151b276a3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/coahoma/1400-Coahoma-Elementary-School/" target="_blank">600 North Main Street, Coahoma, TX, 79511<br>{'Math': '40%', 'Reading': '53%', 'Science': '36%'}</a></div>`)[0];
+                popup_603daeca96bd95da270a3936f06d785f.setContent(html_9a8aa7a638f1637ea3bbcfc151b276a3);
+            
+        
+
+        marker_5dc0292ff6e8329ccd1424574fd05a4c.bindPopup(popup_603daeca96bd95da270a3936f06d785f)
+        ;
+
+        
+    
+    
+            var marker_7cb3924505e2527d0151d433ead8b722 = L.marker(
+                [32.743509700000004, -101.95856428269231],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_b4480f03eb525f998736b18593023417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7cb3924505e2527d0151d433ead8b722.setIcon(icon_b4480f03eb525f998736b18593023417);
+        
+    
+        var popup_2b9d1dd76becd67e87b0656577e19a6f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_395d57a0120b240f38e5cb5b1e47e018 = $(`<div id="html_395d57a0120b240f38e5cb5b1e47e018" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lamesa/4198-North-Elementary-School/" target="_blank">601 North 14th Street, Lamesa, TX, 79331<br>{'Math': '32%', 'Reading': '22%', 'Science': '26%', 'Writing': '15%'}</a></div>`)[0];
+                popup_2b9d1dd76becd67e87b0656577e19a6f.setContent(html_395d57a0120b240f38e5cb5b1e47e018);
+            
+        
+
+        marker_7cb3924505e2527d0151d433ead8b722.bindPopup(popup_2b9d1dd76becd67e87b0656577e19a6f)
+        ;
+
+        
+    
+    
+            var marker_bd7b4248bc048c5d2fbea4fa45de23af = L.marker(
+                [31.851265, -103.089804],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_35b58d25d25f37230a8a4f19e22f31d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_bd7b4248bc048c5d2fbea4fa45de23af.setIcon(icon_35b58d25d25f37230a8a4f19e22f31d9);
+        
+    
+        var popup_8c2e4cabf59486044e6e0f8dd1af6c29 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_237e4e1aebe1f202dd925329783924ab = $(`<div id="html_237e4e1aebe1f202dd925329783924ab" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/kermit/3951-Kermit-J-High-School/" target="_blank">601 South Poplar Street, Kermit, TX, 79745<br>{'Reading': '43%', 'Math': '25%', 'Science': '47%', 'Social Studies': '12%'}</a></div>`)[0];
+                popup_8c2e4cabf59486044e6e0f8dd1af6c29.setContent(html_237e4e1aebe1f202dd925329783924ab);
+            
+        
+
+        marker_bd7b4248bc048c5d2fbea4fa45de23af.bindPopup(popup_8c2e4cabf59486044e6e0f8dd1af6c29)
+        ;
+
+        
+    
+    
+            var marker_ddf91e94e3785d1dcf735e39312d7924 = L.marker(
+                [31.88977, -102.307392],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_f61e0b33dbbacc5b558011d2c103dcf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_ddf91e94e3785d1dcf735e39312d7924.setIcon(icon_f61e0b33dbbacc5b558011d2c103dcf1);
+        
+    
+        var popup_477688ad911191eae719e0c2ac4aaebb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3445184c6047610260f6f9506f0afdb0 = $(`<div id="html_3445184c6047610260f6f9506f0afdb0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2272-L-B-Johnson-Elementary-School/" target="_blank">6401 Amber Drive, Odessa, TX, 79762<br>{'Math': '19%', 'Reading': '36%', 'Science': '16%'}</a></div>`)[0];
+                popup_477688ad911191eae719e0c2ac4aaebb.setContent(html_3445184c6047610260f6f9506f0afdb0);
+            
+        
+
+        marker_ddf91e94e3785d1dcf735e39312d7924.bindPopup(popup_477688ad911191eae719e0c2ac4aaebb)
+        ;
+
+        
+    
+    
+            var marker_86456a40968425d0e26a6f88cc3501f3 = L.marker(
+                [31.993089, -102.05536],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_6f84f8e9dbf533205f0e0495a782a406 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_86456a40968425d0e26a6f88cc3501f3.setIcon(icon_6f84f8e9dbf533205f0e0495a782a406);
+        
+    
+        var popup_e32040e88392d32e8e7937b1414241c7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_acdae740f3bd2be34e8659f406ed12c4 = $(`<div id="html_acdae740f3bd2be34e8659f406ed12c4" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/25063-Ralph-Bunche-Elementary-School/" target="_blank">700 South Jackson Street, Midland, TX, 79701<br>{'Math': '28%', 'Reading': '22%', 'Science': '21%'}</a></div>`)[0];
+                popup_e32040e88392d32e8e7937b1414241c7.setContent(html_acdae740f3bd2be34e8659f406ed12c4);
+            
+        
+
+        marker_86456a40968425d0e26a6f88cc3501f3.bindPopup(popup_e32040e88392d32e8e7937b1414241c7)
+        ;
+
+        
+    
+    
+            var marker_0d181964d46ce0c8fbaa6d8fab48c9f8 = L.marker(
+                [31.599016, -102.898365],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_f1d708095955d9f8b4aef99e47d64ed3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0d181964d46ce0c8fbaa6d8fab48c9f8.setIcon(icon_f1d708095955d9f8b4aef99e47d64ed3);
+        
+    
+        var popup_6052dc3a9eeb513ba9d06a25c6ea9a97 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_009afee9b5e7dbc4d147caf7ff490a3c = $(`<div id="html_009afee9b5e7dbc4d147caf7ff490a3c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/monahans/4888-Sudderth-Elementary-School/" target="_blank">701 North Carol Avenue, Monahans, TX, 79756<br>{'Math': '35%', 'Reading': '44%', 'Science': '27%'}</a></div>`)[0];
+                popup_6052dc3a9eeb513ba9d06a25c6ea9a97.setContent(html_009afee9b5e7dbc4d147caf7ff490a3c);
+            
+        
+
+        marker_0d181964d46ce0c8fbaa6d8fab48c9f8.bindPopup(popup_6052dc3a9eeb513ba9d06a25c6ea9a97)
+        ;
+
+        
+    
+    
+            var marker_1bd190ccfa5ce7b503df8f5c0fa520ca = L.marker(
+                [32.00465234693878, -102.06541824489797],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_da68d53d4fa4d56c269e376984fd11dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1bd190ccfa5ce7b503df8f5c0fa520ca.setIcon(icon_da68d53d4fa4d56c269e376984fd11dd);
+        
+    
+        var popup_cbe9eec9603646bdeb435a9a554947e5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_53c1dda20bc2608b498c546dce0b3be7 = $(`<div id="html_53c1dda20bc2608b498c546dce0b3be7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4796-De-Zavala-Elementary-School/" target="_blank">705 North Lee Street, Midland, TX, 79701<br>{'Reading': '32%', 'Math': '25%', 'Science': '28%'}</a></div>`)[0];
+                popup_cbe9eec9603646bdeb435a9a554947e5.setContent(html_53c1dda20bc2608b498c546dce0b3be7);
+            
+        
+
+        marker_1bd190ccfa5ce7b503df8f5c0fa520ca.bindPopup(popup_cbe9eec9603646bdeb435a9a554947e5)
+        ;
+
+        
+    
+    
+            var marker_52d702e36df7731db48a5ac7c32d37a8 = L.marker(
+                [32.24608583673469, -101.46508467346939],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_20a7ad558192f0ead16b1da4b39eef56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_52d702e36df7731db48a5ac7c32d37a8.setIcon(icon_20a7ad558192f0ead16b1da4b39eef56);
+        
+    
+        var popup_1fbf5bdd4b4d9173d4c392880c69191a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f30f1b3a724c794ca0360e61b669217c = $(`<div id="html_f30f1b3a724c794ca0360e61b669217c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/big-spring/18872-Big-Spring-Aep/" target="_blank">708 East 11th Place, Big Spring, TX, 79720<br>{}</a></div>`)[0];
+                popup_1fbf5bdd4b4d9173d4c392880c69191a.setContent(html_f30f1b3a724c794ca0360e61b669217c);
+            
+        
+
+        marker_52d702e36df7731db48a5ac7c32d37a8.bindPopup(popup_1fbf5bdd4b4d9173d4c392880c69191a)
+        ;
+
+        
+    
+    
+            var marker_0e2943d3b94791e0891bd1f13fa918d6 = L.marker(
+                [31.866901, -102.371307],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_c061423b71d2ec57a0f95a5f1068f477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e2943d3b94791e0891bd1f13fa918d6.setIcon(icon_c061423b71d2ec57a0f95a5f1068f477);
+        
+    
+        var popup_2ad4095399022e0a47ad884d7b30c675 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_317b4a3dc8c93f5d7b1d50ab5a7d983c = $(`<div id="html_317b4a3dc8c93f5d7b1d50ab5a7d983c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2237-Gale-Pond-Alamo-Elementary-School/" target="_blank">801 E 23RD ST, Odessa, TX, 79760<br>{'Math': '57%', 'Reading': '63%', 'Science': '51%'}</a></div>`)[0];
+                popup_2ad4095399022e0a47ad884d7b30c675.setContent(html_317b4a3dc8c93f5d7b1d50ab5a7d983c);
+            
+        
+
+        marker_0e2943d3b94791e0891bd1f13fa918d6.bindPopup(popup_2ad4095399022e0a47ad884d7b30c675)
+        ;
+
+        
+    
+    
+            var marker_4d603be66f470bbb2aaeb0e244ee0991 = L.marker(
+                [31.589003717115993, -102.88617393912905],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_b995af7d2fc4a5bb55928bd41caa45c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4d603be66f470bbb2aaeb0e244ee0991.setIcon(icon_b995af7d2fc4a5bb55928bd41caa45c9);
+        
+    
+        var popup_cffb1e837d225f43f9d897a0ed7f2cea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9a43ee171428247bc16abc2346508719 = $(`<div id="html_9a43ee171428247bc16abc2346508719" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/monahans/22497-Monahans-Head-Start/" target="_blank">804 South Dwight Avenue, Monahans, TX, 79756<br>{}</a></div>`)[0];
+                popup_cffb1e837d225f43f9d897a0ed7f2cea.setContent(html_9a43ee171428247bc16abc2346508719);
+            
+        
+
+        marker_4d603be66f470bbb2aaeb0e244ee0991.bindPopup(popup_cffb1e837d225f43f9d897a0ed7f2cea)
+        ;
+
+        
+    
+    
+            var marker_5517453c0d94f51daf19d5bb0ee4c7d1 = L.marker(
+                [32.010305450000004, -102.08734514834805],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_9efe7742f075ec276a3660d9a9f437d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5517453c0d94f51daf19d5bb0ee4c7d1.setIcon(icon_9efe7742f075ec276a3660d9a9f437d6);
+        
+    
+        var popup_cc413eb4eb0c97e9ee6516b8be859b01 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_235034a1ebd96d461d57d674de4c0e66 = $(`<div id="html_235034a1ebd96d461d57d674de4c0e66" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/19917-James-Bowie-Fine-Arts-Academy/" target="_blank">805 Elk Avenue, Midland, TX, 79701<br>{'Math': '69%', 'Reading': '64%', 'Science': '60%'}</a></div>`)[0];
+                popup_cc413eb4eb0c97e9ee6516b8be859b01.setContent(html_235034a1ebd96d461d57d674de4c0e66);
+            
+        
+
+        marker_5517453c0d94f51daf19d5bb0ee4c7d1.bindPopup(popup_cc413eb4eb0c97e9ee6516b8be859b01)
+        ;
+
+        
+    
+    
+            var marker_3c47b7e8e1d4da13410f498989524825 = L.marker(
+                [31.84138042857143, -102.35352985714286],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_b16b22032f620d4e9bbfd8c423ba26c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_3c47b7e8e1d4da13410f498989524825.setIcon(icon_b16b22032f620d4e9bbfd8c423ba26c4);
+        
+    
+        var popup_fab6cd803ffc21bd6be7e18f1d8d5d9b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_06e752d49abc914764d6e33b1c406aaf = $(`<div id="html_06e752d49abc914764d6e33b1c406aaf" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2254-El-Magnet-At-Milam-Elementary-School/" target="_blank">815 South Dixie Boulevard, Odessa, TX, 79761<br>{'Math': '37%', 'Reading': '42%', 'Science': '25%'}</a></div>`)[0];
+                popup_fab6cd803ffc21bd6be7e18f1d8d5d9b.setContent(html_06e752d49abc914764d6e33b1c406aaf);
+            
+        
+
+        marker_3c47b7e8e1d4da13410f498989524825.bindPopup(popup_fab6cd803ffc21bd6be7e18f1d8d5d9b)
+        ;
+
+        
+    
+    
+            var marker_88faefa62b16880632bd3c84a6feee52 = L.marker(
+                [31.934147, -102.400904],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_369e5fee15a3ce38fe182846543ddcb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_88faefa62b16880632bd3c84a6feee52.setIcon(icon_369e5fee15a3ce38fe182846543ddcb6);
+        
+    
+        var popup_f03144ded07d9c50c606226c616b9158 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b68146aa5244c491d3b3a01b8dac852b = $(`<div id="html_b68146aa5244c491d3b3a01b8dac852b" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/7640-Permian-Basin-Christian-School/" target="_blank">8644 Andrews Hwy, Odessa, TX, 79765<br>{}</a></div>`)[0];
+                popup_f03144ded07d9c50c606226c616b9158.setContent(html_b68146aa5244c491d3b3a01b8dac852b);
+            
+        
+
+        marker_88faefa62b16880632bd3c84a6feee52.bindPopup(popup_f03144ded07d9c50c606226c616b9158)
+        ;
+
+        
+    
+    
+            var marker_b0f90a9e4725717e9a2fe3f3b14157c5 = L.marker(
+                [31.981462, -102.06383],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_c1856ff24a49755bcf397d39669b7cda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b0f90a9e4725717e9a2fe3f3b14157c5.setIcon(icon_c1856ff24a49755bcf397d39669b7cda);
+        
+    
+        var popup_3199e3c99fd224088fc53e5cbe78701f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d1efd4a4c97b174f3d9af14ec81db706 = $(`<div id="html_d1efd4a4c97b174f3d9af14ec81db706" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4813-Travis-Elementary-School/" target="_blank">900 East Gist Avenue, Midland, TX, 79701<br>{'Math': '14%', 'Reading': '10%', 'Science': '11%', 'Writing': '6%'}</a></div>`)[0];
+                popup_3199e3c99fd224088fc53e5cbe78701f.setContent(html_d1efd4a4c97b174f3d9af14ec81db706);
+            
+        
+
+        marker_b0f90a9e4725717e9a2fe3f3b14157c5.bindPopup(popup_3199e3c99fd224088fc53e5cbe78701f)
+        ;
+
+        
+    
+    
+            var marker_962737d5b38640039e6c24375be022f8 = L.marker(
+                [31.977861, -102.1234],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_d8094f4df5d29344c59a0bc3aaa40bed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_962737d5b38640039e6c24375be022f8.setIcon(icon_d8094f4df5d29344c59a0bc3aaa40bed);
+        
+    
+        var popup_26f1510c2dd7fc1ce44e673ae06beb3f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_44df12300b4bc710b2e431e0636902eb = $(`<div id="html_44df12300b4bc710b2e431e0636902eb" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4794-Burnet-Elementary-School/" target="_blank">900 South Raymond Road, Midland, TX, 79703<br>{'Math': '29%', 'Reading': '28%', 'Science': '14%'}</a></div>`)[0];
+                popup_26f1510c2dd7fc1ce44e673ae06beb3f.setContent(html_44df12300b4bc710b2e431e0636902eb);
+            
+        
+
+        marker_962737d5b38640039e6c24375be022f8.bindPopup(popup_26f1510c2dd7fc1ce44e673ae06beb3f)
+        ;
+
+        
+    
+    
+            var marker_c9d424189b1861ac9783969e6b610afd = L.marker(
+                [31.851517, -102.373381],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_7d595f8895d568a80eeb2103b626c590 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c9d424189b1861ac9783969e6b610afd.setIcon(icon_7d595f8895d568a80eeb2103b626c590);
+        
+    
+        var popup_116c1833d69f5db781f55b4ebec09abd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a81548aaf5c07a4632e7247b9f5d718e = $(`<div id="html_a81548aaf5c07a4632e7247b9f5d718e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2238-Austin-Montessori-Magnet/" target="_blank">901 North Lee Avenue, Odessa, TX, 79761<br>{'Math': '36%', 'Reading': '44%', 'Science': '16%'}</a></div>`)[0];
+                popup_116c1833d69f5db781f55b4ebec09abd.setContent(html_a81548aaf5c07a4632e7247b9f5d718e);
+            
+        
+
+        marker_c9d424189b1861ac9783969e6b610afd.bindPopup(popup_116c1833d69f5db781f55b4ebec09abd)
+        ;
+
+        
+    
+    
+            var marker_54f5ed45b235c8c716396bee1937d165 = L.marker(
+                [31.995025705553658, -102.12813177220578],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_17db40dd023bf5f75726c230ca8ad84a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_54f5ed45b235c8c716396bee1937d165.setIcon(icon_17db40dd023bf5f75726c230ca8ad84a);
+        
+    
+        var popup_4d39a97d14e502320beb48085d5b31f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b09ec4939c2b00e76a48276492aa7ce0 = $(`<div id="html_b09ec4939c2b00e76a48276492aa7ce0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/midland/4792-Bonham-Elementary-School/" target="_blank">909 Bonham Street, Midland, TX, 79703<br>{'Math': '38%', 'Reading': '48%', 'Science': '38%'}</a></div>`)[0];
+                popup_4d39a97d14e502320beb48085d5b31f4.setContent(html_b09ec4939c2b00e76a48276492aa7ce0);
+            
+        
+
+        marker_54f5ed45b235c8c716396bee1937d165.bindPopup(popup_4d39a97d14e502320beb48085d5b31f4)
+        ;
+
+        
+    
+    
+            var marker_8d433dac4e538ad100c2ed6097be6f2b = L.marker(
+                [32.12816788108249, -101.79830917267238],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_d4024e391eff4b88c6881d3676788511 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8d433dac4e538ad100c2ed6097be6f2b.setIcon(icon_d4024e391eff4b88c6881d3676788511);
+        
+    
+        var popup_283ccf018d496d45be9d2f42f7177033 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7aa47965797a4320d4f2a543276a8ee3 = $(`<div id="html_7aa47965797a4320d4f2a543276a8ee3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/stanton/6497-Stanton-Elementary-School/" target="_blank">911 Broadway Street, Stanton, TX, 79782<br>{'Math': '42%', 'Reading': '50%', 'Science': '34%'}</a></div>`)[0];
+                popup_283ccf018d496d45be9d2f42f7177033.setContent(html_7aa47965797a4320d4f2a543276a8ee3);
+            
+        
+
+        marker_8d433dac4e538ad100c2ed6097be6f2b.bindPopup(popup_283ccf018d496d45be9d2f42f7177033)
+        ;
+
+        
+    
+    
+            var marker_b3e58ab241cecb2e938b67f47e360973 = L.marker(
+                [31.83131370967742, -102.47673161290322],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_6f26eccc10bc8a5fae619248c1b0f2a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b3e58ab241cecb2e938b67f47e360973.setIcon(icon_6f26eccc10bc8a5fae619248c1b0f2a5);
+        
+    
+        var popup_22c5ca059d99a607554eeca45e8ed581 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af3d780d70c48ed584c8b0abe363f2f8 = $(`<div id="html_af3d780d70c48ed584c8b0abe363f2f8" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2274-Lauro-Cavazos-Elementary-School/" target="_blank">9301 West 16th Street, Odessa, TX, 79763<br>{'Math': '12%', 'Reading': '22%', 'Science': '15%'}</a></div>`)[0];
+                popup_22c5ca059d99a607554eeca45e8ed581.setContent(html_af3d780d70c48ed584c8b0abe363f2f8);
+            
+        
+
+        marker_b3e58ab241cecb2e938b67f47e360973.bindPopup(popup_22c5ca059d99a607554eeca45e8ed581)
+        ;
+
+        
+    
+    
+            var marker_b6ce86eac3b53ce54ee737a5b1e794a3 = L.marker(
+                [31.947037, -102.397525],
+                {}
+            ).addTo(map_11d06529d3436190595d0bb072088c6a);
+        
+    
+            var icon_1f5b5d6457cba845f4d5d39703222749 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b6ce86eac3b53ce54ee737a5b1e794a3.setIcon(icon_1f5b5d6457cba845f4d5d39703222749);
+        
+    
+        var popup_7d6a5b6e4709c3ee0bc8d5db6b540dfe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d4bca18417d6282a46838e0d6459eb7 = $(`<div id="html_1d4bca18417d6282a46838e0d6459eb7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/odessa/2273-Barbara-Jordan-Elementary-School/" target="_blank">9400 Rainbow Drive, Odessa, TX, 79765<br>{'Reading': '44%', 'Math': '43%', 'Science': '34%'}</a></div>`)[0];
+                popup_7d6a5b6e4709c3ee0bc8d5db6b540dfe.setContent(html_1d4bca18417d6282a46838e0d6459eb7);
+            
+        
+
+        marker_b6ce86eac3b53ce54ee737a5b1e794a3.bindPopup(popup_7d6a5b6e4709c3ee0bc8d5db6b540dfe)
+        ;
+
+        
+    
+</script>
+</html>

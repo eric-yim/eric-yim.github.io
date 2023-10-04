@@ -1,0 +1,3822 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05aa86e4699b199610be0e0105fe92a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05aa86e4699b199610be0e0105fe92a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05aa86e4699b199610be0e0105fe92a0 = L.map(
+                "map_05aa86e4699b199610be0e0105fe92a0",
+                {
+                    center: [33.5779, -101.8552],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a892776116836099771a54b56baf24f2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var marker_0b39e3cb7a50394c29dbbcf9cd000a4c = L.marker(
+                [33.81586005, -102.16327305065488],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4da7510ef9278eaa117eef21d7333e78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0b39e3cb7a50394c29dbbcf9cd000a4c.setIcon(icon_4da7510ef9278eaa117eef21d7333e78);
+        
+    
+        var popup_0fee98e35f19f1402062ee16cf004339 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12ce0b8b83454b5bfea5cf839e25279b = $(`<div id="html_12ce0b8b83454b5bfea5cf839e25279b" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/anton/413-Anton-School/" target="_blank">100 East Ellwood Boulevard, Anton, TX, 79313<br>{'Math': '13%', 'Reading': '32%', 'Science': '10%', 'Algebra I': '4%', 'Social Studies': '5%', 'English': '38%', 'English 2': '26%', 'US History': '75%', 'Biology I': '18%'}</a></div>`)[0];
+                popup_0fee98e35f19f1402062ee16cf004339.setContent(html_12ce0b8b83454b5bfea5cf839e25279b);
+            
+        
+
+        marker_0b39e3cb7a50394c29dbbcf9cd000a4c.bindPopup(popup_0fee98e35f19f1402062ee16cf004339)
+        ;
+
+        
+    
+    
+            var marker_c9a7c423cc3fcb86b83edce48e208d20 = L.marker(
+                [33.190555, -102.264225],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4ceeda009644cdd511b59954ce214502 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c9a7c423cc3fcb86b83edce48e208d20.setIcon(icon_4ceeda009644cdd511b59954ce214502);
+        
+    
+        var popup_feeeb481f2b09738625510162be348fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62e73dba9cd96ec72bd978b479592013 = $(`<div id="html_62e73dba9cd96ec72bd978b479592013" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/brownfield/958-Oak-Grove-Elementary-School/" target="_blank">1000 Cactus Lane, Brownfield, TX, 79316<br>{'Reading': '27%', 'Math': '24%', 'Science': '24%'}</a></div>`)[0];
+                popup_feeeb481f2b09738625510162be348fd.setContent(html_62e73dba9cd96ec72bd978b479592013);
+            
+        
+
+        marker_c9a7c423cc3fcb86b83edce48e208d20.bindPopup(popup_feeeb481f2b09738625510162be348fd)
+        ;
+
+        
+    
+    
+            var marker_641a98ca24b727e960be69b6f4185beb = L.marker(
+                [34.186779, -101.714366],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4ba32112b586ad576fec32fa62eae6a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_641a98ca24b727e960be69b6f4185beb.setIcon(icon_4ba32112b586ad576fec32fa62eae6a1);
+        
+    
+        var popup_ea4e2f61178f7a5d2b05d87e07c57a76 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f34f583641181f58d70b32f91b50c7a6 = $(`<div id="html_f34f583641181f58d70b32f91b50c7a6" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plainview/12206-First-United-Methodist-Church-Calico-Caboose/" target="_blank">1001 W 7th Street, Plainview, TX, 79072<br>{}</a></div>`)[0];
+                popup_ea4e2f61178f7a5d2b05d87e07c57a76.setContent(html_f34f583641181f58d70b32f91b50c7a6);
+            
+        
+
+        marker_641a98ca24b727e960be69b6f4185beb.bindPopup(popup_ea4e2f61178f7a5d2b05d87e07c57a76)
+        ;
+
+        
+    
+    
+            var marker_53097af9a7b029339563300329e3b621 = L.marker(
+                [34.186779, -101.714366],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_830c87ed359f6f2a51ab094983196ce8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_53097af9a7b029339563300329e3b621.setIcon(icon_830c87ed359f6f2a51ab094983196ce8);
+        
+    
+        var popup_3cea30cef35bd6c7f297f19246183daf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6564fd80eb413747ec24c0f2efab5215 = $(`<div id="html_6564fd80eb413747ec24c0f2efab5215" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plainview/10344-First-U-M-Calico-Caboose/" target="_blank">1001 W 7th, Plainview, TX, 79072<br>{}</a></div>`)[0];
+                popup_3cea30cef35bd6c7f297f19246183daf.setContent(html_6564fd80eb413747ec24c0f2efab5215);
+            
+        
+
+        marker_53097af9a7b029339563300329e3b621.bindPopup(popup_3cea30cef35bd6c7f297f19246183daf)
+        ;
+
+        
+    
+    
+            var marker_846113d52f229236818bb2308b08fbae = L.marker(
+                [34.186779, -101.714366],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_eabd77830e543dc26bfdad89fd5a6f44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_846113d52f229236818bb2308b08fbae.setIcon(icon_eabd77830e543dc26bfdad89fd5a6f44);
+        
+    
+        var popup_360c9f2831ce8780fe19aa2751c4de03 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1b3e12aaa1c1c8365fe791c366ec15e3 = $(`<div id="html_1b3e12aaa1c1c8365fe791c366ec15e3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plainview/17214-Child-Development-Center/" target="_blank">1001 West 7th Street, Plainview, TX, 79072<br>{}</a></div>`)[0];
+                popup_360c9f2831ce8780fe19aa2751c4de03.setContent(html_1b3e12aaa1c1c8365fe791c366ec15e3);
+            
+        
+
+        marker_846113d52f229236818bb2308b08fbae.bindPopup(popup_360c9f2831ce8780fe19aa2751c4de03)
+        ;
+
+        
+    
+    
+            var marker_22260f2aff9c8dde498ebf6b8ba95015 = L.marker(
+                [33.503281, -101.974477],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7815ab10fd241d7b55d7f2a00c4119d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_22260f2aff9c8dde498ebf6b8ba95015.setIcon(icon_7815ab10fd241d7b55d7f2a00c4119d8);
+        
+    
+        var popup_a5275670b8145549126b5b51b114dac2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39bc496b8648b0f755f55e9bf3e97f3a = $(`<div id="html_39bc496b8648b0f755f55e9bf3e97f3a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/25326-Upland-Heights-Elementary-School/" target="_blank">10020 Upland Avenue, Lubbock, TX, 79424<br>{'Reading': '63%', 'Math': '54%', 'Science': '59%'}</a></div>`)[0];
+                popup_a5275670b8145549126b5b51b114dac2.setContent(html_39bc496b8648b0f755f55e9bf3e97f3a);
+            
+        
+
+        marker_22260f2aff9c8dde498ebf6b8ba95015.bindPopup(popup_a5275670b8145549126b5b51b114dac2)
+        ;
+
+        
+    
+    
+            var marker_f66420e52ed9ab09fbdd0b73d8788400 = L.marker(
+                [33.5189474, -101.99934645045343],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_6c481a30eeb17de093ebc8e8ab27fda8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f66420e52ed9ab09fbdd0b73d8788400.setIcon(icon_6c481a30eeb17de093ebc8e8ab27fda8);
+        
+    
+        var popup_62d5b4052c33f1b7a26bc09edb019a63 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4f9a345ea5ca8f7ebf91e916ba0863b4 = $(`<div id="html_4f9a345ea5ca8f7ebf91e916ba0863b4" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wolfforth/11805-Bennett-Elementary-School/" target="_blank">101 Donald Preston Drive, Wolfforth, TX, 79382<br>{'Math': '59%', 'Reading': '73%', 'Science': '59%'}</a></div>`)[0];
+                popup_62d5b4052c33f1b7a26bc09edb019a63.setContent(html_4f9a345ea5ca8f7ebf91e916ba0863b4);
+            
+        
+
+        marker_f66420e52ed9ab09fbdd0b73d8788400.bindPopup(popup_62d5b4052c33f1b7a26bc09edb019a63)
+        ;
+
+        
+    
+    
+            var marker_9e1bb9b3490d322ad982d3695b2b07f7 = L.marker(
+                [34.016513, -102.409878],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_ab5b0743556a7d0142289a2c7671d178 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_9e1bb9b3490d322ad982d3695b2b07f7.setIcon(icon_ab5b0743556a7d0142289a2c7671d178);
+        
+    
+        var popup_db37dfd0d22e27b9b66ab20b066fb727 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd2f5a4caa4e88b62115de3e19af6de7 = $(`<div id="html_dd2f5a4caa4e88b62115de3e19af6de7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/amherst/375-Amherst-School/" target="_blank">101 Main Street, Amherst, TX, 79312<br>{'Math': '7%', 'Reading': '36%', 'Biology I': '29%', 'Science': '<1%', 'English': '33%', 'Algebra I': '22%', 'English 2': '62%', 'US History': '42%', 'Social Studies': '<1%'}</a></div>`)[0];
+                popup_db37dfd0d22e27b9b66ab20b066fb727.setContent(html_dd2f5a4caa4e88b62115de3e19af6de7);
+            
+        
+
+        marker_9e1bb9b3490d322ad982d3695b2b07f7.bindPopup(popup_db37dfd0d22e27b9b66ab20b066fb727)
+        ;
+
+        
+    
+    
+            var marker_b55db0e23fdd9e885e1a0e971c980e7d = L.marker(
+                [33.597935, -101.853312],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_f86d98582fb85bcb723f98c2cd745d7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b55db0e23fdd9e885e1a0e971c980e7d.setIcon(icon_f86d98582fb85bcb723f98c2cd745d7f);
+        
+    
+        var popup_2547d90ee5b33a1967fb0a2cc7b649b2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3768acf219f8c777ab84aab7a973e48 = $(`<div id="html_e3768acf219f8c777ab84aab7a973e48" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11227-Guadalupe-Elementary-School/" target="_blank">101 North Avenue P, Lubbock, TX, 79401<br>{'Math': '37%', 'Reading': '28%', 'Science': '17%', 'Writing': '25%'}</a></div>`)[0];
+                popup_2547d90ee5b33a1967fb0a2cc7b649b2.setContent(html_e3768acf219f8c777ab84aab7a973e48);
+            
+        
+
+        marker_b55db0e23fdd9e885e1a0e971c980e7d.bindPopup(popup_2547d90ee5b33a1967fb0a2cc7b649b2)
+        ;
+
+        
+    
+    
+            var marker_2219d34127f6536fa6981909dd8a6081 = L.marker(
+                [33.5018393, -101.94112640656891],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_130f325c853d850cbd88c81937364338 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2219d34127f6536fa6981909dd8a6081.setIcon(icon_130f325c853d850cbd88c81937364338);
+        
+    
+        var popup_e614e4fbc14bee8783609379599bc1b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d922ecbdbd2d1ae489a2cf292be333e = $(`<div id="html_0d922ecbdbd2d1ae489a2cf292be333e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/19371-Lubbock-Cooper-West-Elementary-School/" target="_blank">10101 Fulton Avenue, Lubbock, TX, 79424<br>{'Math': '72%', 'Reading': '74%', 'Science': '61%'}</a></div>`)[0];
+                popup_e614e4fbc14bee8783609379599bc1b4.setContent(html_0d922ecbdbd2d1ae489a2cf292be333e);
+            
+        
+
+        marker_2219d34127f6536fa6981909dd8a6081.bindPopup(popup_e614e4fbc14bee8783609379599bc1b4)
+        ;
+
+        
+    
+    
+            var marker_ca5c4f79af2ce0eae570d1e246e28ebe = L.marker(
+                [33.4358128, -101.65924114016153],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a5138b121cd3189b48350aa60ab62876 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ca5c4f79af2ce0eae570d1e246e28ebe.setIcon(icon_a5138b121cd3189b48350aa60ab62876);
+        
+    
+        var popup_d5d16aeef7d564c23f7f673e2fe86a4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cbc1d5220112c32a817aedadfc5d8fe2 = $(`<div id="html_cbc1d5220112c32a817aedadfc5d8fe2" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/slaton/25090-Slaton-Daep/" target="_blank">105 North 20th Street, Slaton, TX, 79364<br>{}</a></div>`)[0];
+                popup_d5d16aeef7d564c23f7f673e2fe86a4b.setContent(html_cbc1d5220112c32a817aedadfc5d8fe2);
+            
+        
+
+        marker_ca5c4f79af2ce0eae570d1e246e28ebe.bindPopup(popup_d5d16aeef7d564c23f7f673e2fe86a4b)
+        ;
+
+        
+    
+    
+            var marker_6c5430f25dd4c731b8f075c3062f2695 = L.marker(
+                [33.58212475, -102.37353219499782],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_f2c4fd69e83726f4dc235e556aa8f360 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6c5430f25dd4c731b8f075c3062f2695.setIcon(icon_f2c4fd69e83726f4dc235e556aa8f360);
+        
+    
+        var popup_14a55e169a9dd1dc6c4c8dda318da6e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_298aeae4540543326f57ad9bb86c4854 = $(`<div id="html_298aeae4540543326f57ad9bb86c4854" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/levelland/4278-Levelland-Intermediate-School/" target="_blank">1100 Avenue D, Levelland, TX, 79336<br>{'Math': '19%', 'Reading': '34%', 'Science': '24%'}</a></div>`)[0];
+                popup_14a55e169a9dd1dc6c4c8dda318da6e3.setContent(html_298aeae4540543326f57ad9bb86c4854);
+            
+        
+
+        marker_6c5430f25dd4c731b8f075c3062f2695.bindPopup(popup_14a55e169a9dd1dc6c4c8dda318da6e3)
+        ;
+
+        
+    
+    
+            var marker_a49dd187e5ae4aed647a0cc71d66e8a7 = L.marker(
+                [33.69210874747475, -101.99306834343435],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_2e7d472d7fe3a02c893211776f7fa3b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a49dd187e5ae4aed647a0cc71d66e8a7.setIcon(icon_2e7d472d7fe3a02c893211776f7fa3b8);
+        
+    
+        var popup_c5bcb0f70587604eaeb82cc9d09febbe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0eda229366af7e35e856e5ac4f17092f = $(`<div id="html_0eda229366af7e35e856e5ac4f17092f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/shallowater/6237-Shallowater-Intermediate-School/" target="_blank">1100 Avenue K, Shallowater, TX, 79363<br>{'Math': '63%', 'Reading': '78%'}</a></div>`)[0];
+                popup_c5bcb0f70587604eaeb82cc9d09febbe.setContent(html_0eda229366af7e35e856e5ac4f17092f);
+            
+        
+
+        marker_a49dd187e5ae4aed647a0cc71d66e8a7.bindPopup(popup_c5bcb0f70587604eaeb82cc9d09febbe)
+        ;
+
+        
+    
+    
+            var marker_820b3d1c904d30a78efb6387c3fe5cf3 = L.marker(
+                [33.974733, -101.331627],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_1f89a4e6ae57b729b589d10360c7e937 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_820b3d1c904d30a78efb6387c3fe5cf3.setIcon(icon_1f89a4e6ae57b729b589d10360c7e937);
+        
+    
+        var popup_962c414494d15ff7520e0613895e69d4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_218f3de481bc733ad057e3d01bb0a475 = $(`<div id="html_218f3de481bc733ad057e3d01bb0a475" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/floydada/2531-A-B-Duncan-Elementary-School/" target="_blank">1101 South 8th Street, Floydada, TX, 79235<br>{'Reading': '48%', 'Math': '41%', 'Science': '37%'}</a></div>`)[0];
+                popup_962c414494d15ff7520e0613895e69d4.setContent(html_218f3de481bc733ad057e3d01bb0a475);
+            
+        
+
+        marker_820b3d1c904d30a78efb6387c3fe5cf3.bindPopup(popup_962c414494d15ff7520e0613895e69d4)
+        ;
+
+        
+    
+    
+            var marker_95bde768a0c2514c676c42ecff3b5ca7 = L.marker(
+                [33.69289897959183, -101.99434648979592],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_3ae7b1b963e24f964931df48c139f769 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_95bde768a0c2514c676c42ecff3b5ca7.setIcon(icon_3ae7b1b963e24f964931df48c139f769);
+        
+    
+        var popup_1c792f91e89365937d401ab81e84e9c6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4590ffd55b59bb375b28712d641a328a = $(`<div id="html_4590ffd55b59bb375b28712d641a328a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/shallowater/6234-Shallowater-Elementary-School/" target="_blank">1108 Avenue J, Shallowater, TX, 79363<br>{}</a></div>`)[0];
+                popup_1c792f91e89365937d401ab81e84e9c6.setContent(html_4590ffd55b59bb375b28712d641a328a);
+            
+        
+
+        marker_95bde768a0c2514c676c42ecff3b5ca7.bindPopup(popup_1c792f91e89365937d401ab81e84e9c6)
+        ;
+
+        
+    
+    
+            var marker_b480ff71fc894240fb5b2b6c2431d63c = L.marker(
+                [33.986301499999996, -101.33377322553093],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_32cff8381a0148cf86388744162475e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b480ff71fc894240fb5b2b6c2431d63c.setIcon(icon_32cff8381a0148cf86388744162475e0);
+        
+    
+        var popup_0970bbc4df7ac57d35445c183b4d972b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_338220886a6328d23d6545c735c961fc = $(`<div id="html_338220886a6328d23d6545c735c961fc" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/floydada/9790-P-A-C/" target="_blank">111 North Wall Street, Floydada, TX, 79235<br>{}</a></div>`)[0];
+                popup_0970bbc4df7ac57d35445c183b4d972b.setContent(html_338220886a6328d23d6545c735c961fc);
+            
+        
+
+        marker_b480ff71fc894240fb5b2b6c2431d63c.bindPopup(popup_0970bbc4df7ac57d35445c183b4d972b)
+        ;
+
+        
+    
+    
+            var marker_30a66efb78e871511cb4cce1e148df3a = L.marker(
+                [33.92930580814997, -102.33827322980677],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_6cdd1e7875fb37c5e22e654813386150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_30a66efb78e871511cb4cce1e148df3a.setIcon(icon_6cdd1e7875fb37c5e22e654813386150);
+        
+    
+        var popup_544675349d19d0e91ac9deee0cdc2fa7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_085c71fcba4ab5033f058da482590b89 = $(`<div id="html_085c71fcba4ab5033f058da482590b89" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/littlefield/4377-Littlefield-Elementary-School/" target="_blank">120 North Westside Avenue, Littlefield, TX, 79339<br>{'Reading': '44%', 'Math': '30%', 'Science': '24%'}</a></div>`)[0];
+                popup_544675349d19d0e91ac9deee0cdc2fa7.setContent(html_085c71fcba4ab5033f058da482590b89);
+            
+        
+
+        marker_30a66efb78e871511cb4cce1e148df3a.bindPopup(popup_544675349d19d0e91ac9deee0cdc2fa7)
+        ;
+
+        
+    
+    
+            var marker_0b26b387db87638ea7364ded59de0bca = L.marker(
+                [34.2142923, -101.7191854492736],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e95ce3322bead23a8fc6e7bc930ed3c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0b26b387db87638ea7364ded59de0bca.setIcon(icon_e95ce3322bead23a8fc6e7bc930ed3c5);
+        
+    
+        var popup_48727383fd7cd6b61ea7c17c6d36a364 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1b4b0fb456ddced11a74229b17d049f = $(`<div id="html_c1b4b0fb456ddced11a74229b17d049f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plainview/5482-Thunderbird-Elementary-School/" target="_blank">1200 West 32nd Street, Plainview, TX, 79072<br>{'Math': '36%', 'Reading': '40%', 'Science': '32%'}</a></div>`)[0];
+                popup_48727383fd7cd6b61ea7c17c6d36a364.setContent(html_c1b4b0fb456ddced11a74229b17d049f);
+            
+        
+
+        marker_0b26b387db87638ea7364ded59de0bca.bindPopup(popup_48727383fd7cd6b61ea7c17c6d36a364)
+        ;
+
+        
+    
+    
+            var marker_a6fac5045991550c772f1298467b9a68 = L.marker(
+                [33.5848196, -101.92173951223779],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_cb1563b88f79a6d877bd4ea4d58089a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a6fac5045991550c772f1298467b9a68.setIcon(icon_cb1563b88f79a6d877bd4ea4d58089a0);
+        
+    
+        var popup_45fbc1041545046a4f4f94e1de885da9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_58ece0dedeb00258c78a91702b58dc42 = $(`<div id="html_58ece0dedeb00258c78a91702b58dc42" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/26329-Mrs.-Os-At-Agape/" target="_blank">1215 Slide Road, Lubbock, TX, 79416<br>{}</a></div>`)[0];
+                popup_45fbc1041545046a4f4f94e1de885da9.setContent(html_58ece0dedeb00258c78a91702b58dc42);
+            
+        
+
+        marker_a6fac5045991550c772f1298467b9a68.bindPopup(popup_45fbc1041545046a4f4f94e1de885da9)
+        ;
+
+        
+    
+    
+            var marker_95c9b73f39629bc277469ad0fba8107f = L.marker(
+                [33.6129663, -101.91488400129734],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_8a124504b5838c9c361f79d05629319a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_95c9b73f39629bc277469ad0fba8107f.setIcon(icon_8a124504b5838c9c361f79d05629319a);
+        
+    
+        var popup_fc852516350e8e086f5093c37897a83b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00c810a22281a8ce2a6aa2432a1d537c = $(`<div id="html_00c810a22281a8ce2a6aa2432a1d537c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11803-Centennial-Elementary-School/" target="_blank">1301 North Utica Avenue, Lubbock, TX, 79416<br>{'Reading': '45%', 'Math': '40%', 'Science': '37%'}</a></div>`)[0];
+                popup_fc852516350e8e086f5093c37897a83b.setContent(html_00c810a22281a8ce2a6aa2432a1d537c);
+            
+        
+
+        marker_95c9b73f39629bc277469ad0fba8107f.bindPopup(popup_fc852516350e8e086f5093c37897a83b)
+        ;
+
+        
+    
+    
+            var marker_0eaae72104a990e465dce4e72cef4bdb = L.marker(
+                [33.6265089, -101.8499103576808],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7601fe3c4388b4f39de9b7d1e1c1464e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0eaae72104a990e465dce4e72cef4bdb.setIcon(icon_7601fe3c4388b4f39de9b7d1e1c1464e);
+        
+    
+        var popup_3aa1fd97943723dbe98470b02815c54d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_310719b28a249d937803c4eabba7a413 = $(`<div id="html_310719b28a249d937803c4eabba7a413" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11262-Wright-Elementary-School/" target="_blank">1302 ADRIAN ST, Lubbock, TX, 79403<br>{'Reading': '37%', 'Math': '36%', 'Science': '9%', 'Writing': '9%'}</a></div>`)[0];
+                popup_3aa1fd97943723dbe98470b02815c54d.setContent(html_310719b28a249d937803c4eabba7a413);
+            
+        
+
+        marker_0eaae72104a990e465dce4e72cef4bdb.bindPopup(popup_3aa1fd97943723dbe98470b02815c54d)
+        ;
+
+        
+    
+    
+            var marker_9a1be346d6d7805df8c4bab5493d3fa6 = L.marker(
+                [33.6265089, -101.8499103576808],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_cec88dd71aa4ccc84795299b3ba59c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9a1be346d6d7805df8c4bab5493d3fa6.setIcon(icon_cec88dd71aa4ccc84795299b3ba59c41);
+        
+    
+        var popup_275e6892f935247019fca6bcd4cb9e55 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2697535d07272e5c077474448db276d = $(`<div id="html_e2697535d07272e5c077474448db276d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11216-A-C-Elementary-School/" target="_blank">1302 Adrian St, Lubbock, TX, 79403<br>{}</a></div>`)[0];
+                popup_275e6892f935247019fca6bcd4cb9e55.setContent(html_e2697535d07272e5c077474448db276d);
+            
+        
+
+        marker_9a1be346d6d7805df8c4bab5493d3fa6.bindPopup(popup_275e6892f935247019fca6bcd4cb9e55)
+        ;
+
+        
+    
+    
+            var marker_82de822083c42ecc717430d10bcc2ea6 = L.marker(
+                [33.433509099999995, -101.6574235226386],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_3485aff84c874713ab878442281ccc11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_82de822083c42ecc717430d10bcc2ea6.setIcon(icon_3485aff84c874713ab878442281ccc11);
+        
+    
+        var popup_154b3078d9a323326c25d85d722dcf44 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_891ef6cfa3114e9f30fd721ab1fc7a7f = $(`<div id="html_891ef6cfa3114e9f30fd721ab1fc7a7f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/slaton/7759-St-Joseph-School/" target="_blank">1305 West Division Street, Slaton, TX, 79364<br>{}</a></div>`)[0];
+                popup_154b3078d9a323326c25d85d722dcf44.setContent(html_891ef6cfa3114e9f30fd721ab1fc7a7f);
+            
+        
+
+        marker_82de822083c42ecc717430d10bcc2ea6.bindPopup(popup_154b3078d9a323326c25d85d722dcf44)
+        ;
+
+        
+    
+    
+            var marker_8c717d51425c7f8868a677b8b150a1d0 = L.marker(
+                [33.59537565, -102.3837202490933],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_8c0bad0fd0affc1ee27075a249e2a00f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8c717d51425c7f8868a677b8b150a1d0.setIcon(icon_8c0bad0fd0affc1ee27075a249e2a00f);
+        
+    
+        var popup_a13dd84e621888fd4b7df304c1db22ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8f580b8b8f5e065001b37bfa38ad37c = $(`<div id="html_e8f580b8b8f5e065001b37bfa38ad37c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/mullin/25050-Parkview-School---Levelland/" target="_blank">1313 Washington Street, Levelland, TX, 79336<br>{}</a></div>`)[0];
+                popup_a13dd84e621888fd4b7df304c1db22ec.setContent(html_e8f580b8b8f5e065001b37bfa38ad37c);
+            
+        
+
+        marker_8c717d51425c7f8868a677b8b150a1d0.bindPopup(popup_a13dd84e621888fd4b7df304c1db22ec)
+        ;
+
+        
+    
+    
+            var marker_7457b67ba5e7ce8bc4f080122046d0c5 = L.marker(
+                [33.43687465, -101.64134549441118],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_fc3fd1aa423f83d5ce381470e3e12180 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_7457b67ba5e7ce8bc4f080122046d0c5.setIcon(icon_fc3fd1aa423f83d5ce381470e3e12180);
+        
+    
+        var popup_152a62406bc8f62fcba7aa4b1e3d4351 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6090a1e450f5bcc4744bee4ebf7dc19d = $(`<div id="html_6090a1e450f5bcc4744bee4ebf7dc19d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/slaton/25840-NEW-VOCATIONAL-High-School/" target="_blank">140 East Panhandle Avenue, Slaton, TX, 79364<br>{}</a></div>`)[0];
+                popup_152a62406bc8f62fcba7aa4b1e3d4351.setContent(html_6090a1e450f5bcc4744bee4ebf7dc19d);
+            
+        
+
+        marker_7457b67ba5e7ce8bc4f080122046d0c5.bindPopup(popup_152a62406bc8f62fcba7aa4b1e3d4351)
+        ;
+
+        
+    
+    
+            var marker_8c8b41887773d2c689af8684bd6f5963 = L.marker(
+                [33.6875455, -101.37612975037183],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_c20de0de768293b8d4c4390d4e937a13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8c8b41887773d2c689af8684bd6f5963.setIcon(icon_c20de0de768293b8d4c4390d4e937a13);
+        
+    
+        var popup_35623f2e9dd93889bb7727ede1697781 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d7e257ba9dc799b7bdf1b79117d05b7d = $(`<div id="html_d7e257ba9dc799b7bdf1b79117d05b7d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/ralls/5655-Ralls-Elementary-School/" target="_blank">1401 16th Street, Ralls, TX, 79357<br>{'Math': '18%', 'Reading': '21%', 'Science': '13%'}</a></div>`)[0];
+                popup_35623f2e9dd93889bb7727ede1697781.setContent(html_d7e257ba9dc799b7bdf1b79117d05b7d);
+            
+        
+
+        marker_8c8b41887773d2c689af8684bd6f5963.bindPopup(popup_35623f2e9dd93889bb7727ede1697781)
+        ;
+
+        
+    
+    
+            var marker_7dde256f8a08c1ec252b2b5f185e3c58 = L.marker(
+                [33.58168465, -101.67664450769318],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e73e908c40d9d04ba5107616a7c71357 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7dde256f8a08c1ec252b2b5f185e3c58.setIcon(icon_e73e908c40d9d04ba5107616a7c71357);
+        
+    
+        var popup_ba764cf2c73b376a0bb27c583fd2a908 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5d47026312aab1e057aa59e17deb7426 = $(`<div id="html_5d47026312aab1e057aa59e17deb7426" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/5847-Roosevelt-Elementary-School/" target="_blank">1406 County Road 3300, Lubbock, TX, 79403<br>{'Math': '23%', 'Reading': '33%', 'Science': '20%'}</a></div>`)[0];
+                popup_ba764cf2c73b376a0bb27c583fd2a908.setContent(html_5d47026312aab1e057aa59e17deb7426);
+            
+        
+
+        marker_7dde256f8a08c1ec252b2b5f185e3c58.bindPopup(popup_ba764cf2c73b376a0bb27c583fd2a908)
+        ;
+
+        
+    
+    
+            var marker_388bee73721f0c03643bd6009e2eefee = L.marker(
+                [33.3193764491958, -101.72752510742106],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_31bdc1a57dac32da84a047d6f3591c77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_388bee73721f0c03643bd6009e2eefee.setIcon(icon_31bdc1a57dac32da84a047d6f3591c77);
+        
+    
+        var popup_d3d268b8cf92c06da078a7834ce20213 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ee553029bc2cc8a655e332895f01372 = $(`<div id="html_1ee553029bc2cc8a655e332895f01372" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wilson/7097-Wilson-School/" target="_blank">1411 Green Avenue, Wilson, TX, 79381<br>{'Reading': '40%', 'Math': '27%', 'Science': '23%', 'English': '43%', 'Algebra I': '33%', 'Biology I': '57%', 'Social Studies': '27%', 'English 2': '<1%', 'US History': '88%'}</a></div>`)[0];
+                popup_d3d268b8cf92c06da078a7834ce20213.setContent(html_1ee553029bc2cc8a655e332895f01372);
+            
+        
+
+        marker_388bee73721f0c03643bd6009e2eefee.bindPopup(popup_d3d268b8cf92c06da078a7834ce20213)
+        ;
+
+        
+    
+    
+            var marker_dbe10db4dacc439657f59eea5e774de1 = L.marker(
+                [33.8708689, -101.60415586531961],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_0c541d8fe33cccc9b0fde29fba15c3eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dbe10db4dacc439657f59eea5e774de1.setIcon(icon_0c541d8fe33cccc9b0fde29fba15c3eb);
+        
+    
+        var popup_74ede5598b51b6b5fa27adffb90d5fad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_249ebb8a623719cdb3e544730797fdb2 = $(`<div id="html_249ebb8a623719cdb3e544730797fdb2" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/petersburg/5397-Petersburg-School/" target="_blank">1411 West 4th, Petersburg, TX, 79250<br>{'Reading': '54%', 'Math': '49%', 'Science': '31%', 'Biology I': '51%', 'Algebra I': '54%', 'English': '59%', 'English 2': '63%', 'Social Studies': '27%', 'US History': '82%'}</a></div>`)[0];
+                popup_74ede5598b51b6b5fa27adffb90d5fad.setContent(html_249ebb8a623719cdb3e544730797fdb2);
+            
+        
+
+        marker_dbe10db4dacc439657f59eea5e774de1.bindPopup(popup_74ede5598b51b6b5fa27adffb90d5fad)
+        ;
+
+        
+    
+    
+            var marker_0acb3e600c45629ccbf578d4d5d62e16 = L.marker(
+                [33.59931675, -102.33973025],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a5a4c64c493b65df66d1748a2ee30f20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0acb3e600c45629ccbf578d4d5d62e16.setIcon(icon_a5a4c64c493b65df66d1748a2ee30f20);
+        
+    
+        var popup_1d1bd9fb919feb9a295e39520c49e803 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3baff1720fcc0f7effca978cd6a8825f = $(`<div id="html_3baff1720fcc0f7effca978cd6a8825f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/levelland/11194-Levelland-Academic-Beginnings-Cent/" target="_blank">1412 East Ellis Street, Levelland, TX, 79336<br>{}</a></div>`)[0];
+                popup_1d1bd9fb919feb9a295e39520c49e803.setContent(html_3baff1720fcc0f7effca978cd6a8825f);
+            
+        
+
+        marker_0acb3e600c45629ccbf578d4d5d62e16.bindPopup(popup_1d1bd9fb919feb9a295e39520c49e803)
+        ;
+
+        
+    
+    
+            var marker_dfd958c6ec582b94b03f9009d1773646 = L.marker(
+                [33.584121800000005, -101.9322045110253],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_410f43977eba474ddf817892c463ec91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_dfd958c6ec582b94b03f9009d1773646.setIcon(icon_410f43977eba474ddf817892c463ec91);
+        
+    
+        var popup_69a2fa3633afe21d65d28e42465e3d53 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_40cfc2795a772c90c2d82b3d9bbc7e37 = $(`<div id="html_40cfc2795a772c90c2d82b3d9bbc7e37" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11228-Hardwick-Elementary-School/" target="_blank">1420 CHICAGO, Lubbock, TX, 79416<br>{'Math': '48%', 'Reading': '59%', 'Science': '30%'}</a></div>`)[0];
+                popup_69a2fa3633afe21d65d28e42465e3d53.setContent(html_40cfc2795a772c90c2d82b3d9bbc7e37);
+            
+        
+
+        marker_dfd958c6ec582b94b03f9009d1773646.bindPopup(popup_69a2fa3633afe21d65d28e42465e3d53)
+        ;
+
+        
+    
+    
+            var marker_c5e266893c6f40cadb0224573ef8a4c0 = L.marker(
+                [33.582695, -101.851472],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4aa83f2945c6caf0b374dc0c7fe6f643 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c5e266893c6f40cadb0224573ef8a4c0.setIcon(icon_4aa83f2945c6caf0b374dc0c7fe6f643);
+        
+    
+        var popup_2c1fc74ba1532d57e54b289e10922f00 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_17af778dcee91b661910a0297d4e09b4 = $(`<div id="html_17af778dcee91b661910a0297d4e09b4" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/25758-EL-FOR-EDUCATION-INNOVATION/" target="_blank">1500 14th Street, Lubbock, TX, 79401<br>{'Reading': '25%', 'Math': '5%', 'Science': '21%'}</a></div>`)[0];
+                popup_2c1fc74ba1532d57e54b289e10922f00.setContent(html_17af778dcee91b661910a0297d4e09b4);
+            
+        
+
+        marker_c5e266893c6f40cadb0224573ef8a4c0.bindPopup(popup_2c1fc74ba1532d57e54b289e10922f00)
+        ;
+
+        
+    
+    
+            var marker_aea4564fdbe3d710eaac7743e93a841d = L.marker(
+                [33.57734895, -102.37232136938886],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_b8c7343d7177d3821bd584c0b3c98759 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_aea4564fdbe3d710eaac7743e93a841d.setIcon(icon_b8c7343d7177d3821bd584c0b3c98759);
+        
+    
+        var popup_f215ccf5f04f77a28e765d8e9752154e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a8d29229349f258ff427346abdd82637 = $(`<div id="html_a8d29229349f258ff427346abdd82637" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/levelland/4279-South-Elementary-School/" target="_blank">1500 Avenue C, Levelland, TX, 79336<br>{'Reading': '37%', 'Math': '31%'}</a></div>`)[0];
+                popup_f215ccf5f04f77a28e765d8e9752154e.setContent(html_a8d29229349f258ff427346abdd82637);
+            
+        
+
+        marker_aea4564fdbe3d710eaac7743e93a841d.bindPopup(popup_f215ccf5f04f77a28e765d8e9752154e)
+        ;
+
+        
+    
+    
+            var marker_688168913c1a9ca9294c08f03789937c = L.marker(
+                [33.578202250000004, -101.8534866150004],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_d618d59ee60ae8dd3b73b0c895938f3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_688168913c1a9ca9294c08f03789937c.setIcon(icon_d618d59ee60ae8dd3b73b0c895938f3d);
+        
+    
+        var popup_08e231c5a9e2b0ca24637bfd7b847979 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_72014c961246660eb1c7def3f3a0c789 = $(`<div id="html_72014c961246660eb1c7def3f3a0c789" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11082-Pete-Ragus-Aquatic-Center/" target="_blank">1628 19th St, Lubbock, TX, 79401<br>{}</a></div>`)[0];
+                popup_08e231c5a9e2b0ca24637bfd7b847979.setContent(html_72014c961246660eb1c7def3f3a0c789);
+            
+        
+
+        marker_688168913c1a9ca9294c08f03789937c.bindPopup(popup_08e231c5a9e2b0ca24637bfd7b847979)
+        ;
+
+        
+    
+    
+            var marker_064ab9c606a153b590fd9e1d0767b1f2 = L.marker(
+                [33.578202250000004, -101.8534866150004],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_1a3b9e2105f9cf77657c8d3d1c2420ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_064ab9c606a153b590fd9e1d0767b1f2.setIcon(icon_1a3b9e2105f9cf77657c8d3d1c2420ed);
+        
+    
+        var popup_f586897df42e80a3d8aab5d0ff4e752c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f0c30836955726e1ecdf1164d9f9517e = $(`<div id="html_f0c30836955726e1ecdf1164d9f9517e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/10123-Homebound/" target="_blank">1628 19th Street, Lubbock, TX, 79401<br>{}</a></div>`)[0];
+                popup_f586897df42e80a3d8aab5d0ff4e752c.setContent(html_f0c30836955726e1ecdf1164d9f9517e);
+            
+        
+
+        marker_064ab9c606a153b590fd9e1d0767b1f2.bindPopup(popup_f586897df42e80a3d8aab5d0ff4e752c)
+        ;
+
+        
+    
+    
+            var marker_cb7b58945cb2aa37b8a0a480e0dd9c92 = L.marker(
+                [33.443638699999994, -101.84466178511693],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7fc4051216678353ccc91b0ced0c0bd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb7b58945cb2aa37b8a0a480e0dd9c92.setIcon(icon_7fc4051216678353ccc91b0ced0c0bd3);
+        
+    
+        var popup_f86a0dd980e359ace6f8a0c469600b4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09921553bdf9be7f96286c9724eba9b3 = $(`<div id="html_09921553bdf9be7f96286c9724eba9b3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/1521-Lubbock-Cooper-South-Elementary-School/" target="_blank">16410 Loop 493, Lubbock, TX, 79423<br>{'Reading': '62%', 'Math': '58%', 'Science': '41%'}</a></div>`)[0];
+                popup_f86a0dd980e359ace6f8a0c469600b4b.setContent(html_09921553bdf9be7f96286c9724eba9b3);
+            
+        
+
+        marker_cb7b58945cb2aa37b8a0a480e0dd9c92.bindPopup(popup_f86a0dd980e359ace6f8a0c469600b4b)
+        ;
+
+        
+    
+    
+            var marker_0a6ad4d1fc4fdbff7562589af1ac2475 = L.marker(
+                [34.191105750000006, -101.72383095067724],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a909bb1ec3f3ee1493230013ab0a5746 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0a6ad4d1fc4fdbff7562589af1ac2475.setIcon(icon_a909bb1ec3f3ee1493230013ab0a5746);
+        
+    
+        var popup_1b7b1836bf65471ef5104da34ad3ccbb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f2dcbffd2818bf189e09fb8a1f5f753 = $(`<div id="html_6f2dcbffd2818bf189e09fb8a1f5f753" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plainview/5479-Highland-Elementary-School/" target="_blank">1707 West 11th, Plainview, TX, 79072<br>{'Math': '20%', 'Reading': '31%', 'Science': '23%'}</a></div>`)[0];
+                popup_1b7b1836bf65471ef5104da34ad3ccbb.setContent(html_6f2dcbffd2818bf189e09fb8a1f5f753);
+            
+        
+
+        marker_0a6ad4d1fc4fdbff7562589af1ac2475.bindPopup(popup_1b7b1836bf65471ef5104da34ad3ccbb)
+        ;
+
+        
+    
+    
+            var marker_9ca1f6dea76eba76021638fcb086db08 = L.marker(
+                [32.9478728, -102.5713866],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_8cd8b28beebb4986065306cf15b87de4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_9ca1f6dea76eba76021638fcb086db08.setIcon(icon_8cd8b28beebb4986065306cf15b87de4);
+        
+    
+        var popup_c1ec7ac2b1541c327207388f64b7d628 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_191b3c7f53b12e1871e3f236adc2cf3b = $(`<div id="html_191b3c7f53b12e1871e3f236adc2cf3b" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/seagraves/6204-Seagraves-Schools/" target="_blank">1801 Avenue K, Seagraves, TX, 79359<br>{'Reading': '28%', 'Math': '23%', 'Science': '22%', 'English 2': '39%', 'US History': '60%', 'Social Studies': '29%', 'English': '30%', 'Biology I': '66%', 'Algebra I': '36%'}</a></div>`)[0];
+                popup_c1ec7ac2b1541c327207388f64b7d628.setContent(html_191b3c7f53b12e1871e3f236adc2cf3b);
+            
+        
+
+        marker_9ca1f6dea76eba76021638fcb086db08.bindPopup(popup_c1ec7ac2b1541c327207388f64b7d628)
+        ;
+
+        
+    
+    
+            var marker_4c28040db4d8f5d426c473ead270c2b5 = L.marker(
+                [33.5677711, -101.81613612990755],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4d96975058e32352749ab534eacf6f74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4c28040db4d8f5d426c473ead270c2b5.setIcon(icon_4d96975058e32352749ab534eacf6f74);
+        
+    
+        var popup_825a6f81c4daf4a912e26999cc2c298c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_69281df9243ae2fe83fec533458c7ae7 = $(`<div id="html_69281df9243ae2fe83fec533458c7ae7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/24657-Ervin-El/" target="_blank">1802 East 28th Street, Lubbock, TX, 79404<br>{'Math': '23%', 'Reading': '26%', 'Science': '6%'}</a></div>`)[0];
+                popup_825a6f81c4daf4a912e26999cc2c298c.setContent(html_69281df9243ae2fe83fec533458c7ae7);
+            
+        
+
+        marker_4c28040db4d8f5d426c473ead270c2b5.bindPopup(popup_825a6f81c4daf4a912e26999cc2c298c)
+        ;
+
+        
+    
+    
+            var marker_c400c9f03ef97612222c124474a5b3af = L.marker(
+                [33.3608255, -101.5511147],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e621ca6ea247b8a83ff53324d07d6f6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c400c9f03ef97612222c124474a5b3af.setIcon(icon_e621ca6ea247b8a83ff53324d07d6f6b);
+        
+    
+        var popup_023637f1d4542877da91dc79b88d8285 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46bc52079426420566dd216969772c3b = $(`<div id="html_46bc52079426420566dd216969772c3b" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/southland/6376-Southland-School/" target="_blank">190 South 8th Street, Southland, TX, 79364<br>{'Reading': '45%', 'Math': '23%', 'Science': '11%', 'Algebra I': '30%', 'English': '70%', 'Biology I': '60%', 'Social Studies': '<1%', 'English 2': '50%', 'US History': '87%'}</a></div>`)[0];
+                popup_023637f1d4542877da91dc79b88d8285.setContent(html_46bc52079426420566dd216969772c3b);
+            
+        
+
+        marker_c400c9f03ef97612222c124474a5b3af.bindPopup(popup_023637f1d4542877da91dc79b88d8285)
+        ;
+
+        
+    
+    
+            var marker_18a54ea6bcdfd0eec93d4fc8303461fd = L.marker(
+                [33.548647013422816, -101.85666588590604],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_1d59b876fbfbae2b1653d1d76ac5ada3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_18a54ea6bcdfd0eec93d4fc8303461fd.setIcon(icon_1d59b876fbfbae2b1653d1d76ac5ada3);
+        
+    
+        var popup_72deeba4cd8ca32e2b5d682a1bb65c91 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_15302d6eae85ddf3150aede7b9bacc2b = $(`<div id="html_15302d6eae85ddf3150aede7b9bacc2b" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/26101-Springboard-Academics/" target="_blank">1901 50th Street, Lubbock, TX, 79412<br>{}</a></div>`)[0];
+                popup_72deeba4cd8ca32e2b5d682a1bb65c91.setContent(html_15302d6eae85ddf3150aede7b9bacc2b);
+            
+        
+
+        marker_18a54ea6bcdfd0eec93d4fc8303461fd.bindPopup(popup_72deeba4cd8ca32e2b5d682a1bb65c91)
+        ;
+
+        
+    
+    
+            var marker_0c105f61c08330f463a3eb5f68a2f6c9 = L.marker(
+                [33.5863062429663, -102.32695773905816],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_fdb7b15f4f8e8c4a165ccb3ca64706b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0c105f61c08330f463a3eb5f68a2f6c9.setIcon(icon_fdb7b15f4f8e8c4a165ccb3ca64706b9);
+        
+    
+        var popup_518519d9fa7092933b9ae33f9be20da0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f0eb89c36e9a4ea5199741ddfc2471a = $(`<div id="html_3f0eb89c36e9a4ea5199741ddfc2471a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/levelland/7976-Levelland-Christian-School/" target="_blank">1905 Cactus Drive, Levelland, TX, 79336<br>{}</a></div>`)[0];
+                popup_518519d9fa7092933b9ae33f9be20da0.setContent(html_3f0eb89c36e9a4ea5199741ddfc2471a);
+            
+        
+
+        marker_0c105f61c08330f463a3eb5f68a2f6c9.bindPopup(popup_518519d9fa7092933b9ae33f9be20da0)
+        ;
+
+        
+    
+    
+            var marker_d8626c2f5132efe48da02fc220dac807 = L.marker(
+                [33.16937265, -101.80552689996739],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_2e3d177122ccdd317d39a2c343deeea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8626c2f5132efe48da02fc220dac807.setIcon(icon_2e3d177122ccdd317d39a2c343deeea0);
+        
+    
+        var popup_5dcc4e1732365176958bd55dd17afb5c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d2536443b8ebce81d2d174be5e251ac = $(`<div id="html_1d2536443b8ebce81d2d174be5e251ac" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/tahoka/6561-Tahoka-Elementary-School/" target="_blank">1925 Avenue O, Tahoka, TX, 79373<br>{'Reading': '52%', 'Math': '55%', 'Science': '48%'}</a></div>`)[0];
+                popup_5dcc4e1732365176958bd55dd17afb5c.setContent(html_1d2536443b8ebce81d2d174be5e251ac);
+            
+        
+
+        marker_d8626c2f5132efe48da02fc220dac807.bindPopup(popup_5dcc4e1732365176958bd55dd17afb5c)
+        ;
+
+        
+    
+    
+            var marker_be3f30f00044cb7879f2321ac8452eb7 = L.marker(
+                [34.363746, -101.746063],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_299570d6f4b042cdf3ebd40b6fd8f72f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_be3f30f00044cb7879f2321ac8452eb7.setIcon(icon_299570d6f4b042cdf3ebd40b6fd8f72f);
+        
+    
+        var popup_ca03b62dbf1aad1138bcf3eae7cdd977 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3b1afa3790a558fa2c60b1fcf30d8319 = $(`<div id="html_3b1afa3790a558fa2c60b1fcf30d8319" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/kress/4068-Kress-Elementary-School/" target="_blank">200 East 5th Street, Kress, TX, 79052<br>{'Math': '37%', 'Reading': '35%', 'Science': '13%'}</a></div>`)[0];
+                popup_ca03b62dbf1aad1138bcf3eae7cdd977.setContent(html_3b1afa3790a558fa2c60b1fcf30d8319);
+            
+        
+
+        marker_be3f30f00044cb7879f2321ac8452eb7.bindPopup(popup_ca03b62dbf1aad1138bcf3eae7cdd977)
+        ;
+
+        
+    
+    
+            var marker_6322a8ff190679a0a56c14dfcdc29890 = L.marker(
+                [32.7212245, -101.97270684787372],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_f65fd677241aed52c4e624d8febbc8c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6322a8ff190679a0a56c14dfcdc29890.setIcon(icon_f65fd677241aed52c4e624d8febbc8c5);
+        
+    
+        var popup_bd48250d0e402f8ea0466e4c0c7e2afa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d47c9f779f1ad5f7219333ab10b1c815 = $(`<div id="html_d47c9f779f1ad5f7219333ab10b1c815" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lamesa/4200-South-Elementary-School/" target="_blank">2000 South 8th Street, Lamesa, TX, 79331<br>{}</a></div>`)[0];
+                popup_bd48250d0e402f8ea0466e4c0c7e2afa.setContent(html_d47c9f779f1ad5f7219333ab10b1c815);
+            
+        
+
+        marker_6322a8ff190679a0a56c14dfcdc29890.bindPopup(popup_bd48250d0e402f8ea0466e4c0c7e2afa)
+        ;
+
+        
+    
+    
+            var marker_73d5c1b226452e56dafa4996615e095b = L.marker(
+                [33.1581833, -102.28040679434454],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_424baf818d9713c891590c177b0559f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_73d5c1b226452e56dafa4996615e095b.setIcon(icon_424baf818d9713c891590c177b0559f8);
+        
+    
+        var popup_3c669d4b3075a4ac4b6f5df6fc0ab62c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0cf62c9e5b8db4759183aa1ac86ec2de = $(`<div id="html_0cf62c9e5b8db4759183aa1ac86ec2de" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/brownfield/10013-Rudd-SATF/" target="_blank">2004 Lamesa Highway, Brownfield, TX, 79316<br>{}</a></div>`)[0];
+                popup_3c669d4b3075a4ac4b6f5df6fc0ab62c.setContent(html_0cf62c9e5b8db4759183aa1ac86ec2de);
+            
+        
+
+        marker_73d5c1b226452e56dafa4996615e095b.bindPopup(popup_3c669d4b3075a4ac4b6f5df6fc0ab62c)
+        ;
+
+        
+    
+    
+            var marker_1aeb62e140cde594ef4876d18c02757e = L.marker(
+                [33.57660879591837, -101.85977048979592],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_bf0cb6428963b05f6ebbbb844ca20729 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1aeb62e140cde594ef4876d18c02757e.setIcon(icon_bf0cb6428963b05f6ebbbb844ca20729);
+        
+    
+        var popup_93e22eb51244265b132d083a3a719d86 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6b5285db1b548c232bd566fcb199ab6e = $(`<div id="html_6b5285db1b548c232bd566fcb199ab6e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11226-Dupre-Elementary-School/" target="_blank">2008 Avenue T, Lubbock, TX, 79411<br>{'Reading': '42%', 'Math': '31%', 'Science': '17%'}</a></div>`)[0];
+                popup_93e22eb51244265b132d083a3a719d86.setContent(html_6b5285db1b548c232bd566fcb199ab6e);
+            
+        
+
+        marker_1aeb62e140cde594ef4876d18c02757e.bindPopup(popup_93e22eb51244265b132d083a3a719d86)
+        ;
+
+        
+    
+    
+            var marker_84fb9ce23c729666711f72ff6b344ffa = L.marker(
+                [33.7385177, -102.32659957506806],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_8ccc7725299084fd4b61175a138a561a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_84fb9ce23c729666711f72ff6b344ffa.setIcon(icon_8ccc7725299084fd4b61175a138a561a);
+        
+    
+        var popup_6f2fcc0f4da94d9cee170b4345c2ff9e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b6bef0926ad7f75455d4a99ebb19240e = $(`<div id="html_b6bef0926ad7f75455d4a99ebb19240e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/whitharral/7039-Whitharral-School/" target="_blank">201 2nd Street, Whitharral, TX, 79380<br>{'Math': '51%', 'Reading': '58%', 'Science': '55%', 'Social Studies': '40%', 'US History': '100%', 'English 2': '100%', 'Algebra I': '45%', 'English': '81%', 'Biology I': '100%'}</a></div>`)[0];
+                popup_6f2fcc0f4da94d9cee170b4345c2ff9e.setContent(html_b6bef0926ad7f75455d4a99ebb19240e);
+            
+        
+
+        marker_84fb9ce23c729666711f72ff6b344ffa.bindPopup(popup_6f2fcc0f4da94d9cee170b4345c2ff9e)
+        ;
+
+        
+    
+    
+            var marker_7ca36754f0dcca329fe5c4a03c25c334 = L.marker(
+                [33.595758950000004, -101.86410730374496],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e394bfcd8230905f548a2f6261e0fc56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7ca36754f0dcca329fe5c4a03c25c334.setIcon(icon_e394bfcd8230905f548a2f6261e0fc56);
+        
+    
+        var popup_4506ef106cbc730dec9ddbba620e69ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_03f8cce454e76d58618d106105c06a81 = $(`<div id="html_03f8cce454e76d58618d106105c06a81" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11234-Jackson-Elementary-School/" target="_blank">201 Vernon Avenue, Lubbock, TX, 79415<br>{'Reading': '20%', 'Math': '21%', 'Writing': '7%', 'Science': '4%'}</a></div>`)[0];
+                popup_4506ef106cbc730dec9ddbba620e69ca.setContent(html_03f8cce454e76d58618d106105c06a81);
+            
+        
+
+        marker_7ca36754f0dcca329fe5c4a03c25c334.bindPopup(popup_4506ef106cbc730dec9ddbba620e69ca)
+        ;
+
+        
+    
+    
+            var marker_8eb09d3f5f4bed9a2958aefd0d425d03 = L.marker(
+                [33.5713952, -101.9719415],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e49b9cbac92959f14f27ebe10dc03a3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8eb09d3f5f4bed9a2958aefd0d425d03.setIcon(icon_e49b9cbac92959f14f27ebe10dc03a3a);
+        
+    
+        var popup_dca46a29016162503d44327b69f4b200 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7468ce4dd387601589b77b0cb8a30263 = $(`<div id="html_7468ce4dd387601589b77b0cb8a30263" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/bushland/5605-Bushland-Middle-School/" target="_blank">20101 25th Street, Bushland, TX, 79012<br>{'Reading': '69%', 'Math': '47%', 'Science': '51%', 'Social Studies': '38%', 'Algebra I': '90%'}</a></div>`)[0];
+                popup_dca46a29016162503d44327b69f4b200.setContent(html_7468ce4dd387601589b77b0cb8a30263);
+            
+        
+
+        marker_8eb09d3f5f4bed9a2958aefd0d425d03.bindPopup(popup_dca46a29016162503d44327b69f4b200)
+        ;
+
+        
+    
+    
+            var marker_80cbaef6b8f9579d8d3434431b5cfcdf = L.marker(
+                [33.6588575, -101.2498806],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4d308a3e651a0f773b0da780814f1f22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_80cbaef6b8f9579d8d3434431b5cfcdf.setIcon(icon_4d308a3e651a0f773b0da780814f1f22);
+        
+    
+        var popup_146d29a58f4c98e0adda006bd97d129f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7b577f9fce910350e709bf95a2fced42 = $(`<div id="html_7b577f9fce910350e709bf95a2fced42" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/crosbyton/1-Crosbyton-Elementary-School/" target="_blank">204 South Harrison Avenue, Crosbyton, TX, 79322<br>{'Math': '28%', 'Reading': '44%', 'Science': '13%'}</a></div>`)[0];
+                popup_146d29a58f4c98e0adda006bd97d129f.setContent(html_7b577f9fce910350e709bf95a2fced42);
+            
+        
+
+        marker_80cbaef6b8f9579d8d3434431b5cfcdf.bindPopup(popup_146d29a58f4c98e0adda006bd97d129f)
+        ;
+
+        
+    
+    
+            var marker_ff047ade4997a1fd56665358d15e6448 = L.marker(
+                [33.6757853, -101.819192],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_5c9eeb891c525f3377d6fb7329958429 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ff047ade4997a1fd56665358d15e6448.setIcon(icon_5c9eeb891c525f3377d6fb7329958429);
+        
+    
+        var popup_f70349db7686b8de4a8bae256cd1c894 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3215b879cded80dbb58c4753d80d453 = $(`<div id="html_e3215b879cded80dbb58c4753d80d453" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/corpus-christi/8571-Rise-Academy/" target="_blank">207 North Martin L King Boulevard, Lubbock, TX, 79403<br>{'Reading': '79%', 'Math': '64%', 'Science': '75%', 'Social Studies': '70%'}</a></div>`)[0];
+                popup_f70349db7686b8de4a8bae256cd1c894.setContent(html_e3215b879cded80dbb58c4753d80d453);
+            
+        
+
+        marker_ff047ade4997a1fd56665358d15e6448.bindPopup(popup_f70349db7686b8de4a8bae256cd1c894)
+        ;
+
+        
+    
+    
+            var marker_eb19eb655bdec99c88952ec05861f35d = L.marker(
+                [33.18918404081632, -101.37980993877551],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_8f54ef576bfdd06d0ac0a9ea29f2ab26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_eb19eb655bdec99c88952ec05861f35d.setIcon(icon_8f54ef576bfdd06d0ac0a9ea29f2ab26);
+        
+    
+        var popup_fd070c3a32d03eca27ac6153113f196b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5fd2b23544b61d0c6ccfa2017a879df = $(`<div id="html_a5fd2b23544b61d0c6ccfa2017a879df" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/post/5590-Post-Elementary-School/" target="_blank">211 West 8th Street, Post, TX, 79356<br>{'Reading': '34%', 'Math': '33%', 'Science': '16%'}</a></div>`)[0];
+                popup_fd070c3a32d03eca27ac6153113f196b.setContent(html_a5fd2b23544b61d0c6ccfa2017a879df);
+            
+        
+
+        marker_eb19eb655bdec99c88952ec05861f35d.bindPopup(popup_fd070c3a32d03eca27ac6153113f196b)
+        ;
+
+        
+    
+    
+            var marker_be550f437d3c2addf5f81259c66808e4 = L.marker(
+                [33.54142957142857, -101.86217714285713],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_068e64d043a0afbb94462a61d742ccb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_be550f437d3c2addf5f81259c66808e4.setIcon(icon_068e64d043a0afbb94462a61d742ccb2);
+        
+    
+        var popup_9274680b40b8ab947c63d6ccc901ff23 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79f461e80225a774a82cccca5e0c3f37 = $(`<div id="html_79f461e80225a774a82cccca5e0c3f37" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11221-Bayless-Elementary-School/" target="_blank">2115 58th Street, Lubbock, TX, 79412<br>{'Math': '37%', 'Reading': '42%', 'Science': '41%'}</a></div>`)[0];
+                popup_9274680b40b8ab947c63d6ccc901ff23.setContent(html_79f461e80225a774a82cccca5e0c3f37);
+            
+        
+
+        marker_be550f437d3c2addf5f81259c66808e4.bindPopup(popup_9274680b40b8ab947c63d6ccc901ff23)
+        ;
+
+        
+    
+    
+            var marker_9b3fe1e8aa3cb7f9ae76cfeb64284d1e = L.marker(
+                [33.98783765, -101.34546722416069],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_0b02e1fc99e84af78874ed0b6e02179a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9b3fe1e8aa3cb7f9ae76cfeb64284d1e.setIcon(icon_0b02e1fc99e84af78874ed0b6e02179a);
+        
+    
+        var popup_28a4e7179f35efdbe03f4d2b5981d04d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d9e8f4ac280ebf1f38926735b218820 = $(`<div id="html_1d9e8f4ac280ebf1f38926735b218820" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/floydada/21976-Floydada-Isd-Head-Start/" target="_blank">215 North White Street, Floydada, TX, 79235<br>{}</a></div>`)[0];
+                popup_28a4e7179f35efdbe03f4d2b5981d04d.setContent(html_1d9e8f4ac280ebf1f38926735b218820);
+            
+        
+
+        marker_9b3fe1e8aa3cb7f9ae76cfeb64284d1e.bindPopup(popup_28a4e7179f35efdbe03f4d2b5981d04d)
+        ;
+
+        
+    
+    
+            var marker_ac859e549bc5eb92dc3f62b736c77b82 = L.marker(
+                [33.59455985, -101.81112351672746],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_ef6495d644201324c7604282ed2cd060 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_ac859e549bc5eb92dc3f62b736c77b82.setIcon(icon_ef6495d644201324c7604282ed2cd060);
+        
+    
+        var popup_750cd58b0a47c396da3b3123d37ed4ba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d443ee4168b495f52c7b2b474ccdbf7a = $(`<div id="html_d443ee4168b495f52c7b2b474ccdbf7a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/24655-Alderson-El/" target="_blank">219 Walnut Avenue, Lubbock, TX, 79403<br>{'Reading': '29%', 'Math': '18%', 'Science': '27%'}</a></div>`)[0];
+                popup_750cd58b0a47c396da3b3123d37ed4ba.setContent(html_d443ee4168b495f52c7b2b474ccdbf7a);
+            
+        
+
+        marker_ac859e549bc5eb92dc3f62b736c77b82.bindPopup(popup_750cd58b0a47c396da3b3123d37ed4ba)
+        ;
+
+        
+    
+    
+            var marker_7b3d386dcad84946d892fbc71063d6aa = L.marker(
+                [33.328395989163, -101.91304911921183],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e714ab9ef4f849f78d5ac420017f92a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7b3d386dcad84946d892fbc71063d6aa.setIcon(icon_e714ab9ef4f849f78d5ac420017f92a2);
+        
+    
+        var popup_61932b09bb8b2ddf5a77f32ee928a34c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28ff8079e0bde8680310fbed3a4e28ac = $(`<div id="html_28ff8079e0bde8680310fbed3a4e28ac" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/new-home/5008-New-Home-School/" target="_blank">225 North Main Street, New Home, TX, 79381<br>{'Reading': '81%', 'Math': '68%', 'Science': '58%', 'English': '77%', 'Biology I': '77%', 'Social Studies': '44%', 'Algebra I': '80%', 'English 2': '87%', 'US History': '100%'}</a></div>`)[0];
+                popup_61932b09bb8b2ddf5a77f32ee928a34c.setContent(html_28ff8079e0bde8680310fbed3a4e28ac);
+            
+        
+
+        marker_7b3d386dcad84946d892fbc71063d6aa.bindPopup(popup_61932b09bb8b2ddf5a77f32ee928a34c)
+        ;
+
+        
+    
+    
+            var marker_c3f370a9d4d9906d2405029470448a97 = L.marker(
+                [33.56104765, -101.86746124999999],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a337f4dc7a92adf535b35deabcae222c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c3f370a9d4d9906d2405029470448a97.setIcon(icon_a337f4dc7a92adf535b35deabcae222c);
+        
+    
+        var popup_11ddd590c5a801a306ed4b16d0d78976 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_951997ce64c44197246c445e7cb9f0f4 = $(`<div id="html_951997ce64c44197246c445e7cb9f0f4" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11225-Brown-Elementary-School/" target="_blank">2315 36th Street, Lubbock, TX, 79412<br>{'Reading': '29%', 'Math': '27%', 'Science': '27%'}</a></div>`)[0];
+                popup_11ddd590c5a801a306ed4b16d0d78976.setContent(html_951997ce64c44197246c445e7cb9f0f4);
+            
+        
+
+        marker_c3f370a9d4d9906d2405029470448a97.bindPopup(popup_11ddd590c5a801a306ed4b16d0d78976)
+        ;
+
+        
+    
+    
+            var marker_b2657b48fabd0e9202ada2094d5ab918 = L.marker(
+                [33.98818796524809, -101.99273530957859],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7ca23a9f9b9f20f3aeafec0282995951 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b2657b48fabd0e9202ada2094d5ab918.setIcon(icon_7ca23a9f9b9f20f3aeafec0282995951);
+        
+    
+        var popup_1a21746ca0be2961f9f265efa5f5737c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cc3fa9082f60527204150ca3fefe9098 = $(`<div id="html_cc3fa9082f60527204150ca3fefe9098" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/cotton-center/1629-Cotton-Center-School/" target="_blank">2345 FM 179, Cotton Center, TX, 79021<br>{'Math': '28%', 'Reading': '54%', 'US History': '75%', 'Biology I': '66%', 'English 2': '77%', 'Science': '25%', 'English': '87%', 'Social Studies': '<1%', 'Algebra I': '37%'}</a></div>`)[0];
+                popup_1a21746ca0be2961f9f265efa5f5737c.setContent(html_cc3fa9082f60527204150ca3fefe9098);
+            
+        
+
+        marker_b2657b48fabd0e9202ada2094d5ab918.bindPopup(popup_1a21746ca0be2961f9f265efa5f5737c)
+        ;
+
+        
+    
+    
+            var marker_2f06956659464baab88cd3a9f288074a = L.marker(
+                [32.77584405, -101.45124500222687],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4aed03945c7e8a9d889ff259f01382ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f06956659464baab88cd3a9f288074a.setIcon(icon_4aed03945c7e8a9d889ff259f01382ca);
+        
+    
+        var popup_38faf31cc66e9e048a1d00e7f9040330 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e616670ce518cad7b875ed0e4bb35abf = $(`<div id="html_e616670ce518cad7b875ed0e4bb35abf" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/gail/860-Borden-County-School/" target="_blank">240 West Kincaid Avenue, Gail, TX, 79738<br>{'Reading': '68%', 'Math': '65%', 'Science': '53%', 'English 2': '92%', 'Social Studies': '30%', 'US History': '87%', 'English': '93%', 'Biology I': '100%', 'Algebra I': '93%'}</a></div>`)[0];
+                popup_38faf31cc66e9e048a1d00e7f9040330.setContent(html_e616670ce518cad7b875ed0e4bb35abf);
+            
+        
+
+        marker_2f06956659464baab88cd3a9f288074a.bindPopup(popup_38faf31cc66e9e048a1d00e7f9040330)
+        ;
+
+        
+    
+    
+            var marker_1ab95239ed1e38bcff362e9bf809568f = L.marker(
+                [33.57041384693878, -101.93393206122448],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_c9d8b0f9e9fb3125fea1c49798c6c447 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1ab95239ed1e38bcff362e9bf809568f.setIcon(icon_c9d8b0f9e9fb3125fea1c49798c6c447);
+        
+    
+        var popup_755afa033d70da2ed46adf73cb30a2da = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ad849b125410dfada00a6608839f2839 = $(`<div id="html_ad849b125410dfada00a6608839f2839" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/8328-Lubbock-Christian-School/" target="_blank">2604 Dover Avenue, Lubbock, TX, 79407<br>{}</a></div>`)[0];
+                popup_755afa033d70da2ed46adf73cb30a2da.setContent(html_ad849b125410dfada00a6608839f2839);
+            
+        
+
+        marker_1ab95239ed1e38bcff362e9bf809568f.bindPopup(popup_755afa033d70da2ed46adf73cb30a2da)
+        ;
+
+        
+    
+    
+            var marker_e3121518d8a6c6cf63a77c9b4cb5d2fd = L.marker(
+                [33.47127245, -101.87470972501217],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_f63b1da701b3ffb141f9465c658050bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e3121518d8a6c6cf63a77c9b4cb5d2fd.setIcon(icon_f63b1da701b3ffb141f9465c658050bf);
+        
+    
+        var popup_1e6b29b454469797cb2fa91dbb27742f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_06b7b1a2762d467d46625d4d82febc1f = $(`<div id="html_06b7b1a2762d467d46625d4d82febc1f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/25694-LUBBOCK-COOPER-EAST-Elementary-School/" target="_blank">2727 134th Street, Lubbock, TX, 79423<br>{'Math': '48%', 'Reading': '52%', 'Science': '43%'}</a></div>`)[0];
+                popup_1e6b29b454469797cb2fa91dbb27742f.setContent(html_06b7b1a2762d467d46625d4d82febc1f);
+            
+        
+
+        marker_e3121518d8a6c6cf63a77c9b4cb5d2fd.bindPopup(popup_1e6b29b454469797cb2fa91dbb27742f)
+        ;
+
+        
+    
+    
+            var marker_af0c5a0579505ba0c1eea469ded27960 = L.marker(
+                [33.5708154, -101.8775556],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e3aa542478e4e41a397394921a4efbb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_af0c5a0579505ba0c1eea469ded27960.setIcon(icon_e3aa542478e4e41a397394921a4efbb7);
+        
+    
+        var popup_0540f57d06044c167f1fc031954af598 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aa0c72b502e89f16df585551cc9a56d1 = $(`<div id="html_aa0c72b502e89f16df585551cc9a56d1" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11260-Wilson-Elementary-School/" target="_blank">2807 25th Street, Lubbock, TX, 79410<br>{'Math': '67%', 'Reading': '82%', 'Science': '53%'}</a></div>`)[0];
+                popup_0540f57d06044c167f1fc031954af598.setContent(html_aa0c72b502e89f16df585551cc9a56d1);
+            
+        
+
+        marker_af0c5a0579505ba0c1eea469ded27960.bindPopup(popup_0540f57d06044c167f1fc031954af598)
+        ;
+
+        
+    
+    
+            var marker_6bc0c40cfe1db126e0cc334d62749f0a = L.marker(
+                [33.5407595, -101.87827663452808],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4928c302c9c44e5580952a588caca708 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6bc0c40cfe1db126e0cc334d62749f0a.setIcon(icon_4928c302c9c44e5580952a588caca708);
+        
+    
+        var popup_f378b64f5a87b7acdfb69625e43281ce = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2f4d87f49f2c4d73d81c004e97f71c15 = $(`<div id="html_2f4d87f49f2c4d73d81c004e97f71c15" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11245-Parsons-Elementary-School/" target="_blank">2811 58th Street, Lubbock, TX, 79413<br>{'Math': '23%', 'Reading': '45%', 'Science': '29%'}</a></div>`)[0];
+                popup_f378b64f5a87b7acdfb69625e43281ce.setContent(html_2f4d87f49f2c4d73d81c004e97f71c15);
+            
+        
+
+        marker_6bc0c40cfe1db126e0cc334d62749f0a.bindPopup(popup_f378b64f5a87b7acdfb69625e43281ce)
+        ;
+
+        
+    
+    
+            var marker_12789379a8edf59bf090f23c078105b8 = L.marker(
+                [33.56650105, -101.93230629805998],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_c17f62aa98fed4e54a7bc9774a4d35a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_12789379a8edf59bf090f23c078105b8.setIcon(icon_c17f62aa98fed4e54a7bc9774a4d35a0);
+        
+    
+        var popup_0d9fc9a7c9db8c5d9bd0d3ea679f90c8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b1f04293682314ba5af29491bdac20d1 = $(`<div id="html_b1f04293682314ba5af29491bdac20d1" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11223-Bowie-Elementary-School/" target="_blank">2902 Chicago Avenue, Lubbock, TX, 79407<br>{'Reading': '42%', 'Math': '42%', 'Science': '45%', 'Writing': '9%'}</a></div>`)[0];
+                popup_0d9fc9a7c9db8c5d9bd0d3ea679f90c8.setContent(html_b1f04293682314ba5af29491bdac20d1);
+            
+        
+
+        marker_12789379a8edf59bf090f23c078105b8.bindPopup(popup_0d9fc9a7c9db8c5d9bd0d3ea679f90c8)
+        ;
+
+        
+    
+    
+            var marker_b3ebca5368fb2f3803ad12ffcdbc14d8 = L.marker(
+                [33.567668673469385, -101.89436002040817],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_225e9ccf2ffeaaefd3ddd44f6e06fb41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b3ebca5368fb2f3803ad12ffcdbc14d8.setIcon(icon_225e9ccf2ffeaaefd3ddd44f6e06fb41);
+        
+    
+        var popup_b6a69adc877a805f2aea0a8904a7a485 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e57e21fe356e58c8072676624907ff08 = $(`<div id="html_e57e21fe356e58c8072676624907ff08" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11243-Overton-Elementary-School/" target="_blank">2902 Louisville Avenue, Lubbock, TX, 79410<br>{'Math': '41%', 'Reading': '44%', 'Science': '43%'}</a></div>`)[0];
+                popup_b6a69adc877a805f2aea0a8904a7a485.setContent(html_e57e21fe356e58c8072676624907ff08);
+            
+        
+
+        marker_b3ebca5368fb2f3803ad12ffcdbc14d8.bindPopup(popup_b6a69adc877a805f2aea0a8904a7a485)
+        ;
+
+        
+    
+    
+            var marker_74495402201890d72ed2271f4b7158c9 = L.marker(
+                [33.508753, -102.010647],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_8c8eba43a6553d1634ac8376c0bde7ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_74495402201890d72ed2271f4b7158c9.setIcon(icon_8c8eba43a6553d1634ac8376c0bde7ad);
+        
+    
+        var popup_501c1b190eeab6a20944b8c921da5867 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_55e71367ee99fcaabc5feb55ac72b274 = $(`<div id="html_55e71367ee99fcaabc5feb55ac72b274" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wolfforth/10720-Special-Education-Coop/" target="_blank">300 Main St, Wolfforth, TX, 79382<br>{}</a></div>`)[0];
+                popup_501c1b190eeab6a20944b8c921da5867.setContent(html_55e71367ee99fcaabc5feb55ac72b274);
+            
+        
+
+        marker_74495402201890d72ed2271f4b7158c9.bindPopup(popup_501c1b190eeab6a20944b8c921da5867)
+        ;
+
+        
+    
+    
+            var marker_91c5c12a9b1f956c422daf4d58be463b = L.marker(
+                [33.566787, -101.850945],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_37d68a91bde09c3d36ea8c9e8a289419 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_91c5c12a9b1f956c422daf4d58be463b.setIcon(icon_37d68a91bde09c3d36ea8c9e8a289419);
+        
+    
+        var popup_502975a1871e719c3f60383755902396 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_308e59702d71d6185f4b842591c24e70 = $(`<div id="html_308e59702d71d6185f4b842591c24e70" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11222-Bean-Elementary-School/" target="_blank">3001 Avenue N, Lubbock, TX, 79411<br>{'Reading': '28%', 'Math': '17%', 'Science': '10%'}</a></div>`)[0];
+                popup_502975a1871e719c3f60383755902396.setContent(html_308e59702d71d6185f4b842591c24e70);
+            
+        
+
+        marker_91c5c12a9b1f956c422daf4d58be463b.bindPopup(popup_502975a1871e719c3f60383755902396)
+        ;
+
+        
+    
+    
+            var marker_fc8712c2ec825fb50368db64e4f134e0 = L.marker(
+                [33.52345175510204, -101.87932704081632],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_dcd275ae6e76f54d9bb063d6794b5e4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_fc8712c2ec825fb50368db64e4f134e0.setIcon(icon_dcd275ae6e76f54d9bb063d6794b5e4f);
+        
+    
+        var popup_a8e05de99020c8b58d6bd38a6faeedc9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0e13a08854e1e91bfd7a173a0f40bbbb = $(`<div id="html_0e13a08854e1e91bfd7a173a0f40bbbb" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11254-Waters-Elementary-School/" target="_blank">3006 78th Street, Lubbock, TX, 79423<br>{'Math': '44%', 'Reading': '57%', 'Science': '43%'}</a></div>`)[0];
+                popup_a8e05de99020c8b58d6bd38a6faeedc9.setContent(html_0e13a08854e1e91bfd7a173a0f40bbbb);
+            
+        
+
+        marker_fc8712c2ec825fb50368db64e4f134e0.bindPopup(popup_a8e05de99020c8b58d6bd38a6faeedc9)
+        ;
+
+        
+    
+    
+            var marker_6caf8d52f61fa662412c05a8c154aa16 = L.marker(
+                [33.556105, -101.87939940816327],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_ee8d736c8090a003631c747959deb947 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6caf8d52f61fa662412c05a8c154aa16.setIcon(icon_ee8d736c8090a003631c747959deb947);
+        
+    
+        var popup_57f7a12e64e31bd0e77267b341a6900e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c259efe899c04068161ec27b59d27365 = $(`<div id="html_c259efe899c04068161ec27b59d27365" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11257-Wheelock-Elementary-School/" target="_blank">3008 42nd Street, Lubbock, TX, 79413<br>{'Reading': '35%', 'Math': '23%', 'Science': '16%'}</a></div>`)[0];
+                popup_57f7a12e64e31bd0e77267b341a6900e.setContent(html_c259efe899c04068161ec27b59d27365);
+            
+        
+
+        marker_6caf8d52f61fa662412c05a8c154aa16.bindPopup(popup_57f7a12e64e31bd0e77267b341a6900e)
+        ;
+
+        
+    
+    
+            var marker_964cfdf71111745ce8c305f840bad1e0 = L.marker(
+                [33.4124949, -102.15383713400782],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a9753f198ce49384279afc72145d0966 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_964cfdf71111745ce8c305f840bad1e0.setIcon(icon_a9753f198ce49384279afc72145d0966);
+        
+    
+        var popup_9229f33df0774213a9930917305ed049 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19aa46939d1e1d3271d3e44142b4b2e0 = $(`<div id="html_19aa46939d1e1d3271d3e44142b4b2e0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/ropesville/5851-Ropes-School/" target="_blank">304 Ranch Street, Ropesville, TX, 79358<br>{'Reading': '64%', 'Math': '50%', 'Science': '44%', 'US History': '85%', 'English 2': '79%', 'Social Studies': '23%', 'English': '76%', 'Algebra I': '56%', 'Biology I': '92%'}</a></div>`)[0];
+                popup_9229f33df0774213a9930917305ed049.setContent(html_19aa46939d1e1d3271d3e44142b4b2e0);
+            
+        
+
+        marker_964cfdf71111745ce8c305f840bad1e0.bindPopup(popup_9229f33df0774213a9930917305ed049)
+        ;
+
+        
+    
+    
+            var marker_95516a2a07a1fde94f3c1522c4ef09ff = L.marker(
+                [34.1742352, -101.74245207620946],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_b8554640d926ca5de3e66485023a17ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_95516a2a07a1fde94f3c1522c4ef09ff.setIcon(icon_b8554640d926ca5de3e66485023a17ab);
+        
+    
+        var popup_582367be1bd8e9584b94c809a0b31eb3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_edc798538e8c6f5d9ecf067e1f64f85a = $(`<div id="html_edc798538e8c6f5d9ecf067e1f64f85a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plainview/7861-Plainview-Christian-Academy/" target="_blank">310 S Ennis St, Plainview, TX, 79072<br>{}</a></div>`)[0];
+                popup_582367be1bd8e9584b94c809a0b31eb3.setContent(html_edc798538e8c6f5d9ecf067e1f64f85a);
+            
+        
+
+        marker_95516a2a07a1fde94f3c1522c4ef09ff.bindPopup(popup_582367be1bd8e9584b94c809a0b31eb3)
+        ;
+
+        
+    
+    
+            var marker_8f68892c7adf356375ec51d6723e415c = L.marker(
+                [34.1162629, -101.4503957],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7cbe314b38f5fba08ba0c63272b514c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8f68892c7adf356375ec51d6723e415c.setIcon(icon_7cbe314b38f5fba08ba0c63272b514c7);
+        
+    
+        var popup_d019f76353e2e60b8796b8594a3ac340 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d7c25687fa2a91509999a31e7ab33b20 = $(`<div id="html_d7c25687fa2a91509999a31e7ab33b20" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lockney/4399-Lockney-Elementary-School/" target="_blank">310 W 8TH ST, Lockney, TX, 79241<br>{'Math': '26%', 'Reading': '42%', 'Science': '23%'}</a></div>`)[0];
+                popup_d019f76353e2e60b8796b8594a3ac340.setContent(html_d7c25687fa2a91509999a31e7ab33b20);
+            
+        
+
+        marker_8f68892c7adf356375ec51d6723e415c.bindPopup(popup_d019f76353e2e60b8796b8594a3ac340)
+        ;
+
+        
+    
+    
+            var marker_ea43ab7a803b2987f2cd071ba5d314bf = L.marker(
+                [33.56179625, -101.88181635494145],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_af5e7278df6876d0d6591f04fb3749e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ea43ab7a803b2987f2cd071ba5d314bf.setIcon(icon_af5e7278df6876d0d6591f04fb3749e4);
+        
+    
+        var popup_d1dc9f028d0623fe0887ece1814d8908 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22a45e3e020cfcd04ac00858cc759508 = $(`<div id="html_22a45e3e020cfcd04ac00858cc759508" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/16447-Ywca-Child-Care-Center/" target="_blank">3101 35th Street, Lubbock, TX, 79413<br>{}</a></div>`)[0];
+                popup_d1dc9f028d0623fe0887ece1814d8908.setContent(html_22a45e3e020cfcd04ac00858cc759508);
+            
+        
+
+        marker_ea43ab7a803b2987f2cd071ba5d314bf.bindPopup(popup_d1dc9f028d0623fe0887ece1814d8908)
+        ;
+
+        
+    
+    
+            var marker_d95ea59c87cbd82b105358c25ccb2d82 = L.marker(
+                [33.7313489, -101.83941318220627],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_f463faeefd253dcaefe0c3c62425b245 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d95ea59c87cbd82b105358c25ccb2d82.setIcon(icon_f463faeefd253dcaefe0c3c62425b245);
+        
+    
+        var popup_a2dfcb6fa97867dc03d79b833005dd98 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd0a5d34a1aafc4f483cc0cccf12030d = $(`<div id="html_fd0a5d34a1aafc4f483cc0cccf12030d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/new-deal/5004-New-Deal-Middle-School/" target="_blank">312 S MONROE AVE, New Deal, TX, 79350<br>{'Math': '38%', 'Reading': '54%', 'Science': '29%', 'Social Studies': '8%'}</a></div>`)[0];
+                popup_a2dfcb6fa97867dc03d79b833005dd98.setContent(html_fd0a5d34a1aafc4f483cc0cccf12030d);
+            
+        
+
+        marker_d95ea59c87cbd82b105358c25ccb2d82.bindPopup(popup_a2dfcb6fa97867dc03d79b833005dd98)
+        ;
+
+        
+    
+    
+            var marker_0e2b0835ff3b7e12d3101fc8f797a703 = L.marker(
+                [34.16774865, -101.70454029336547],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_785f6a8814ca1e4fac5e19f0fb670510 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0e2b0835ff3b7e12d3101fc8f797a703.setIcon(icon_785f6a8814ca1e4fac5e19f0fb670510);
+        
+    
+        var popup_7792e87370ef613212d9b38d2147a1a8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3cca5bff57054eabf52581a331198128 = $(`<div id="html_3cca5bff57054eabf52581a331198128" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plainview/5480-Hillcrest-Elementary-School/" target="_blank">315 Southwest Alpine Drive, Plainview, TX, 79072<br>{'Math': '28%', 'Reading': '36%', 'Science': '29%'}</a></div>`)[0];
+                popup_7792e87370ef613212d9b38d2147a1a8.setContent(html_3cca5bff57054eabf52581a331198128);
+            
+        
+
+        marker_0e2b0835ff3b7e12d3101fc8f797a703.bindPopup(popup_7792e87370ef613212d9b38d2147a1a8)
+        ;
+
+        
+    
+    
+            var marker_83e0d670d03876fef00114f13444dd73 = L.marker(
+                [33.49684015, -101.88375066998819],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_932155d7188c2826220f4e092ee29de4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83e0d670d03876fef00114f13444dd73.setIcon(icon_932155d7188c2826220f4e092ee29de4);
+        
+    
+        var popup_5d8dac888f37f72e9cb48f2247929e2a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_428e892f5cd31870e876096a0195b2c0 = $(`<div id="html_428e892f5cd31870e876096a0195b2c0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/9154-Lubbock-Cooper-North-Elementary-School/" target="_blank">3202 108th Street, Lubbock, TX, 79423<br>{'Reading': '62%', 'Math': '56%', 'Science': '43%'}</a></div>`)[0];
+                popup_5d8dac888f37f72e9cb48f2247929e2a.setContent(html_428e892f5cd31870e876096a0195b2c0);
+            
+        
+
+        marker_83e0d670d03876fef00114f13444dd73.bindPopup(popup_5d8dac888f37f72e9cb48f2247929e2a)
+        ;
+
+        
+    
+    
+            var marker_418e53530b794105771695ecd4853661 = L.marker(
+                [33.6081789, -101.8850614],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_14d730746633eb2d5732f2b7f3986114 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_418e53530b794105771695ecd4853661.setIcon(icon_14d730746633eb2d5732f2b7f3986114);
+        
+    
+        var popup_b7df8fe32a6e6f5e627509f8ac8db746 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_550828f31d5a792c2fbcb065b20d066c = $(`<div id="html_550828f31d5a792c2fbcb065b20d066c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11261-Wolffarth-Elementary-School/" target="_blank">3202 Erskine Street, Lubbock, TX, 79415<br>{'Math': '54%', 'Reading': '63%', 'Science': '37%'}</a></div>`)[0];
+                popup_b7df8fe32a6e6f5e627509f8ac8db746.setContent(html_550828f31d5a792c2fbcb065b20d066c);
+            
+        
+
+        marker_418e53530b794105771695ecd4853661.bindPopup(popup_b7df8fe32a6e6f5e627509f8ac8db746)
+        ;
+
+        
+    
+    
+            var marker_95bc894fc3326982ed68522d945ccdf5 = L.marker(
+                [33.500684, -101.88411120202021],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_4de159e62368375a131cac4e4902f4fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_95bc894fc3326982ed68522d945ccdf5.setIcon(icon_4de159e62368375a131cac4e4902f4fd);
+        
+    
+        var popup_b8960edff7459805756649afe8572eaf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_31b50cd6652072ab426a4cb5e18d20e6 = $(`<div id="html_31b50cd6652072ab426a4cb5e18d20e6" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/7526-All-Saints-Episcopal-School/" target="_blank">3222 103rd Street, Lubbock, TX, 79423<br>{}</a></div>`)[0];
+                popup_b8960edff7459805756649afe8572eaf.setContent(html_31b50cd6652072ab426a4cb5e18d20e6);
+            
+        
+
+        marker_95bc894fc3326982ed68522d945ccdf5.bindPopup(popup_b8960edff7459805756649afe8572eaf)
+        ;
+
+        
+    
+    
+            var marker_d6839279bc94b6811243b8d8739ff9ec = L.marker(
+                [33.58766848979592, -101.887657],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7a3ebd3029eabcad9b15e45d8b8391c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d6839279bc94b6811243b8d8739ff9ec.setIcon(icon_7a3ebd3029eabcad9b15e45d8b8391c0);
+        
+    
+        var popup_4aa980ac4b8231255ef34118a5e3ff06 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f8b1897aadad8761ec661c1cf515790a = $(`<div id="html_f8b1897aadad8761ec661c1cf515790a" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/9153-Texas-Tech-Elementary-School/" target="_blank">3316 9th St, Lubbock, TX, 79409<br>{}</a></div>`)[0];
+                popup_4aa980ac4b8231255ef34118a5e3ff06.setContent(html_f8b1897aadad8761ec661c1cf515790a);
+            
+        
+
+        marker_d6839279bc94b6811243b8d8739ff9ec.bindPopup(popup_4aa980ac4b8231255ef34118a5e3ff06)
+        ;
+
+        
+    
+    
+            var marker_5fcae82054932e259e450a6ea7b09560 = L.marker(
+                [33.51653678334295, -101.89420738404155],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_c1830d0aafc24d327d0e03afc9b73e2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5fcae82054932e259e450a6ea7b09560.setIcon(icon_c1830d0aafc24d327d0e03afc9b73e2a);
+        
+    
+        var popup_8b3f4f63a92803430ef8592354ba590a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2ec0881778bfdc1a33a58b2c09d2ac8d = $(`<div id="html_2ec0881778bfdc1a33a58b2c09d2ac8d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11232-Honey-Elementary-School/" target="_blank">3615 86th Street, Lubbock, TX, 79423<br>{'Math': '66%', 'Reading': '75%', 'Science': '58%'}</a></div>`)[0];
+                popup_8b3f4f63a92803430ef8592354ba590a.setContent(html_2ec0881778bfdc1a33a58b2c09d2ac8d);
+            
+        
+
+        marker_5fcae82054932e259e450a6ea7b09560.bindPopup(popup_8b3f4f63a92803430ef8592354ba590a)
+        ;
+
+        
+    
+    
+            var marker_a461cbf1552977aceab426cd31f9487b = L.marker(
+                [33.559777499999996, -101.94033544999999],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_420ee5de86f91b2be222f7718e86802f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a461cbf1552977aceab426cd31f9487b.setIcon(icon_420ee5de86f91b2be222f7718e86802f);
+        
+    
+        var popup_d389ee4e7ed75ba804d9729c98f40cb9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8cac0c8ad2f6ad60f11eae9cbff1180e = $(`<div id="html_8cac0c8ad2f6ad60f11eae9cbff1180e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/24961-Harmony-Science-Academy---Lubbock/" target="_blank">3701 West Loop 289, Lubbock, TX, 79407<br>{'Reading': '43%', 'Math': '28%', 'Science': '26%', 'Social Studies': '16%', 'Algebra I': '100%'}</a></div>`)[0];
+                popup_d389ee4e7ed75ba804d9729c98f40cb9.setContent(html_8cac0c8ad2f6ad60f11eae9cbff1180e);
+            
+        
+
+        marker_a461cbf1552977aceab426cd31f9487b.bindPopup(popup_d389ee4e7ed75ba804d9729c98f40cb9)
+        ;
+
+        
+    
+    
+            var marker_f851f867bf03923a2a28c560bdb47ed7 = L.marker(
+                [33.553258, -101.89455857142858],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_ef0f3005de046ba78938ea1c6d285031 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f851f867bf03923a2a28c560bdb47ed7.setIcon(icon_ef0f3005de046ba78938ea1c6d285031);
+        
+    
+        var popup_e49b312225512f1e4e2d72ddc37b59a5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cce65ad200a7da77447eacef7f21e8ae = $(`<div id="html_cce65ad200a7da77447eacef7f21e8ae" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11613-St-Lukes-Preschool/" target="_blank">3708 45th Street, Lubbock, TX, 79413<br>{}</a></div>`)[0];
+                popup_e49b312225512f1e4e2d72ddc37b59a5.setContent(html_cce65ad200a7da77447eacef7f21e8ae);
+            
+        
+
+        marker_f851f867bf03923a2a28c560bdb47ed7.bindPopup(popup_e49b312225512f1e4e2d72ddc37b59a5)
+        ;
+
+        
+    
+    
+            var marker_ded44bac0c12c33c18dbf524e66183f4 = L.marker(
+                [33.527839400000005, -101.89741991670826],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a181717adb78b4a79144a5e61179909f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ded44bac0c12c33c18dbf524e66183f4.setIcon(icon_a181717adb78b4a79144a5e61179909f);
+        
+    
+        var popup_50f6a054ad8b1361d5497b07ba8f3d24 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bde035134d80a5163fbf32b78c9e5963 = $(`<div id="html_bde035134d80a5163fbf32b78c9e5963" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/8002-Southcrest-Christian-School/" target="_blank">3801 South Loop 289, Lubbock, TX, 79423<br>{}</a></div>`)[0];
+                popup_50f6a054ad8b1361d5497b07ba8f3d24.setContent(html_bde035134d80a5163fbf32b78c9e5963);
+            
+        
+
+        marker_ded44bac0c12c33c18dbf524e66183f4.bindPopup(popup_50f6a054ad8b1361d5497b07ba8f3d24)
+        ;
+
+        
+    
+    
+            var marker_6e39f1dde104034c552d665162e8b0c7 = L.marker(
+                [33.553279, -101.844857],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_dee935cda8e2293f230b27d2f144d6db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6e39f1dde104034c552d665162e8b0c7.setIcon(icon_dee935cda8e2293f230b27d2f144d6db);
+        
+    
+        var popup_1eaf425d2300edfa62d0df0f6c7d4cdd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_97a26fbc9d08d0fd462c8bc96085b220 = $(`<div id="html_97a26fbc9d08d0fd462c8bc96085b220" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/24308-Springboard-Academics/" target="_blank">3901 Interstate 27, Lubbock, TX, 79404<br>{}</a></div>`)[0];
+                popup_1eaf425d2300edfa62d0df0f6c7d4cdd.setContent(html_97a26fbc9d08d0fd462c8bc96085b220);
+            
+        
+
+        marker_6e39f1dde104034c552d665162e8b0c7.bindPopup(popup_1eaf425d2300edfa62d0df0f6c7d4cdd)
+        ;
+
+        
+    
+    
+            var marker_2778bc3f7de1040d24027eb3c6b15c3c = L.marker(
+                [32.9688132, -101.82903747507494],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_09e77b12b105d991d54d37af2b2bd45a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_2778bc3f7de1040d24027eb3c6b15c3c.setIcon(icon_09e77b12b105d991d54d37af2b2bd45a);
+        
+    
+        var popup_8bbb1248ab87c89bec134849460b4c02 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9c9e80161a2c0db46c1b1b4fc1e0246 = $(`<div id="html_e9c9e80161a2c0db46c1b1b4fc1e0246" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/o'donnell/5233-Odonnell-High-School/" target="_blank">400 Small Street, O'Donnell, TX, 79351<br>{'Reading': '46%', 'Math': '31%', 'Science': '32%', 'US History': '40%', 'English': '50%', 'Algebra I': '54%', 'English 2': '51%', 'Social Studies': '3%'}</a></div>`)[0];
+                popup_8bbb1248ab87c89bec134849460b4c02.setContent(html_e9c9e80161a2c0db46c1b1b4fc1e0246);
+            
+        
+
+        marker_2778bc3f7de1040d24027eb3c6b15c3c.bindPopup(popup_8bbb1248ab87c89bec134849460b4c02)
+        ;
+
+        
+    
+    
+            var marker_c92722830c2c9ea0aa7c93a336ecb022 = L.marker(
+                [33.6019674, -102.61841342402548],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_546fe65805192594e8d09e66bc85aece = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c92722830c2c9ea0aa7c93a336ecb022.setIcon(icon_546fe65805192594e8d09e66bc85aece);
+        
+    
+        var popup_230fa0a667bf8ad02882a585a09ae39e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff8168006834f6d0ce87479b307b688f = $(`<div id="html_ff8168006834f6d0ce87479b307b688f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/whiteface/7025-Whiteface-Elementary-School/" target="_blank">401 Antelope Blvd, Whiteface, TX, 79379<br>{'Math': '47%', 'Reading': '29%', 'Writing': '17%', 'Science': '17%'}</a></div>`)[0];
+                popup_230fa0a667bf8ad02882a585a09ae39e.setContent(html_ff8168006834f6d0ce87479b307b688f);
+            
+        
+
+        marker_c92722830c2c9ea0aa7c93a336ecb022.bindPopup(popup_230fa0a667bf8ad02882a585a09ae39e)
+        ;
+
+        
+    
+    
+            var marker_989bde95b3b0ed5089cf5545f5722802 = L.marker(
+                [33.6019674, -102.61841342402548],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_828fb1f148c3ca682dd6390950dadd70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_989bde95b3b0ed5089cf5545f5722802.setIcon(icon_828fb1f148c3ca682dd6390950dadd70);
+        
+    
+        var popup_87d7c8e03c7cd0d5bd340a855401a407 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_617626334aa7a32b06a6d51485fbe273 = $(`<div id="html_617626334aa7a32b06a6d51485fbe273" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/whiteface/7026-Whiteface-High-School/" target="_blank">401 Antelope Boulevard, Whiteface, TX, 79379<br>{'Reading': '53%', 'Math': '31%', 'Science': '31%', 'US History': '58%', 'English 2': '50%', 'Social Studies': '4%', 'Biology I': '33%', 'English': '56%', 'Algebra I': '30%'}</a></div>`)[0];
+                popup_87d7c8e03c7cd0d5bd340a855401a407.setContent(html_617626334aa7a32b06a6d51485fbe273);
+            
+        
+
+        marker_989bde95b3b0ed5089cf5545f5722802.bindPopup(popup_87d7c8e03c7cd0d5bd340a855401a407)
+        ;
+
+        
+    
+    
+            var marker_cfca95c4cd85b5654d9a4e97d6581f5e = L.marker(
+                [33.6021224, -102.36251431819683],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a322c10fc47baf26ed13dcc6b8a4d945 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_cfca95c4cd85b5654d9a4e97d6581f5e.setIcon(icon_a322c10fc47baf26ed13dcc6b8a4d945);
+        
+    
+        var popup_e38b93f87e7bda0b8881445eacd42c53 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_89410a0c15a3f969e4ab477bb01a61d0 = $(`<div id="html_89410a0c15a3f969e4ab477bb01a61d0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/levelland/20236-Capitol-Elementary-School/" target="_blank">401 Ellis Street, Levelland, TX, 79336<br>{'Math': '39%', 'Reading': '40%'}</a></div>`)[0];
+                popup_e38b93f87e7bda0b8881445eacd42c53.setContent(html_89410a0c15a3f969e4ab477bb01a61d0);
+            
+        
+
+        marker_cfca95c4cd85b5654d9a4e97d6581f5e.bindPopup(popup_e38b93f87e7bda0b8881445eacd42c53)
+        ;
+
+        
+    
+    
+            var marker_b9b8f0a40a2aa260aee5be3f2285f4e5 = L.marker(
+                [33.591058200000006, -102.16552782552965],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_85b45cc6a6712bf824f263234d7b2a5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b9b8f0a40a2aa260aee5be3f2285f4e5.setIcon(icon_85b45cc6a6712bf824f263234d7b2a5e);
+        
+    
+        var popup_c51a488cba614054b9adc17362b15c55 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bec4dcc2defdc39e775b088aaa0254fe = $(`<div id="html_bec4dcc2defdc39e775b088aaa0254fe" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/smyer/6311-Smyer-High-School/" target="_blank">401 Lincoln Street, Smyer, TX, 79367<br>{'Reading': '63%', 'Math': '49%', 'Science': '36%', 'Algebra I': '39%', 'Biology I': '40%', 'English': '40%', 'English 2': '81%', 'US History': '76%', 'Social Studies': '25%'}</a></div>`)[0];
+                popup_c51a488cba614054b9adc17362b15c55.setContent(html_bec4dcc2defdc39e775b088aaa0254fe);
+            
+        
+
+        marker_b9b8f0a40a2aa260aee5be3f2285f4e5.bindPopup(popup_c51a488cba614054b9adc17362b15c55)
+        ;
+
+        
+    
+    
+            var marker_9fe464a3ca6e22fb343abdd4692e73be = L.marker(
+                [33.54455645, -101.90075567019785],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_dddff90919bfc1304aaf72cb162b5e05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9fe464a3ca6e22fb343abdd4692e73be.setIcon(icon_dddff90919bfc1304aaf72cb162b5e05);
+        
+    
+        var popup_491df49568ed41b3bb454147c0f23df2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a7472eace4747163ffa8ea5577c69fb1 = $(`<div id="html_a7472eace4747163ffa8ea5577c69fb1" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/7758-Christ-The-King-Cathedral-School/" target="_blank">4011 54th Street, Lubbock, TX, 79413<br>{}</a></div>`)[0];
+                popup_491df49568ed41b3bb454147c0f23df2.setContent(html_a7472eace4747163ffa8ea5577c69fb1);
+            
+        
+
+        marker_9fe464a3ca6e22fb343abdd4692e73be.bindPopup(popup_491df49568ed41b3bb454147c0f23df2)
+        ;
+
+        
+    
+    
+            var marker_cc888215c7ea9ea82b29fe4742f3e5de = L.marker(
+                [33.1909867, -101.3679235],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_3d33f91dfbe30dad68b6567feefcf9ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_cc888215c7ea9ea82b29fe4742f3e5de.setIcon(icon_3d33f91dfbe30dad68b6567feefcf9ff);
+        
+    
+        var popup_0d0fa7edca3a1defe8968b12d2627368 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc4d0277f64d5820db00f6d4dcdd14ff = $(`<div id="html_dc4d0277f64d5820db00f6d4dcdd14ff" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/post/8141-First-Baptist-Church-Christian/" target="_blank">402 Main Street, Post, TX, 79356<br>{}</a></div>`)[0];
+                popup_0d0fa7edca3a1defe8968b12d2627368.setContent(html_dc4d0277f64d5820db00f6d4dcdd14ff);
+            
+        
+
+        marker_cc888215c7ea9ea82b29fe4742f3e5de.bindPopup(popup_0d0fa7edca3a1defe8968b12d2627368)
+        ;
+
+        
+    
+    
+            var marker_5fe4838d35e43db3edaadceda2994fce = L.marker(
+                [33.4732868, -101.90109558967997],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_9cbf897948fb5c02232eef2b01ef1647 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5fe4838d35e43db3edaadceda2994fce.setIcon(icon_9cbf897948fb5c02232eef2b01ef1647);
+        
+    
+        var popup_1310dd30bf48ca86d4ff62a3dc90b9b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea16fa92e140dd319c9f01d54f356bbc = $(`<div id="html_ea16fa92e140dd319c9f01d54f356bbc" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/20256-Lubbock-Cooper-Central-Elementary-School/" target="_blank">4020 135th Street, Lubbock, TX, 79423<br>{'Math': '69%', 'Reading': '73%', 'Science': '58%'}</a></div>`)[0];
+                popup_1310dd30bf48ca86d4ff62a3dc90b9b5.setContent(html_ea16fa92e140dd319c9f01d54f356bbc);
+            
+        
+
+        marker_5fe4838d35e43db3edaadceda2994fce.bindPopup(popup_1310dd30bf48ca86d4ff62a3dc90b9b5)
+        ;
+
+        
+    
+    
+            var marker_7cab0763b1d9158b62b73e5a3f5cf581 = L.marker(
+                [33.660319231523964, -101.6767314394724],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a6c9d1cfa523bd29b71e32a8a167aaf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7cab0763b1d9158b62b73e5a3f5cf581.setIcon(icon_a6c9d1cfa523bd29b71e32a8a167aaf3);
+        
+    
+        var popup_b3dc6fa583dc6c68754f3bcf28670a49 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e48fb6a97b8c80f0b11c57ee55dd58ab = $(`<div id="html_e48fb6a97b8c80f0b11c57ee55dd58ab" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/idalou/3726-Idalou-Middle-School/" target="_blank">403 East 7th Street, Idalou, TX, 79329<br>{'Reading': '60%', 'Math': '64%', 'Science': '58%', 'Social Studies': '52%'}</a></div>`)[0];
+                popup_b3dc6fa583dc6c68754f3bcf28670a49.setContent(html_e48fb6a97b8c80f0b11c57ee55dd58ab);
+            
+        
+
+        marker_7cab0763b1d9158b62b73e5a3f5cf581.bindPopup(popup_b3dc6fa583dc6c68754f3bcf28670a49)
+        ;
+
+        
+    
+    
+            var marker_2b776cdef95cd6c2ee514a6004494d13 = L.marker(
+                [34.06987385, -101.85151634948124],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_9fe56e0f97bfe9e33abe8babf305b3e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_2b776cdef95cd6c2ee514a6004494d13.setIcon(icon_9fe56e0f97bfe9e33abe8babf305b3e6);
+        
+    
+        var popup_b1a2ec140480c2f43fc53f5704991281 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_942d36dab9de87c2f45cb89c91f8a460 = $(`<div id="html_942d36dab9de87c2f45cb89c91f8a460" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/hale-center/3140-Carr-Middle-School/" target="_blank">410 West 12th Street, Hale Center, TX, 79041<br>{'Math': '24%', 'Reading': '44%', 'Science': '22%', 'Social Studies': '4%'}</a></div>`)[0];
+                popup_b1a2ec140480c2f43fc53f5704991281.setContent(html_942d36dab9de87c2f45cb89c91f8a460);
+            
+        
+
+        marker_2b776cdef95cd6c2ee514a6004494d13.bindPopup(popup_b1a2ec140480c2f43fc53f5704991281)
+        ;
+
+        
+    
+    
+            var marker_43704e4aa46a1653673470bce09c1bd6 = L.marker(
+                [33.55724845, -101.83909033800488],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_40b41d24809db6f83bb3931dc054d30e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_43704e4aa46a1653673470bce09c1bd6.setIcon(icon_40b41d24809db6f83bb3931dc054d30e);
+        
+    
+        var popup_b0cbbf3aee2e86e15ccd671462cd122d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c6906f2e5529c0fffa447866abf4ea83 = $(`<div id="html_c6906f2e5529c0fffa447866abf4ea83" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11229-Harwell-Elementary-School/" target="_blank">4101 Avenue D, Lubbock, TX, 79404<br>{'Math': '29%', 'Reading': '45%', 'Science': '29%'}</a></div>`)[0];
+                popup_b0cbbf3aee2e86e15ccd671462cd122d.setContent(html_c6906f2e5529c0fffa447866abf4ea83);
+            
+        
+
+        marker_43704e4aa46a1653673470bce09c1bd6.bindPopup(popup_b0cbbf3aee2e86e15ccd671462cd122d)
+        ;
+
+        
+    
+    
+            var marker_32df49c136d0d8d1e4255558969d4339 = L.marker(
+                [33.5529541, -101.89749258029067],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_2c6c65c851c005997af1466d7e0d5737 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_32df49c136d0d8d1e4255558969d4339.setIcon(icon_2c6c65c851c005997af1466d7e0d5737);
+        
+    
+        var popup_68198ace76bb2ed48327ce57357d0343 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_58321537c3e6fd228457f1590e0136b6 = $(`<div id="html_58321537c3e6fd228457f1590e0136b6" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11239-Maedgen-Elementary-School/" target="_blank">4401 Nashville Avenue, Lubbock, TX, 79413<br>{'Math': '52%', 'Reading': '51%', 'Science': '13%'}</a></div>`)[0];
+                popup_68198ace76bb2ed48327ce57357d0343.setContent(html_58321537c3e6fd228457f1590e0136b6);
+            
+        
+
+        marker_32df49c136d0d8d1e4255558969d4339.bindPopup(popup_68198ace76bb2ed48327ce57357d0343)
+        ;
+
+        
+    
+    
+            var marker_d9afaeb04aa2566406a797eea5763b53 = L.marker(
+                [33.5514195, -101.93217616589612],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_04ce5c6fecd759b9408d40ad231202cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d9afaeb04aa2566406a797eea5763b53.setIcon(icon_04ce5c6fecd759b9408d40ad231202cd);
+        
+    
+        var popup_5675b2d174a9b46575f1ffebab675320 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b859d0b44d44d5312844479f0c601d8 = $(`<div id="html_8b859d0b44d44d5312844479f0c601d8" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11255-Wester-Elementary-School/" target="_blank">4602 Chicago Avenue, Lubbock, TX, 79414<br>{'Math': '35%', 'Reading': '47%', 'Science': '12%'}</a></div>`)[0];
+                popup_5675b2d174a9b46575f1ffebab675320.setContent(html_8b859d0b44d44d5312844479f0c601d8);
+            
+        
+
+        marker_d9afaeb04aa2566406a797eea5763b53.bindPopup(popup_5675b2d174a9b46575f1ffebab675320)
+        ;
+
+        
+    
+    
+            var marker_b86d28ec92b8afdaf9a09c2a347ac7bf = L.marker(
+                [33.583514949999994, -101.91384680825473],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_242e1a31f39373a479e001fba0eafb05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b86d28ec92b8afdaf9a09c2a347ac7bf.setIcon(icon_242e1a31f39373a479e001fba0eafb05);
+        
+    
+        var popup_18c5e460b31505eb7bf74d0fe64114b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_968845474f25cde569bb832950d0daf2 = $(`<div id="html_968845474f25cde569bb832950d0daf2" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11247-Rush-Elementary-School/" target="_blank">4702 15th Street, Lubbock, TX, 79416<br>{'Math': '41%', 'Reading': '52%', 'Science': '28%'}</a></div>`)[0];
+                popup_18c5e460b31505eb7bf74d0fe64114b5.setContent(html_968845474f25cde569bb832950d0daf2);
+            
+        
+
+        marker_b86d28ec92b8afdaf9a09c2a347ac7bf.bindPopup(popup_18c5e460b31505eb7bf74d0fe64114b5)
+        ;
+
+        
+    
+    
+            var marker_028273cbd8fe981375202d074928fa80 = L.marker(
+                [33.54154363265306, -101.91411702040816],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_ecfaa21bc0400be587d252b338e6212c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_028273cbd8fe981375202d074928fa80.setIcon(icon_ecfaa21bc0400be587d252b338e6212c);
+        
+    
+        var popup_fb2e75ba813c07295de2d9058e9455ba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_767af25e8cc38fb7c8f8be23b19e4f3d = $(`<div id="html_767af25e8cc38fb7c8f8be23b19e4f3d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11259-Williams-Elementary-School/" target="_blank">4812 58th Street, Lubbock, TX, 79414<br>{'Reading': '55%', 'Math': '41%', 'Science': '42%'}</a></div>`)[0];
+                popup_fb2e75ba813c07295de2d9058e9455ba.setContent(html_767af25e8cc38fb7c8f8be23b19e4f3d);
+            
+        
+
+        marker_028273cbd8fe981375202d074928fa80.bindPopup(popup_fb2e75ba813c07295de2d9058e9455ba)
+        ;
+
+        
+    
+    
+            var marker_1c7aaeb5cbdd7fc4658a79942411832d = L.marker(
+                [33.5515635, -101.91482352096101],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_139a4ac401d5c2aaac08043a6a5ca758 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1c7aaeb5cbdd7fc4658a79942411832d.setIcon(icon_139a4ac401d5c2aaac08043a6a5ca758);
+        
+    
+        var popup_f2965a65ca00dc86fea2332e8ad65c4e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ecffea90ea5e4521b056f5e215bfa36 = $(`<div id="html_3ecffea90ea5e4521b056f5e215bfa36" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11251-Stewart-Elementary-School/" target="_blank">4815 46th Street, Lubbock, TX, 79414<br>{'Math': '39%', 'Reading': '50%', 'Science': '23%'}</a></div>`)[0];
+                popup_f2965a65ca00dc86fea2332e8ad65c4e.setContent(html_3ecffea90ea5e4521b056f5e215bfa36);
+            
+        
+
+        marker_1c7aaeb5cbdd7fc4658a79942411832d.bindPopup(popup_f2965a65ca00dc86fea2332e8ad65c4e)
+        ;
+
+        
+    
+    
+            var marker_4562c0a9677ed204a9a4bb8fd03e0778 = L.marker(
+                [33.72142952316451, -102.76400201086247],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_6f8389a43bedfcd59884c57f5cef5d88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4562c0a9677ed204a9a4bb8fd03e0778.setIcon(icon_6f8389a43bedfcd59884c57f5cef5d88);
+        
+    
+        var popup_f511d4469d0980231443d5aaa6eaecb4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_49a1f51b250930cf7df3cf43181874c8 = $(`<div id="html_49a1f51b250930cf7df3cf43181874c8" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/morton/4908-Morton-High-School/" target="_blank">500 Champion Drive, Morton, TX, 79346<br>{'Reading': '22%', 'Math': '19%', 'Science': '5%', 'English': '31%', 'Algebra I': '5%', 'Biology I': '27%', 'Social Studies': '9%', 'English 2': '33%', 'US History': '38%'}</a></div>`)[0];
+                popup_f511d4469d0980231443d5aaa6eaecb4.setContent(html_49a1f51b250930cf7df3cf43181874c8);
+            
+        
+
+        marker_4562c0a9677ed204a9a4bb8fd03e0778.bindPopup(popup_f511d4469d0980231443d5aaa6eaecb4)
+        ;
+
+        
+    
+    
+            var marker_4c8c3e115cd460fb511955caa5b624fe = L.marker(
+                [33.5478626, -101.85203075208912],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_403394a8583d85cf5d5f40cf1310a096 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4c8c3e115cd460fb511955caa5b624fe.setIcon(icon_403394a8583d85cf5d5f40cf1310a096);
+        
+    
+        var popup_6e1e9e529013f3beefea02385a1b97b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_03a2eb0cd5c5d45f80d7957825c95b65 = $(`<div id="html_03a2eb0cd5c5d45f80d7957825c95b65" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11231-Hodges-Elementary-School/" target="_blank">5001 Avenue P, Lubbock, TX, 79412<br>{'Math': '24%', 'Reading': '33%', 'Science': '44%'}</a></div>`)[0];
+                popup_6e1e9e529013f3beefea02385a1b97b7.setContent(html_03a2eb0cd5c5d45f80d7957825c95b65);
+            
+        
+
+        marker_4c8c3e115cd460fb511955caa5b624fe.bindPopup(popup_6e1e9e529013f3beefea02385a1b97b7)
+        ;
+
+        
+    
+    
+            var marker_68ec1fbddea1c8653d808fb3ad52799e = L.marker(
+                [33.046408346938776, -102.42752014285715],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_06eded6d650d77944127128c36b16c98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_68ec1fbddea1c8653d808fb3ad52799e.setIcon(icon_06eded6d650d77944127128c36b16c98);
+        
+    
+        var popup_62611abd29841317f6099d78565cd323 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cf429cfe849880ead8aa5d9a1feb266d = $(`<div id="html_cf429cfe849880ead8aa5d9a1feb266d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wellman/6952-Wellman-Union-School/" target="_blank">501 Terry Avenue, Wellman, TX, 79378<br>{'Reading': '56%', 'Math': '50%', 'Science': '29%', 'English': '56%', 'Biology I': '60%', 'Algebra I': '78%', 'Social Studies': '<1%', 'English 2': '61%', 'US History': '55%'}</a></div>`)[0];
+                popup_62611abd29841317f6099d78565cd323.setContent(html_cf429cfe849880ead8aa5d9a1feb266d);
+            
+        
+
+        marker_68ec1fbddea1c8653d808fb3ad52799e.bindPopup(popup_62611abd29841317f6099d78565cd323)
+        ;
+
+        
+    
+    
+            var marker_475639b628be05cb4566b71ff7c9e607 = L.marker(
+                [33.5157671, -102.0090102],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7fb1d03f39c42f3d8993ee8cc338a04f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_475639b628be05cb4566b71ff7c9e607.setIcon(icon_7fb1d03f39c42f3d8993ee8cc338a04f);
+        
+    
+        var popup_3e54a5bf4411ac19e11234cc064f0c1d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a6f847e474f6c4242f958f48e231bc7 = $(`<div id="html_0a6f847e474f6c4242f958f48e231bc7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wolfforth/26122-Tas-Montessori-School/" target="_blank">502 North Dowden Road, Wolfforth, TX, 79382<br>{}</a></div>`)[0];
+                popup_3e54a5bf4411ac19e11234cc064f0c1d.setContent(html_0a6f847e474f6c4242f958f48e231bc7);
+            
+        
+
+        marker_475639b628be05cb4566b71ff7c9e607.bindPopup(popup_3e54a5bf4411ac19e11234cc064f0c1d)
+        ;
+
+        
+    
+    
+            var marker_c986cbeda6ee3edf2accc8dcdf9f76d5 = L.marker(
+                [33.8303065, -101.84614467306594],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_122d08329778e17befe76d1d24e82cea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c986cbeda6ee3edf2accc8dcdf9f76d5.setIcon(icon_122d08329778e17befe76d1d24e82cea);
+        
+    
+        var popup_7a0e0cf7ae0d360df2f8cf0be4fb301b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea3d02bd693fd3b30e26558acf5ca228 = $(`<div id="html_ea3d02bd693fd3b30e26558acf5ca228" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/abernathy/120-Abernathy-Elementary-School/" target="_blank">505 7th Street, Abernathy, TX, 79311<br>{'Math': '46%', 'Reading': '57%', 'Science': '61%'}</a></div>`)[0];
+                popup_7a0e0cf7ae0d360df2f8cf0be4fb301b.setContent(html_ea3d02bd693fd3b30e26558acf5ca228);
+            
+        
+
+        marker_c986cbeda6ee3edf2accc8dcdf9f76d5.bindPopup(popup_7a0e0cf7ae0d360df2f8cf0be4fb301b)
+        ;
+
+        
+    
+    
+            var marker_fd94c5d3622f577c725fefd8b04a8eac = L.marker(
+                [33.605749349999996, -101.94058895782192],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_0c4adda5615dfd134a397a28e42465b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fd94c5d3622f577c725fefd8b04a8eac.setIcon(icon_0c4adda5615dfd134a397a28e42465b0);
+        
+    
+        var popup_c87a677a8da663ecb3f6f8075f5b4bca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_467e60464c9d6fb1148b8c16547af192 = $(`<div id="html_467e60464c9d6fb1148b8c16547af192" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/16473-Creative-Learning-Center/" target="_blank">525 North Frankford Avenue, Lubbock, TX, 79416<br>{}</a></div>`)[0];
+                popup_c87a677a8da663ecb3f6f8075f5b4bca.setContent(html_467e60464c9d6fb1148b8c16547af192);
+            
+        
+
+        marker_fd94c5d3622f577c725fefd8b04a8eac.bindPopup(popup_c87a677a8da663ecb3f6f8075f5b4bca)
+        ;
+
+        
+    
+    
+            var marker_a13059ce780c233b49df950b655be8cc = L.marker(
+                [33.519604, -101.925824],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_0614134683e5b5accb80b613da6fdf4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a13059ce780c233b49df950b655be8cc.setIcon(icon_0614134683e5b5accb80b613da6fdf4c);
+        
+    
+        var popup_3eab0307526796b5502ca2ea844205e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cd4eef7a7939abfad67cd480a6b8046c = $(`<div id="html_cd4eef7a7939abfad67cd480a6b8046c" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/8382-Calvary-Baptist-Weekday-Ministries/" target="_blank">5301 82nd Street, Lubbock, TX, 79424<br>{}</a></div>`)[0];
+                popup_3eab0307526796b5502ca2ea844205e1.setContent(html_cd4eef7a7939abfad67cd480a6b8046c);
+            
+        
+
+        marker_a13059ce780c233b49df950b655be8cc.bindPopup(popup_3eab0307526796b5502ca2ea844205e1)
+        ;
+
+        
+    
+    
+            var marker_a3e70ecbbd222eb48492b8a944056df7 = L.marker(
+                [33.5492007, -101.92544625898203],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_da6b6e29da6134877a3346788a4f38e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a3e70ecbbd222eb48492b8a944056df7.setIcon(icon_da6b6e29da6134877a3346788a4f38e1);
+        
+    
+        var popup_af2b7c2e33374396b5ea61ad8b72777a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_627c7c6ef425bec16d47513111f37e4e = $(`<div id="html_627c7c6ef425bec16d47513111f37e4e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/16476-Kids-Kingdom/" target="_blank">5320 50th Street, Lubbock, TX, 79414<br>{}</a></div>`)[0];
+                popup_af2b7c2e33374396b5ea61ad8b72777a.setContent(html_627c7c6ef425bec16d47513111f37e4e);
+            
+        
+
+        marker_a3e70ecbbd222eb48492b8a944056df7.bindPopup(popup_af2b7c2e33374396b5ea61ad8b72777a)
+        ;
+
+        
+    
+    
+            var marker_67dafa8b51d03f05124e7436e0f94beb = L.marker(
+                [32.93139245, -102.12751496245143],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_cef8601b2dcd06bffd403e4edc5ee1ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_67dafa8b51d03f05124e7436e0f94beb.setIcon(icon_cef8601b2dcd06bffd403e4edc5ee1ee);
+        
+    
+        var popup_0952aa9d6b2ae600cd844b51faa7b95d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a33fcf65ad86359aeb7259511eaa783 = $(`<div id="html_6a33fcf65ad86359aeb7259511eaa783" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/welch/1995-Dawson-School/" target="_blank">600 BROWNFIELD HWY 137, Welch, TX, 79377<br>{'Math': '11%', 'Reading': '35%', 'Science': '29%', 'Social Studies': '<1%', 'English': '18%', 'Algebra I': '10%', 'US History': '37%', 'English 2': '50%'}</a></div>`)[0];
+                popup_0952aa9d6b2ae600cd844b51faa7b95d.setContent(html_6a33fcf65ad86359aeb7259511eaa783);
+            
+        
+
+        marker_67dafa8b51d03f05124e7436e0f94beb.bindPopup(popup_0952aa9d6b2ae600cd844b51faa7b95d)
+        ;
+
+        
+    
+    
+            var marker_dc539ae5e37333d70ee72b89832f7d7d = L.marker(
+                [32.746402950000004, -101.9594633162834],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e0f15ce7eb260ba660c3c3c6af7c930b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_dc539ae5e37333d70ee72b89832f7d7d.setIcon(icon_e0f15ce7eb260ba660c3c3c6af7c930b);
+        
+    
+        var popup_0b4733db886325fa64a371664e269e70 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d2953fdfc8ddf58e004ce978d2f7973b = $(`<div id="html_d2953fdfc8ddf58e004ce978d2f7973b" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lamesa/4196-Lamesa-High-School/" target="_blank">600 North 14th Street, Lamesa, TX, 79331<br>{'Math': '17%', 'Reading': '31%', 'Science': '12%', 'English': '23%', 'Algebra I': '20%', 'English 2': '40%', 'US History': '36%', 'Biology I': '48%', 'Social Studies': '11%'}</a></div>`)[0];
+                popup_0b4733db886325fa64a371664e269e70.setContent(html_d2953fdfc8ddf58e004ce978d2f7973b);
+            
+        
+
+        marker_dc539ae5e37333d70ee72b89832f7d7d.bindPopup(popup_0b4733db886325fa64a371664e269e70)
+        ;
+
+        
+    
+    
+            var marker_0bde0a1ccdd94ebddf1c5aa2765a4e04 = L.marker(
+                [34.17195085, -101.74265427903653],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_76739f8d39392e68ceb5411616482c52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0bde0a1ccdd94ebddf1c5aa2765a4e04.setIcon(icon_76739f8d39392e68ceb5411616482c52);
+        
+    
+        var popup_fa0725d3943c39443057a83156c62894 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_323d2c7bfb7bc20714869226aebee9f6 = $(`<div id="html_323d2c7bfb7bc20714869226aebee9f6" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plainview/5483-La-Mesa-Elementary-School/" target="_blank">600 S ENNIS ST, Plainview, TX, 79073<br>{'Math': '50%', 'Reading': '52%', 'Science': '48%'}</a></div>`)[0];
+                popup_fa0725d3943c39443057a83156c62894.setContent(html_323d2c7bfb7bc20714869226aebee9f6);
+            
+        
+
+        marker_0bde0a1ccdd94ebddf1c5aa2765a4e04.bindPopup(popup_fa0725d3943c39443057a83156c62894)
+        ;
+
+        
+    
+    
+            var marker_00bba4d8ecfb79db45368b84a2e83e78 = L.marker(
+                [32.743509700000004, -101.95856428269231],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_f5daceaf6e06e2bb1dc5e4711c6f1cd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_00bba4d8ecfb79db45368b84a2e83e78.setIcon(icon_f5daceaf6e06e2bb1dc5e4711c6f1cd1);
+        
+    
+        var popup_18ff6bc8991520696fbeeecfd4faf920 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_489eed6b8fc24c69eb41cc536d709530 = $(`<div id="html_489eed6b8fc24c69eb41cc536d709530" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lamesa/4198-North-Elementary-School/" target="_blank">601 North 14th Street, Lamesa, TX, 79331<br>{'Math': '32%', 'Reading': '22%', 'Science': '26%', 'Writing': '15%'}</a></div>`)[0];
+                popup_18ff6bc8991520696fbeeecfd4faf920.setContent(html_489eed6b8fc24c69eb41cc536d709530);
+            
+        
+
+        marker_00bba4d8ecfb79db45368b84a2e83e78.bindPopup(popup_18ff6bc8991520696fbeeecfd4faf920)
+        ;
+
+        
+    
+    
+            var marker_ffb230306fba406b4d9903c2ea8b23af = L.marker(
+                [33.661838, -101.68445758595414],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_8d8d1f6d19988074abfd0605631c8c5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ffb230306fba406b4d9903c2ea8b23af.setIcon(icon_8d8d1f6d19988074abfd0605631c8c5b);
+        
+    
+        var popup_815e6dbcf85bcae4ea3c7dd55a3b9f8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8877c91f993340af47785c84f28bb35f = $(`<div id="html_8877c91f993340af47785c84f28bb35f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/idalou/3724-Idalou-Elementary-School/" target="_blank">601 Walnut Street, Idalou, TX, 79329<br>{'Math': '71%', 'Reading': '73%'}</a></div>`)[0];
+                popup_815e6dbcf85bcae4ea3c7dd55a3b9f8c.setContent(html_8877c91f993340af47785c84f28bb35f);
+            
+        
+
+        marker_ffb230306fba406b4d9903c2ea8b23af.bindPopup(popup_815e6dbcf85bcae4ea3c7dd55a3b9f8c)
+        ;
+
+        
+    
+    
+            var marker_0d10bdc10f637d5f361306c57397d10f = L.marker(
+                [33.52118125, -101.94556457215648],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_c43fa7bc57aca57a153b03061076f47d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_0d10bdc10f637d5f361306c57397d10f.setIcon(icon_c43fa7bc57aca57a153b03061076f47d);
+        
+    
+        var popup_f0779be3d82d8c796285eda7e82bdfc0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2cfd258ccbf299e069cab94fa15070c2 = $(`<div id="html_2cfd258ccbf299e069cab94fa15070c2" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wolfforth/2745-Crestview-Elementary-School/" target="_blank">6020 81st Street, Lubbock, TX, 79424<br>{'Reading': '88%', 'Math': '74%', 'Science': '86%'}</a></div>`)[0];
+                popup_f0779be3d82d8c796285eda7e82bdfc0.setContent(html_2cfd258ccbf299e069cab94fa15070c2);
+            
+        
+
+        marker_0d10bdc10f637d5f361306c57397d10f.bindPopup(popup_f0779be3d82d8c796285eda7e82bdfc0)
+        ;
+
+        
+    
+    
+            var marker_49442ed797d37521029523f9240b3487 = L.marker(
+                [33.339754150000005, -102.21214598448223],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_0be44ee68bf339fe850295dc7e55a345 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_49442ed797d37521029523f9240b3487.setIcon(icon_0be44ee68bf339fe850295dc7e55a345);
+        
+    
+        var popup_0f7365b8d4b85c41224e43bd4783ebca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aeaf35a47749711543a597f6ba1c473e = $(`<div id="html_aeaf35a47749711543a597f6ba1c473e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/meadow/4704-Meadow-School/" target="_blank">604 4th Street, Meadow, TX, 79345<br>{'Math': '28%', 'Reading': '42%', 'Biology I': '60%', 'Science': '31%', 'English': '50%', 'Algebra I': '41%', 'US History': '64%', 'English 2': '42%', 'Social Studies': '16%'}</a></div>`)[0];
+                popup_0f7365b8d4b85c41224e43bd4783ebca.setContent(html_aeaf35a47749711543a597f6ba1c473e);
+            
+        
+
+        marker_49442ed797d37521029523f9240b3487.bindPopup(popup_0f7365b8d4b85c41224e43bd4783ebca)
+        ;
+
+        
+    
+    
+            var marker_823ba973559f6f47d17836fc8e93559d = L.marker(
+                [33.43517935, -101.64945510199142],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e2b4d9ab20b06306b63cdcda7bff16cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_823ba973559f6f47d17836fc8e93559d.setIcon(icon_e2b4d9ab20b06306b63cdcda7bff16cb);
+        
+    
+        var popup_9b382ec605d074f002da2ccb84594701 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f20a738db5cf7f19b211fc2db3c38dfb = $(`<div id="html_f20a738db5cf7f19b211fc2db3c38dfb" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/slaton/6300-Cathelene-Thomas-Elementary-School/" target="_blank">615 West Lubbock Street, Slaton, TX, 79364<br>{'Reading': '52%', 'Math': '28%', 'Science': '20%'}</a></div>`)[0];
+                popup_9b382ec605d074f002da2ccb84594701.setContent(html_f20a738db5cf7f19b211fc2db3c38dfb);
+            
+        
+
+        marker_823ba973559f6f47d17836fc8e93559d.bindPopup(popup_9b382ec605d074f002da2ccb84594701)
+        ;
+
+        
+    
+    
+            var marker_63f413d0682862e4df2bc29cc809b9d6 = L.marker(
+                [33.9791173, -101.34523809593183],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_2dd6c35fa3c42867ee224d9691e80155 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_63f413d0682862e4df2bc29cc809b9d6.setIcon(icon_2dd6c35fa3c42867ee224d9691e80155);
+        
+    
+        var popup_22666fa6ab5583425e9d191b006c570b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1302d0f9a10dc12682e39b2e712d6354 = $(`<div id="html_1302d0f9a10dc12682e39b2e712d6354" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/floydada/19083-Floydada-Isd-Daep/" target="_blank">618 Whirlwind Alley, Floydada, TX, 79235<br>{}</a></div>`)[0];
+                popup_22666fa6ab5583425e9d191b006c570b.setContent(html_1302d0f9a10dc12682e39b2e712d6354);
+            
+        
+
+        marker_63f413d0682862e4df2bc29cc809b9d6.bindPopup(popup_22666fa6ab5583425e9d191b006c570b)
+        ;
+
+        
+    
+    
+            var marker_9d798c0188b60422fbc3f0b2e722460c = L.marker(
+                [33.58613735, -101.95512445349485],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_945f2bba34d09be7f6a6f3129a0d43e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d798c0188b60422fbc3f0b2e722460c.setIcon(icon_945f2bba34d09be7f6a6f3129a0d43e6);
+        
+    
+        var popup_a87424330e3795b7b5816d33d7111725 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7fffaf5289977dacfc3d63aa3d5c3da2 = $(`<div id="html_7fffaf5289977dacfc3d63aa3d5c3da2" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wolfforth/2743-North-Ridge-Elementary-School/" target="_blank">6302 11th Place, Lubbock, TX, 79416<br>{'Math': '53%', 'Reading': '58%', 'Science': '54%'}</a></div>`)[0];
+                popup_a87424330e3795b7b5816d33d7111725.setContent(html_7fffaf5289977dacfc3d63aa3d5c3da2);
+            
+        
+
+        marker_9d798c0188b60422fbc3f0b2e722460c.bindPopup(popup_a87424330e3795b7b5816d33d7111725)
+        ;
+
+        
+    
+    
+            var marker_7ab807d43209250f534defddae9b781d = L.marker(
+                [33.55542265, -101.95480071713544],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_6cc0f5f1fe631fede9b5814ad729a21a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7ab807d43209250f534defddae9b781d.setIcon(icon_6cc0f5f1fe631fede9b5814ad729a21a);
+        
+    
+        var popup_2cd6cbb3d2c46821fc1c513e81bedb7a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a93f3aeea689443622fc75e4a4aa74a3 = $(`<div id="html_a93f3aeea689443622fc75e4a4aa74a3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wolfforth/2747-Westwind-Elementary-School/" target="_blank">6401 43rd Street, Lubbock, TX, 79407<br>{'Math': '42%', 'Reading': '54%', 'Science': '43%'}</a></div>`)[0];
+                popup_2cd6cbb3d2c46821fc1c513e81bedb7a.setContent(html_a93f3aeea689443622fc75e4a4aa74a3);
+            
+        
+
+        marker_7ab807d43209250f534defddae9b781d.bindPopup(popup_2cd6cbb3d2c46821fc1c513e81bedb7a)
+        ;
+
+        
+    
+    
+            var marker_b8618daf4f1105d503e83231c31540a5 = L.marker(
+                [33.532162400000004, -101.96059870125364],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_9fb17ecd306c749484dc2043c89130ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b8618daf4f1105d503e83231c31540a5.setIcon(icon_9fb17ecd306c749484dc2043c89130ef);
+        
+    
+        var popup_f9b43a9a8a01302d6831866009693932 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b24a1b44a35c42ed314f8a79ca326ca3 = $(`<div id="html_b24a1b44a35c42ed314f8a79ca326ca3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wolfforth/19372-Oak-Ridge-Elementary-School/" target="_blank">6514 68th Street, Lubbock, TX, 79424<br>{'Math': '63%', 'Reading': '69%', 'Science': '70%'}</a></div>`)[0];
+                popup_f9b43a9a8a01302d6831866009693932.setContent(html_b24a1b44a35c42ed314f8a79ca326ca3);
+            
+        
+
+        marker_b8618daf4f1105d503e83231c31540a5.bindPopup(popup_f9b43a9a8a01302d6831866009693932)
+        ;
+
+        
+    
+    
+            var marker_e8747c1b57c172567e5c449cc71f9836 = L.marker(
+                [33.532306, -101.870306],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_6c2db4d3186b00c1edc2e7e988535d15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e8747c1b57c172567e5c449cc71f9836.setIcon(icon_6c2db4d3186b00c1edc2e7e988535d15);
+        
+    
+        var popup_36d3d5c3582274587cd1bb6c04da0261 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e20093cc3584849b502b4291947119a8 = $(`<div id="html_e20093cc3584849b502b4291947119a8" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/8366-Trinity-Christian-School/" target="_blank">6701 University Avenue, Lubbock, TX, 79413<br>{}</a></div>`)[0];
+                popup_36d3d5c3582274587cd1bb6c04da0261.setContent(html_e20093cc3584849b502b4291947119a8);
+            
+        
+
+        marker_e8747c1b57c172567e5c449cc71f9836.bindPopup(popup_36d3d5c3582274587cd1bb6c04da0261)
+        ;
+
+        
+    
+    
+            var marker_271af8d87ba85e3c74aeac0b0262dd99 = L.marker(
+                [33.53175895, -101.8919371579943],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7cf05aa2b2a753adbc3d1283d02efac5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_271af8d87ba85e3c74aeac0b0262dd99.setIcon(icon_7cf05aa2b2a753adbc3d1283d02efac5);
+        
+    
+        var popup_cf017101748c9f2ef6b284fb57b658e4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_190e21befaca29776e9374bf2f20f32f = $(`<div id="html_190e21befaca29776e9374bf2f20f32f" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/24656-Miller-El/" target="_blank">6705 Joliet Drive, Lubbock, TX, 79413<br>{'Math': '65%', 'Reading': '74%', 'Science': '58%'}</a></div>`)[0];
+                popup_cf017101748c9f2ef6b284fb57b658e4.setContent(html_190e21befaca29776e9374bf2f20f32f);
+            
+        
+
+        marker_271af8d87ba85e3c74aeac0b0262dd99.bindPopup(popup_cf017101748c9f2ef6b284fb57b658e4)
+        ;
+
+        
+    
+    
+            var marker_86331f99af026bd66261680f9efb6414 = L.marker(
+                [33.58883435, -101.86091781592113],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_fd458be747fbc316d8cd9c1d2a44cfce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86331f99af026bd66261680f9efb6414.setIcon(icon_fd458be747fbc316d8cd9c1d2a44cfce);
+        
+    
+        var popup_f722731034bbce855b1d51ad6e81a2e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_93d93b1c2e50892304cadf3cb4908255 = $(`<div id="html_93d93b1c2e50892304cadf3cb4908255" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11246-Ramirez-Charter-School/" target="_blank">702 Avenue T, Lubbock, TX, 79401<br>{'Math': '64%', 'Reading': '71%', 'Science': '36%'}</a></div>`)[0];
+                popup_f722731034bbce855b1d51ad6e81a2e1.setContent(html_93d93b1c2e50892304cadf3cb4908255);
+            
+        
+
+        marker_86331f99af026bd66261680f9efb6414.bindPopup(popup_f722731034bbce855b1d51ad6e81a2e1)
+        ;
+
+        
+    
+    
+            var marker_7b78f0f22ca180ba5e84c1d0a4ad67c1 = L.marker(
+                [34.386201, -102.109429],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_fee20e1e6e8ff0a37459ff6a630ec023 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b78f0f22ca180ba5e84c1d0a4ad67c1.setIcon(icon_fee20e1e6e8ff0a37459ff6a630ec023);
+        
+    
+        var popup_cf6f817a4fa5b55f06154c6dc23bfb42 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56cf245a1d9ea836bcb0a50159507a00 = $(`<div id="html_56cf245a1d9ea836bcb0a50159507a00" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/hart/3235-Hart-Jr-Sr-High-School/" target="_blank">710 2nd Street, Hart, TX, 79043<br>{'Reading': '62%', 'Math': '54%', 'Science': '35%', 'US History': '47%', 'English 2': '47%', 'English': '70%', 'Biology I': '56%', 'Algebra I': '73%', 'Social Studies': '27%'}</a></div>`)[0];
+                popup_cf6f817a4fa5b55f06154c6dc23bfb42.setContent(html_56cf245a1d9ea836bcb0a50159507a00);
+            
+        
+
+        marker_7b78f0f22ca180ba5e84c1d0a4ad67c1.bindPopup(popup_cf6f817a4fa5b55f06154c6dc23bfb42)
+        ;
+
+        
+    
+    
+            var marker_aa20841340f7e0059a78507002602bf3 = L.marker(
+                [33.432539500000004, -101.63967710213939],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_5e8aece7137a000f784c988f19ed52bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_aa20841340f7e0059a78507002602bf3.setIcon(icon_5e8aece7137a000f784c988f19ed52bf);
+        
+    
+        var popup_47f25bcfea532723d6684468cd4295b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ffc839176b09ca0e3998d2ed83d3ca7b = $(`<div id="html_ffc839176b09ca0e3998d2ed83d3ca7b" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/slaton/6297-Stephen-F-Austin-Primary-School/" target="_blank">740 South 7th Street, Slaton, TX, 79364<br>{}</a></div>`)[0];
+                popup_47f25bcfea532723d6684468cd4295b5.setContent(html_ffc839176b09ca0e3998d2ed83d3ca7b);
+            
+        
+
+        marker_aa20841340f7e0059a78507002602bf3.bindPopup(popup_47f25bcfea532723d6684468cd4295b5)
+        ;
+
+        
+    
+    
+            var marker_ebd8f7a630044c3b5f656487f55271d0 = L.marker(
+                [33.52601838654087, -101.92656647310588],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_11841be92ff6bd6c95d2b9ca08d2abf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ebd8f7a630044c3b5f656487f55271d0.setIcon(icon_11841be92ff6bd6c95d2b9ca08d2abf0);
+        
+    
+        var popup_74e2b366d3fbf8724c63d4130c3bab70 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a207350e7838016efb956dda63091e4d = $(`<div id="html_a207350e7838016efb956dda63091e4d" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11258-Whiteside-Elementary-School/" target="_blank">7508 Albany Avenue, Lubbock, TX, 79424<br>{'Reading': '65%', 'Math': '60%', 'Science': '49%'}</a></div>`)[0];
+                popup_74e2b366d3fbf8724c63d4130c3bab70.setContent(html_a207350e7838016efb956dda63091e4d);
+            
+        
+
+        marker_ebd8f7a630044c3b5f656487f55271d0.bindPopup(popup_74e2b366d3fbf8724c63d4130c3bab70)
+        ;
+
+        
+    
+    
+            var marker_98e6aac920d079a92dfccac81473b24a = L.marker(
+                [33.52344012121212, -101.95692964646464],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_831955abca845a91a4c29cfac92f9e5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_98e6aac920d079a92dfccac81473b24a.setIcon(icon_831955abca845a91a4c29cfac92f9e5d);
+        
+    
+        var popup_fbe45c809bfd9e7173b3a6c0dd9c40ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c7e18ef54049d4902639d289daa7c1b = $(`<div id="html_6c7e18ef54049d4902639d289daa7c1b" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/26299-Learning-Tree-Childrens-Academy/" target="_blank">7713 Milwaukee Avenue, Lubbock, TX, 79424<br>{}</a></div>`)[0];
+                popup_fbe45c809bfd9e7173b3a6c0dd9c40ae.setContent(html_6c7e18ef54049d4902639d289daa7c1b);
+            
+        
+
+        marker_98e6aac920d079a92dfccac81473b24a.bindPopup(popup_fbe45c809bfd9e7173b3a6c0dd9c40ae)
+        ;
+
+        
+    
+    
+            var marker_9ca9e9ed5cd1ce89f98361157186ad94 = L.marker(
+                [33.5218732, -101.85205857240973],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_bff9e7f6ed12824ea1de975b893cac94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ca9e9ed5cd1ce89f98361157186ad94.setIcon(icon_bff9e7f6ed12824ea1de975b893cac94);
+        
+    
+        var popup_00fe7d65302ce214921c14bfb9962924 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_48093bd0631fa3dbd2e210a602df9a64 = $(`<div id="html_48093bd0631fa3dbd2e210a602df9a64" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11804-Roy-W-Roberts-Elementary-School/" target="_blank">7901 Avenue P, Lubbock, TX, 79423<br>{'Math': '64%', 'Reading': '64%', 'Science': '41%'}</a></div>`)[0];
+                popup_00fe7d65302ce214921c14bfb9962924.setContent(html_48093bd0631fa3dbd2e210a602df9a64);
+            
+        
+
+        marker_9ca9e9ed5cd1ce89f98361157186ad94.bindPopup(popup_00fe7d65302ce214921c14bfb9962924)
+        ;
+
+        
+    
+    
+            var marker_15a0472950e52c090bb98cad26cdabad = L.marker(
+                [33.482725, -100.861016],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_07f5f5bd10d66df8c19e390d1e6ca501 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_15a0472950e52c090bb98cad26cdabad.setIcon(icon_07f5f5bd10d66df8c19e390d1e6ca501);
+        
+    
+        var popup_0481a15666a32c9d45604bb686ad8eac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb226583ddba8efad49d6b4bfebf098e = $(`<div id="html_bb226583ddba8efad49d6b4bfebf098e" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/spur/6-Spur-School/" target="_blank">800 N WILLIAMS, Spur, TX, 79370<br>{'Math': '40%', 'Reading': '71%', 'Science': '51%', 'US History': '60%', 'English 2': '60%', 'Social Studies': '5%', 'English': '26%', 'Biology I': '27%', 'Algebra I': '27%'}</a></div>`)[0];
+                popup_0481a15666a32c9d45604bb686ad8eac.setContent(html_bb226583ddba8efad49d6b4bfebf098e);
+            
+        
+
+        marker_15a0472950e52c090bb98cad26cdabad.bindPopup(popup_0481a15666a32c9d45604bb686ad8eac)
+        ;
+
+        
+    
+    
+            var marker_4561ef3bfcf82db754c1aa84ae9ee7a9 = L.marker(
+                [34.180948, -102.1361],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_7fba7c31b55aaa4663c05f66b10ac9e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4561ef3bfcf82db754c1aa84ae9ee7a9.setIcon(icon_7fba7c31b55aaa4663c05f66b10ac9e1);
+        
+    
+        var popup_07f8f738342021ca30d89c5424179e86 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f4dada9a7d79663952a9934b5829daf0 = $(`<div id="html_f4dada9a7d79663952a9934b5829daf0" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/olton/5242-Webb-Elementary-School/" target="_blank">801 Avenue G, Olton, TX, 79064<br>{'Reading': '49%', 'Math': '25%', 'Science': '2%'}</a></div>`)[0];
+                popup_07f8f738342021ca30d89c5424179e86.setContent(html_f4dada9a7d79663952a9934b5829daf0);
+            
+        
+
+        marker_4561ef3bfcf82db754c1aa84ae9ee7a9.bindPopup(popup_07f8f738342021ca30d89c5424179e86)
+        ;
+
+        
+    
+    
+            var marker_f45289915e460ef200878b0efd7a77bc = L.marker(
+                [33.1905464, -102.82420880986115],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_d980ee58ea6551b254edfc146e96fcca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_f45289915e460ef200878b0efd7a77bc.setIcon(icon_d980ee58ea6551b254edfc146e96fcca);
+        
+    
+        var popup_a0c22917e20942b68e88be32bc1f3155 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c142f43c727035709da8c54d6017dde7 = $(`<div id="html_c142f43c727035709da8c54d6017dde7" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/plains/5471-Plains-Elementary-School/" target="_blank">811 Cowboy Way, Plains, TX, 79355<br>{'Math': '33%', 'Reading': '42%', 'Science': '37%'}</a></div>`)[0];
+                popup_a0c22917e20942b68e88be32bc1f3155.setContent(html_c142f43c727035709da8c54d6017dde7);
+            
+        
+
+        marker_f45289915e460ef200878b0efd7a77bc.bindPopup(popup_a0c22917e20942b68e88be32bc1f3155)
+        ;
+
+        
+    
+    
+            var marker_332df20bf8ec895bc79560507b80e856 = L.marker(
+                [33.925187, -102.33746157224955],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_60c1f2bfa33e154c919751679655f62e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_332df20bf8ec895bc79560507b80e856.setIcon(icon_60c1f2bfa33e154c919751679655f62e);
+        
+    
+        var popup_3da2d114212572800515700b303a626d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_33ee8d1721bdc5e3c70f543d88416ed3 = $(`<div id="html_33ee8d1721bdc5e3c70f543d88416ed3" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/littlefield/4379-Littlefield-Primary-School/" target="_blank">815 West 2nd Street, Littlefield, TX, 79339<br>{}</a></div>`)[0];
+                popup_3da2d114212572800515700b303a626d.setContent(html_33ee8d1721bdc5e3c70f543d88416ed3);
+            
+        
+
+        marker_332df20bf8ec895bc79560507b80e856.bindPopup(popup_3da2d114212572800515700b303a626d)
+        ;
+
+        
+    
+    
+            var marker_ca72d4b986c50a6c6ab575054ad8a6fa = L.marker(
+                [33.51827979533621, -101.88760558691973],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_5466ec7cc7614ca1d79b926579ee72bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ca72d4b986c50a6c6ab575054ad8a6fa.setIcon(icon_5466ec7cc7614ca1d79b926579ee72bf);
+        
+    
+        var popup_9e734f31b9c9342d364c7c70882db08b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e659bed9dbcc564979e34bbe51d928a6 = $(`<div id="html_e659bed9dbcc564979e34bbe51d928a6" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/24828-Sharp-Academy/" target="_blank">8315 Indiana Avenue, Lubbock, TX, 79414<br>{}</a></div>`)[0];
+                popup_9e734f31b9c9342d364c7c70882db08b.setContent(html_e659bed9dbcc564979e34bbe51d928a6);
+            
+        
+
+        marker_ca72d4b986c50a6c6ab575054ad8a6fa.bindPopup(popup_9e734f31b9c9342d364c7c70882db08b)
+        ;
+
+        
+    
+    
+            var marker_d63a5065619fe4abd3fb42697c3a2f8d = L.marker(
+                [33.51827979533621, -101.88760558691973],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_a36cb5f6934f58b7316fe860fd0a36a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d63a5065619fe4abd3fb42697c3a2f8d.setIcon(icon_a36cb5f6934f58b7316fe860fd0a36a8);
+        
+    
+        var popup_1530b23527563132c4007440f78a7399 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_10075655d0888ddbcf1b9fdc6430f305 = $(`<div id="html_10075655d0888ddbcf1b9fdc6430f305" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/26090-Sharp-Academy/" target="_blank">8315 Indiana Avenue, Lubbock, TX, 79423<br>{}</a></div>`)[0];
+                popup_1530b23527563132c4007440f78a7399.setContent(html_10075655d0888ddbcf1b9fdc6430f305);
+            
+        
+
+        marker_d63a5065619fe4abd3fb42697c3a2f8d.bindPopup(popup_1530b23527563132c4007440f78a7399)
+        ;
+
+        
+    
+    
+            var marker_a58f3f4f62d43621c16c9f3761a7ff3c = L.marker(
+                [33.515255249999996, -101.78693211824735],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_056ffac45be99549a7557dabfaee6671 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a58f3f4f62d43621c16c9f3761a7ff3c.setIcon(icon_056ffac45be99549a7557dabfaee6671);
+        
+    
+        var popup_fb28886b05c5d5136889f303d1b9efa9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2807726adb63d0e6aea2c6245dac4b8 = $(`<div id="html_a2807726adb63d0e6aea2c6245dac4b8" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/9989-Montford-Unit/" target="_blank">8602 Peach Avenue, Lubbock, TX, 79404<br>{}</a></div>`)[0];
+                popup_fb28886b05c5d5136889f303d1b9efa9.setContent(html_a2807726adb63d0e6aea2c6245dac4b8);
+            
+        
+
+        marker_a58f3f4f62d43621c16c9f3761a7ff3c.bindPopup(popup_fb28886b05c5d5136889f303d1b9efa9)
+        ;
+
+        
+    
+    
+            var marker_5eb95ecec6adcd247da40cc149c12229 = L.marker(
+                [33.51340915, -101.93236620506693],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_856dd9a40870c68e6b30452a1fc9cf46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5eb95ecec6adcd247da40cc149c12229.setIcon(icon_856dd9a40870c68e6b30452a1fc9cf46);
+        
+    
+        var popup_58eb076409d02d958d0caf79f6d037b2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4abc97964ea8791f1dd5e740617ba067 = $(`<div id="html_4abc97964ea8791f1dd5e740617ba067" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/lubbock/11248-Smith-Elementary-School/" target="_blank">8707 Dover Avenue, Lubbock, TX, 79424<br>{'Reading': '71%', 'Math': '60%', 'Science': '68%'}</a></div>`)[0];
+                popup_58eb076409d02d958d0caf79f6d037b2.setContent(html_4abc97964ea8791f1dd5e740617ba067);
+            
+        
+
+        marker_5eb95ecec6adcd247da40cc149c12229.bindPopup(popup_58eb076409d02d958d0caf79f6d037b2)
+        ;
+
+        
+    
+    
+            var marker_6b80987e0d91b32d5ed67029566d2c0e = L.marker(
+                [33.584811450000004, -102.01202361289782],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_516dc3a16322000039d4fa07241e6bad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6b80987e0d91b32d5ed67029566d2c0e.setIcon(icon_516dc3a16322000039d4fa07241e6bad);
+        
+    
+        var popup_883361b38263b90b833af9d514c6ee80 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_300b66316248f4b80b294896e80c94a1 = $(`<div id="html_300b66316248f4b80b294896e80c94a1" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/wolfforth/10252-Willow-Bend-Elementary-School/" target="_blank">8816 13th Street, Lubbock, TX, 79416<br>{'Math': '38%', 'Reading': '50%', 'Science': '54%'}</a></div>`)[0];
+                popup_883361b38263b90b833af9d514c6ee80.setContent(html_300b66316248f4b80b294896e80c94a1);
+            
+        
+
+        marker_6b80987e0d91b32d5ed67029566d2c0e.bindPopup(popup_883361b38263b90b833af9d514c6ee80)
+        ;
+
+        
+    
+    
+            var marker_fb57d99a599455971718dba435009790 = L.marker(
+                [34.0638281, -101.8533836],
+                {}
+            ).addTo(map_05aa86e4699b199610be0e0105fe92a0);
+        
+    
+            var icon_e50fc6b7532490d87959b09450f4d3c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_fb57d99a599455971718dba435009790.setIcon(icon_e50fc6b7532490d87959b09450f4d3c1);
+        
+    
+        var popup_92a24a0cd9245cd9e974688bd0e10f29 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_201c7dae27e66a2507c1c6da5f4d8223 = $(`<div id="html_201c7dae27e66a2507c1c6da5f4d8223" style="width: 100.0%; height: 100.0%;"><a href="https://www.greatschools.org/texas/hale-center/3138-Akin-Elementary-School/" target="_blank">Avenue K, Hale Center, TX, 79041<br>{'Reading': '40%', 'Math': '27%'}</a></div>`)[0];
+                popup_92a24a0cd9245cd9e974688bd0e10f29.setContent(html_201c7dae27e66a2507c1c6da5f4d8223);
+            
+        
+
+        marker_fb57d99a599455971718dba435009790.bindPopup(popup_92a24a0cd9245cd9e974688bd0e10f29)
+        ;
+
+        
+    
+</script>
+</html>
