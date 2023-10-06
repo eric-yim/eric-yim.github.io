@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
+    <meta property="og:title" content="School Map of Your State">
+    <meta property="og:description" content="Color-coded map of schools by test scores">
+    <meta property="og:image" content="https://eric-yim.github.io/demos/sample_school_map.png"> 
+
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
@@ -35,13 +39,59 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
-</head>
+<link href="https://eric-yim.github.io/bs/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="https://eric-yim.github.io/bs/album.css" rel="stylesheet"></head>
+
 <body>
+<header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">What's this?</h4>
+                <p class="text-muted">These maps are demonstrations made by @codingai. Markers link to greatschools.org which is where the data was sourced from.
+                    This demo is meant to encourage conversation around education.
+                </p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a href="https://www.tiktok.com/@codingai" class="text-white">Follow on TikTok</a></li>
+                  <li><a href="https://www.youtube.com/@engineeringai" class="text-white">Subscribe on YouTube</a></li>
+                  <li><a href="#" class="text-white">Don't email me</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+          <div class="container d-flex justify-content-between">
+            <a href="https://eric-yim.github.io/demos/all_states.html" class="navbar-brand d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+              <strong>Back to All Maps</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
     
     
             <div class="folium-map" id="map_9994ba1272cabd9294536e465d1ca1f4" ></div>
         
-</body>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://eric-yim.github.io/bs/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://eric-yim.github.io/bs/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://eric-yim.github.io/bs/popper.min.js"></script>
+    <script src="https://eric-yim.github.io/bs/bootstrap.min.js"></script>
+    <script src="https://eric-yim.github.io/bs/holder.min.js"></script></body>
+
 <script>
     
     
