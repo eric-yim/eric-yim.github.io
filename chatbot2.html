@@ -31,7 +31,6 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            padding-bottom: 30px; /* Add more padding to the bottom */
         }
 
         .chat-header {
@@ -70,14 +69,14 @@
 
         /* Input box styling */
         .input-group {
-            margin-top: 10px;
+            margin-top: auto; /* Push the input group to the bottom */
             padding: 10px;
         }
 
         /* Media query for wider screens */
         @media (min-width: 1200px) {
             .chat-box {
-                max-width: 400px; /* Adjust the max-width as needed */
+                max-width: 300px; /* Adjust the max-width as needed */
                 margin: auto;
             }
         }
