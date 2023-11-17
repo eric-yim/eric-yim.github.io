@@ -16,7 +16,15 @@
             overflow: hidden;
         }
 
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Adjust the z-index as needed */
+         }
+
         #chat-container {
+            margin-top: 50px;
             height: calc(100vh - 100px); /* Adjust the height based on your needs */
             overflow-y: auto;
             padding: 15px;
