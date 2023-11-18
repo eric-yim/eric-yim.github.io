@@ -26,6 +26,13 @@
           height: 50px;
         }
 
+        @media (max-width: 767px) {
+            /* Adjust the margin-top for smaller screens (mobile devices) */
+            #buffer-for-header {
+                  height: 100px; /* Adjust the margin as needed */
+            }
+         }
+
         #chat-container {
             height: calc(100vh - 100px); /* Adjust the height based on your needs */
             overflow-y: auto;
