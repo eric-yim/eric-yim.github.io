@@ -132,7 +132,7 @@
         .then(data => {
           console.log(data);
           responseDiv.innerHTML = ""; // Clear the responseDiv
-          const words = data.content.split(' ');
+          const words = data.words.split(' ');
 
 
 
@@ -144,9 +144,7 @@
             } else {
               clearInterval(intervalId); // Stop the interval when all words are displayed
               responseDiv.innerHTML += `
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@codingai/video/${data.platform_id}" data-video-id="${data.platform_id}" style="max-width: 605px;min-width: 325px;" id="v91436605118693980">  
-                  <iframe name="__tt_embed__v91436605118693980" sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-top-navigation allow-same-origin" src="https://www.tiktok.com/embed/v2/${data.platform_id}?lang=en-US&amp;" style="width: 100%; height: 744px; display: block; visibility: unset; max-height: 744px;"></iframe>
-                </blockquote> 
+                ${data.link_content}
               `;
             }
           }, 50); // Adjust the interval time (in milliseconds) to control the speed of the word display
