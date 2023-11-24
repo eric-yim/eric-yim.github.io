@@ -166,7 +166,7 @@
         // Clear the input field after sending the message
         document.querySelector('.form-control').value = '';
 
-        displayMessage('bot', '');
+        displayMessage('bot', '<div class="loader"></div>');
         var chatContainer = document.getElementById('inner-container');
         var botMessages = chatContainer.querySelectorAll('.bot-message');
 
@@ -176,7 +176,7 @@
 
         
         var lastBotMessage = botMessages[botMessages.length - 1];
-        lastBotMessage.innerHTML = '<div class="loader"></div>'; 
+        // lastBotMessage.innerHTML = '<div class="loader"></div>'; 
         //===========QUERY===============
         fetch('https://g2mlhzd460.execute-api.us-east-1.amazonaws.com/prod/ragBotResource', {
           method: 'POST',
@@ -221,10 +221,15 @@
 
             // Add classes to the message block and message elements based on the sender
             messageBlock.className = 'message-block';
-            messageElement.className = 'message ' + sender + '-message';
+            if (sender=='bot') {
+              messageElement.className = 'message ' + sender + '-message';
+            } else {
+              messageElement.className = 'message ' + sender + '-message float-end';
+            }
+            
 
             // Set the text content of the message element
-            messageElement.textContent = message;
+            messageElement.innerHTML = message;
 
             // Append the message element to the message block
             messageBlock.appendChild(messageElement);
@@ -286,6 +291,38 @@
     to {
       width: 40px;
     }
+  }
+
+  .previewLink {
+            display: block;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease-in-out;
+            color: #333;
+  }
+
+  .previewLink:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .previewTitle {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+  }
+
+  .previewDescription {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+  }
+
+  .previewImage {
+            max-width: 100%;
+            border-radius: 8px;
   }
 </style>
 
