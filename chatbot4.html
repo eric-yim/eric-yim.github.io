@@ -248,7 +248,7 @@
           i++;
         } else {
           clearInterval(intervalId); // Stop the interval when all words are displayed
-          responseDiv.innerHTML += `
+          lastBotMessage.innerHTML += `
             ${data.link_content}
           `;
         }
