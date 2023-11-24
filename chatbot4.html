@@ -161,21 +161,97 @@
         var userMessage = document.querySelector('.form-control').value;
 
         // Append the user's message to the chat container
-        document.getElementById('inner-container').innerHTML += '<div class="message-block"><div class="message user-message float-end">' + userMessage + '</div></div>';
-
-        // Get all user messages
-        var userMessages = document.querySelectorAll('.user-message');
-        // Concatenate all user messages
-        var allUserMessages = Array.from(userMessages).map(message => message.innerText).join(' ');
-        // Respond with a sample message (you can customize this part)
-        document.getElementById('inner-container').innerHTML += '<div class="message-block"><div class="message bot-message">' + allUserMessages + '</div></div>';
+        displayMessage('user', userMessage);
 
         // Clear the input field after sending the message
         document.querySelector('.form-control').value = '';
 
+        displayMessage('bot', '<div class="loader"></div>');
+
+        //===========QUERY===============
+        fetch('https://g2mlhzd460.execute-api.us-east-1.amazonaws.com/prod/ragBotResource', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: question
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          
+          writeToBotMessage(data);
+          
+
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+        //=============QUERY-END===============
+
+
+
+        // Get all user messages
+        // var userMessages = document.querySelectorAll('.user-message');
+        // Concatenate all user messages
+        // var allUserMessages = Array.from(userMessages).map(message => message.innerText).join(' ');
+        // Respond with a sample message (you can customize this part)
+        // document.getElementById('inner-container').innerHTML += '<div class="message-block"><div class="message bot-message">' + allUserMessages + '</div></div>';
+
+        
+
         // Scroll the chat container to the bottom to show the latest messages
-        var chatContainer = document.getElementById('chat-container');
-        chatContainer.scrollTop = chatContainer.scrollHeight;
+        // var chatContainer = document.getElementById('chat-container');
+        // chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    function displayMessage(sender, message) {
+            var chatContainer = document.getElementById('inner-container');
+            var messageBlock = document.createElement('div');
+            var messageElement = document.createElement('div');
+
+            // Add classes to the message block and message elements based on the sender
+            messageBlock.className = 'message-block';
+            messageElement.className = 'message ' + sender + '-message';
+
+            // Set the text content of the message element
+            messageElement.textContent = message;
+
+            // Append the message element to the message block
+            messageBlock.appendChild(messageElement);
+
+            // Append the message block to the chat container
+            chatContainer.appendChild(messageBlock);
+
+            // Scroll to the bottom of the chat container
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    function writeToBotMessage(data) {
+      var chatContainer = document.getElementById('inner-container');
+      var botMessages = chatContainer.querySelectorAll('.bot');
+
+      // Remove loader
+      var lastBotMessage = botMessages[botMessages.length - 1];
+      lastBotMessage.innerHTML = '';
+      // var loaderMessage = lastBotMessage.querySelector('.loader');
+      // if (loaderMessage) {
+      //   lastBotMessage.removeChild(loaderMessage);
+      // }
+
+      const words = data.words.split(' ');
+      let i = 0;
+      const intervalId = setInterval(() => {
+        if (i < words.length) {
+          lastBotMessage.innerHTML += words[i] + ' '; // Append each word with a space
+          i++;
+        } else {
+          clearInterval(intervalId); // Stop the interval when all words are displayed
+          responseDiv.innerHTML += `
+            ${data.link_content}
+          `;
+        }
+      }, 50); // Adjust the interval time (in milliseconds) to control the speed of the word display
     }
    
 </script>
