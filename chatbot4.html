@@ -166,21 +166,26 @@
         // Clear the input field after sending the message
         document.querySelector('.form-control').value = '';
 
-        displayMessage('bot', '<div class="loader"></div>');
+        displayMessage('bot', '');
+        var chatContainer = document.getElementById('inner-container');
+        var botMessages = chatContainer.querySelectorAll('.bot');
 
+        
+        var lastBotMessage = botMessages[botMessages.length - 1];
+        lastBotMessage.innerHTML = '<div class="loader"></div>'; 
         //===========QUERY===============
         fetch('https://g2mlhzd460.execute-api.us-east-1.amazonaws.com/prod/ragBotResource', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: question
+          body: userMessage
         })
         .then(response => response.json())
         .then(data => {
           console.log(data);
           
-          writeToBotMessage(data);
+          writeToBotMessage(lastBotMessage, data);
           
 
         })
@@ -227,17 +232,9 @@
             chatContainer.scrollTop = chatContainer.scrollHeight;
     }
 
-    function writeToBotMessage(data) {
-      var chatContainer = document.getElementById('inner-container');
-      var botMessages = chatContainer.querySelectorAll('.bot');
-
+    function writeToBotMessage(lastBotMessage, data) {
       // Remove loader
-      var lastBotMessage = botMessages[botMessages.length - 1];
       lastBotMessage.innerHTML = '';
-      // var loaderMessage = lastBotMessage.querySelector('.loader');
-      // if (loaderMessage) {
-      //   lastBotMessage.removeChild(loaderMessage);
-      // }
 
       const words = data.words.split(' ');
       let i = 0;
@@ -255,6 +252,37 @@
     }
    
 </script>
+<style>
+  .loader {
+    display: inline-block;
+    font-size: 80px;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+  }
 
+  .loader:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+    animation: ellipsis steps(4, end) 900ms infinite;
+    content: "\2026";
+    /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+
+  @keyframes ellipsis {
+    to {
+      width: 40px;
+    }
+  }
+
+  @-webkit-keyframes ellipsis {
+    to {
+      width: 40px;
+    }
+  }
+</style>
 
 </html>
