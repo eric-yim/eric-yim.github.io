@@ -170,6 +170,10 @@
         var chatContainer = document.getElementById('inner-container');
         var botMessages = chatContainer.querySelectorAll('.bot-message');
 
+        if (!botMessages) {
+          return;
+        }
+
         
         var lastBotMessage = botMessages[botMessages.length - 1];
         lastBotMessage.innerHTML = '<div class="loader"></div>'; 
