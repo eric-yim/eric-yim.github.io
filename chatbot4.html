@@ -94,7 +94,7 @@
     </style>
 </head>
 <body>
-   <header>
+   <!-- <header>
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
           <div class="row">
@@ -125,7 +125,7 @@
         </div>
       </div>
     </header>
-<div id="buffer-for-header" class="b_head"> </div>
+<div id="buffer-for-header" class="b_head"> </div> -->
 <div id="chat-container" class="col-12">
    <div class="row justify-content-center">
       <div class="col-12 col-md-8">
@@ -210,8 +210,8 @@
         
 
         // Scroll the chat container to the bottom to show the latest messages
-        // var chatContainer = document.getElementById('chat-container');
-        // chatContainer.scrollTop = chatContainer.scrollHeight;
+        var chatContainer = document.getElementById('chat-container');
+        chatContainer.scrollTop = chatContainer.scrollHeight;
     }
 
     function displayMessage(sender, message) {
