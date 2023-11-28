@@ -173,11 +173,16 @@
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        return response.text(); // or response.json() if the response is in JSON format
+        return response.json(); // or response.json() if the response is in JSON format
       })
       .then(data => {
         // Update the HTML of the element with id 'dataDisplay' with the fetched data
-        document.getElementById('custom-pins').innerHTML = data;
+        const customPins = document.getElementById('custom-pins').innerHTML = data;
+        data.forEach(item => {
+          document.createElement('div');
+          contentElement.innerHTML = item.link_content;
+          customPins.appendChild(contentElement);
+        });
       })
       .catch(error => {
         console.error('Error:', error);
