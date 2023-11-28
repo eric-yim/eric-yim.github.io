@@ -179,7 +179,7 @@
         // Update the HTML of the element with id 'dataDisplay' with the fetched data
         const customPins = document.getElementById('custom-pins').innerHTML = data;
         data.forEach(item => {
-          document.createElement('div');
+          const contentElement = document.createElement('div');
           contentElement.innerHTML = item.link_content;
           customPins.appendChild(contentElement);
         });
@@ -189,17 +189,33 @@
       });
     }
     getPins();
-    function sendMessage() {
-        
 
-        // Get the user's message from the input field
-        var userMessage = document.querySelector('.form-control').value;
+    function handleButtonClick(buttonId) {
+      // Get the corresponding button element
+      var buttonElement = document.getElementById(buttonId);
 
-        // Append the user's message to the chat container
-        displayMessage('user', userMessage);
+      // Get the inner text of the button
+      var userMessage = buttonElement.innerText;
 
-        // Clear the input field after sending the message
-        document.querySelector('.form-control').value = '';
+      displayMessage('user', userMessage);
+
+      // Print the result to the console
+      sendMessage(userMessage);
+    }
+    function inputMessage() {
+      // Get the user's message from the input field
+      var userMessage = document.querySelector('.form-control').value;
+      // Append the user's message to the chat container
+      displayMessage('user', userMessage);
+
+      // Clear the input field after sending the message
+      document.querySelector('.form-control').value = '';
+
+      sendMessage(userMessage);
+
+    }
+
+    function sendMessage(userMessage) {
 
         displayMessage('bot', '<div class="loader"></div>');
         var chatContainer = document.getElementById('inner-container');
