@@ -176,9 +176,11 @@
         return response.json(); // or response.json() if the response is in JSON format
       })
       .then(data => {
+        console.log(data);
         // Update the HTML of the element with id 'dataDisplay' with the fetched data
-        const customPins = document.getElementById('custom-pins').innerHTML = data;
+        const customPins = document.getElementById('custom-pins');
         data.forEach(item => {
+          console.log(item);
           const contentElement = document.createElement('div');
           contentElement.innerHTML = item.link_content;
           customPins.appendChild(contentElement);
