@@ -95,6 +95,9 @@
             padding: 15px;
             background-color: #f8f9fa;
         }
+        .btn-container {
+          margin-bottom: 5px;
+        }
 
     </style>
 </head>
@@ -187,6 +190,7 @@
         data.forEach(item => {
           console.log(item);
           const contentElement = document.createElement('div');
+          contentElement.className = "btn-container";
           contentElement.innerHTML = item.link_content;
           customPins.appendChild(contentElement);
         });
