@@ -29,7 +29,7 @@
         @media (max-width: 767px) {
             /* Adjust the margin-top for smaller screens (mobile devices) */
             #buffer-for-header {
-                  height: 100px; /* Adjust the margin as needed */
+                  height: 50px; /* Adjust the margin as needed */
             }
          }
 
@@ -124,11 +124,12 @@
           </button>
         </div>
       </div>
-    </header>
-<div id="buffer-for-header" class="b_head"> </div> -->
+    </header>-->
+<div id="buffer-for-header" class="b_head"> </div> 
 <div id="chat-container" class="col-12">
    <div class="row justify-content-center">
       <div class="col-12 col-md-8">
+          <div id="custom-pins"><!-- pinned buttons here --></div>
           <div id="inner-container">
               <!-- Chat messages will be appended here using JavaScript -->
           </div>
@@ -156,8 +157,35 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 <!-- Your custom JavaScript -->
 <script>
+    const creatorId = "@codingai";
+    const ENDPOINT = 'https://ikkiiktxp6.execute-api.us-east-1.amazonaws.com/prod/ragBotResource/' + creatorId;
+    function getPins() {
+
+      // Make a GET request using fetch
+      fetch(ENDPOINT, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json', // Adjust based on the API requirements
+        },
+      })
+      .then(response => {
+        // Check if the response is successful (status code 200-299)
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text(); // or response.json() if the response is in JSON format
+      })
+      .then(data => {
+        // Update the HTML of the element with id 'dataDisplay' with the fetched data
+        document.getElementById('customPins').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    }
+    getPins();
     function sendMessage() {
-        const creatorId = "@codingai";
+        
 
         // Get the user's message from the input field
         var userMessage = document.querySelector('.form-control').value;
@@ -180,7 +208,7 @@
         var lastBotMessage = botMessages[botMessages.length - 1];
         // lastBotMessage.innerHTML = '<div class="loader"></div>'; 
         //===========QUERY===============
-        fetch('https://ikkiiktxp6.execute-api.us-east-1.amazonaws.com/prod/ragBotResource/' + creatorId, {
+        fetch(ENDPOINT, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
