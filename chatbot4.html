@@ -34,8 +34,13 @@
 
         @media (max-width: 767px) {
             /* Adjust the margin-top for smaller screens (mobile devices) */
-            #buffer-for-header {
-                  height: 0px; /* Adjust the margin as needed */
+            #chat-container {
+                position: fixed;
+                bottom: 10vh;
+                height: 90vh; /* Adjust the height based on your needs */
+                overflow-y: auto;
+                padding-top: 10vh;
+                /* margin-top: 50px; Adjust the margin to accommodate the fixed header */
             }
             
          }
