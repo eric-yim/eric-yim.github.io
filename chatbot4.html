@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Chatbox UI</title>
+    <title>Link Cheerio | CodingAI</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
@@ -105,38 +105,7 @@
     </style>
 </head>
 <body>
-   <!-- <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">What is this?</h4>
-              <p class="text-muted">This is my chatbot! Have fun!</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="https://www.tiktok.com/@codingai" class="text-white">Follow on TikTok</a></li>
-                  <li><a href="https://www.youtube.com/@engineeringai" class="text-white">Subscribe on YouTube</a></li>
 
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong style="padding-left:5px">Codingai Repos</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>-->
-<div id="buffer-for-header" class="b_head"> </div> 
 <div id="chat-container" class="col-12">
    <div class="row justify-content-center">
       <div class="col-12 col-md-8">
@@ -249,6 +218,34 @@
   .previewImage {
             max-width: 100%;
             border-radius: 8px;
+  }
+
+  .square-avatar-circle {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+  }
+
+  .square-avatar {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+  }
+
+  .btn-watch-now {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
   }
 </style>
 
