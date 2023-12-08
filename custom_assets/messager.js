@@ -17,11 +17,9 @@
         return response.json(); // or response.json() if the response is in JSON format
       })
       .then(data => {
-        console.log(data);
         // Update the HTML of the element with id 'dataDisplay' with the fetched data
         const customPins = document.getElementById('custom-pins');
         data.forEach(item => {
-          console.log(item);
           const contentElement = document.createElement('div');
           contentElement.className = "btn-container";
           contentElement.innerHTML = item.link_content;
@@ -69,9 +67,11 @@
           })
           .then(response => response.json())
           .then(data => {
-            console.log(data);
             
             writeToBotMessage(lastBotMessage, data);
+            // Scroll the chat container to the bottom to show the latest messages
+            var chatContainer = document.getElementById('chat-container');
+            chatContainer.scrollTop = chatContainer.scrollHeight;
             
   
           })
@@ -91,9 +91,7 @@
   
           
   
-          // Scroll the chat container to the bottom to show the latest messages
-          var chatContainer = document.getElementById('chat-container');
-          chatContainer.scrollTop = chatContainer.scrollHeight;
+          
       }
   
       function displayMessage(sender, message) {
