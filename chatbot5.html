@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Link Cheerio | CodingAI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Adjust the z-index as needed */
+         }
+
+        
+
+        
+
+        
+
+        /* Styles for the scrollbar */
+         #chat-container::-webkit-scrollbar {
+            width: 12px;
+         }
+
+         #chat-container::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 6px;
+         }
+
+         #chat-container::-webkit-scrollbar-track {
+            background-color: #f8f9fa;
+         }
+
+        .message-block {
+            display: block;
+            float: left;
+            width: 100%;
+            
+            border-radius: 10px;
+        }
+
+        .message {
+            display: inline-block;
+            max-width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .user-message {
+
+            background-color: #007bff;
+            color: #fff;
+ 
+        }
+
+        .bot-message {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            align-self: flex-start;
+        }
+
+        #input-container {
+            display: flex;
+            position: fixed;
+            height: 10vh;
+            bottom: 0;
+            width: 100%;
+            padding: 15px;
+            background-color: #f8f9fa;
+        }
+        .btn-container {
+          margin-bottom: 5px;
+        }
+        #main-container {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+        }
+
+        #chat-container {
+            flex: 1;
+            /* position: fixed;
+            bottom: 10vh;
+            height: 90vh; Adjust the height based on your needs */
+            overflow-y: auto;
+            padding: 15px;
+            /* margin-top: 50px; Adjust the margin to accommodate the fixed header */
+        }
+
+    </style>
+</head>
+<body>
+<div id="main-container">
+<div id="chat-container" class="col-12">
+   <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+          <div id="custom-pins"><!-- pinned buttons here --></div>
+          <div id="inner-container">
+              <!-- Chat messages will be appended here using JavaScript -->
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="input-container">
+   <div class="row justify-content-center">
+      <div class="col-12 col-md-10">
+         <div class="input-group">
+            <input type="text" class="form-control" placeholder="Type your message...">
+            <button class="btn btn-primary" onclick="inputMessage()"><i class="fas fa-paper-plane"></i> Send</button>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+<script>window.jQuery || document.write('<script src="bs/jquery-slim.min.js"><\/script>')</script>
+<script src="bs/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<!-- Your custom JavaScript -->
+<script src="custom_assets/messager.js"></script>
+<script>
+    
+    getPins();
+
+    function handleButtonClick(buttonId) {
+      // Get the corresponding button element
+      var buttonElement = document.getElementById(buttonId);
+
+      // Get the inner text of the button
+      var userMessage = buttonElement.innerText;
+
+      displayMessage('user', userMessage);
+
+      // Print the result to the console
+      sendMessage(userMessage);
+    }
+    
+   
+</script>
+<style>
+  .loader {
+    display: inline-block;
+    font-size: 80px;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+  }
+
+  .loader:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+    animation: ellipsis steps(4, end) 900ms infinite;
+    content: "\2026";
+    /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+
+  @keyframes ellipsis {
+    to {
+      width: 40px;
+    }
+  }
+
+  @-webkit-keyframes ellipsis {
+    to {
+      width: 40px;
+    }
+  }
+
+  .previewLink {
+            display: block;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease-in-out;
+            color: #333;
+  }
+
+  .previewLink:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .previewTitle {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+  }
+
+  .previewDescription {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+  }
+
+  .previewImage {
+            max-width: 100%;
+            border-radius: 8px;
+  }
+
+  .square-avatar-circle {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+  }
+
+  .square-avatar {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+  }
+
+  .btn-watch-now {
+    display: block;
+    float: right;
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+</style>
+
+</html>
