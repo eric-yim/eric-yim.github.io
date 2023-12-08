@@ -9,25 +9,12 @@
     <!-- Font Awesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        body {
+        /* body {
             margin: 0;
             padding: 0;
             height: 100vh;
             
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000; /* Adjust the z-index as needed */
-         }
-
-        
-
-        
-
-        
+        } */
 
         /* Styles for the scrollbar */
          #chat-container::-webkit-scrollbar {
@@ -47,7 +34,6 @@
             display: block;
             float: left;
             width: 100%;
-            
             border-radius: 10px;
         }
 
@@ -72,15 +58,6 @@
             align-self: flex-start;
         }
 
-        #input-container {
-            display: flex;
-
-            height: 10vh;
-            bottom: 0;
-            width: 100%;
-            padding: 15px;
-            background-color: #f8f9fa;
-        }
         .btn-container {
           margin-bottom: 5px;
         }
@@ -88,14 +65,18 @@
           display: flex;
           flex-direction: column;
           height: 100vh;
-          width: 100%;
         }
 
         #chat-container {
-            flex: 1;
+          flex: 1;
+          overflow-y: auto;
+        }
 
-            overflow-y: scroll;
-            padding: 15px;
+        #input-container {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
         }
 
     </style>
