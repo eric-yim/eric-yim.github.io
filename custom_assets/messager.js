@@ -69,9 +69,7 @@
           .then(data => {
             
             writeToBotMessage(lastBotMessage, data);
-            // Scroll the chat container to the bottom to show the latest messages
-            var chatContainer = document.getElementById('chat-container');
-            chatContainer.scrollTop = chatContainer.scrollHeight;
+            
             
   
           })
@@ -136,6 +134,10 @@
             lastBotMessage.innerHTML += `
               ${data.link_content}
             `;
+            // Scroll the chat container to the bottom to show the latest messages
+            var chatContainer = document.getElementById('chat-container');
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
           }
         }, 50); // Adjust the interval time (in milliseconds) to control the speed of the word display
       }
