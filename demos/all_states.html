@@ -1,9 +1,6 @@
-
-
-
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html>
+<head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="codingai github repos">
@@ -11,146 +8,1989 @@
     <meta property="og:title" content="School Map of Your State">
     <meta property="og:description" content="Color-coded map of US elementary schools by test scores">
     <meta property="og:image" content="https://eric-yim.github.io/demos/sample_school_map.png"> 
-    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="icon" href="https://eric-yim.github.io/demos/marker.png">
+    <title>codingai github repos | school maps demo</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5e782f7edf0dec18129f99ee63095354 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+<link href="https://eric-yim.github.io/bs/bootstrap.min.css" rel="stylesheet">
 
-    <title>codingai github repos | eric-yim</title>
+        <!-- Custom styles for this template -->
+        <link href="https://eric-yim.github.io/bs/album.css" rel="stylesheet"></head>
 
-    <link rel="canonical" href="https://eric-yim.github.io/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../bs/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../bs/album.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">What's on this page?</h4>
-              <p class="text-muted">Here's the code for the projects @codingai demos on his social media pages. Feel free to learn and play around.</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="https://www.tiktok.com/@codingai" class="text-white">Follow on TikTok</a></li>
+<body>
+<header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">What's this?</h4>
+                <p class="text-muted">These maps are demonstrations made by @codingai. Markers link to greatschools.org which is where the data was sourced from.
+                    This demo is meant to encourage conversation around education.
+                </p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a href="https://www.tiktok.com/@codingai" class="text-white">Follow on TikTok</a></li>
                   <li><a href="https://www.youtube.com/@engineeringai" class="text-white">Subscribe on YouTube</a></li>
                   <li><a href="#" class="text-white">Don't email me</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>Codingai Repos</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main role="main">
-
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Demo Maps by State</h1>
-          <p class="lead text-muted">These maps are a demonstration of data scraping. The map markers link to Great Schools Org which is where the data comes from.</p>
-
-        </div>
-      </section>
-
-      <div class="album py-5 bg-light">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-md-4">
-                <ul>
-                    <li>Arkansas
-                        <ul><li><a href="arkansas_elementary.html">Arkansas Elementary</a></li></ul>
-                    </li> 
-                    <li>California
-                      <ul><li><a href="california_Los Angeles_elementary.html">Los Angeles Elementary</a></li></ul>
-                      <ul><li><a href="california_San Diego_elementary.html">San Diego Elementary</a></li></ul>
-                      <ul><li><a href="california_San Francisco_elementary.html">San Francisco Elementary</a></li></ul>
-                      <ul><li><a href="california_elementary_other.html">Other Cities Elementary</a></li></ul>
-                    </li> 
-                    <li>Florida
-                      <ul><li><a href="florida_Jacksonville_elementary.html">Jacksonville Elementary</a></li></ul>
-                      <ul><li><a href="florida_Miami_elementary.html">Miami Elementary</a></li></ul>
-                      <ul><li><a href="florida_elementary_other.html">Other Cities Elementary</a></li></ul>
-                    </li> 
-                    <li>Colorado
-                        <ul><li><a href="colorado_elementary.html">Colorado Elementary</a></li></ul>
-                    </li>    
-                    <li>Hawaii
-                        
-                        <ul>
-                            <li><a href="hawaii_elementary.html">Hawaii Elementary</a></li>
-                        </ul>
-                    </li>
-                    <li>Louisiana
-                        <ul><li><a href="louisiana_elementary.html">Louisiana Elementary</a></li></ul>
-                    </li>
-
-                    <li>Texas
-                        
-                      <ul>
-                          <li><a href="texas_Austin_elementary.html">Austin Elementary</a></li>
-                          <li><a href="texas_Corpus_Christi_elementary.html">Corpus Christi Elementary</a></li>
-                          <li><a href="texas_Dallas_elementary.html">Dallas Elementary</a></li>
-                          <li><a href="texas_El_Paso_elementary.html">El Paso Elementary</a></li>
-                          <li><a href="texas_Houston_elementary.html">Houston Elementary</a></li>
-                          <li><a href="texas_Lubbock_elementary.html">Lubbock Elementary</a></li>
-                          <li><a href="texas_Midland_elementary.html">Midland Elementary</a></li>
-                          <li><a href="texas_San_Antonio_elementary.html">San Antonio Elementary</a></li>
-                          <li><a href="texas_elementary_other.html">Other Cities Elementary</a></li>
-                      </ul>
-                   </li>
-            
-                    <li>Washington
-                        
-                        <ul>
-                            <li><a href="washington_elementary.html">Washington Elementary</a></li>
-                            <li><a href="washington_middle.html">Washington Middle</a></li>
-                        </ul>
-                    </li>
                 </ul>
+              </div>
             </div>
-            
-
-            
-            
           </div>
         </div>
-      </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+          <div class="container d-flex justify-content-between">
+            <a href="https://eric-yim.github.io/" class="navbar-brand d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+              <strong>Back to Code Repos</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main role="main">
 
-    </main>
-
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
-        <p>&copy; CodingAI</p>
+        <section class="jumbotron text-center" style="padding-bottom:10px; padding-top:10px;">
+          <div class="container">
+            <h2 class="jumbotron-heading">School Maps: All 50 US States</h1>
+            <p class="lead">Data comes from Great Schools Org.<br>Click on a pin to see state map.</p>
+  
+          </div>
+        </section>
+        </main>
     
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
+    
+            <div class="folium-map" id="map_5e782f7edf0dec18129f99ee63095354" ></div>
+        
+<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script>window.jQuery || document.write('<script src="../bs/jquery-slim.min.js"><\/script>')</script>
-    <script src="../bs/popper.min.js"></script>
-    <script src="../bs/bootstrap.min.js"></script>
-    <script src="../bs/holder.min.js"></script>
-  </body>
+  
+    <script>window.jQuery || document.write('<script src="https://eric-yim.github.io/bs/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://eric-yim.github.io/bs/popper.min.js"></script>
+    <script src="https://eric-yim.github.io/bs/bootstrap.min.js"></script>
+    <script src="https://eric-yim.github.io/bs/holder.min.js"></script></body>
+
+<script>
+    
+    
+            var map_5e782f7edf0dec18129f99ee63095354 = L.map(
+                "map_5e782f7edf0dec18129f99ee63095354",
+                {
+                    center: [39.047725, -98.097109],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e345c69b99dadda4e916bd45ba5bd510 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var marker_4c410f4d29831d20b268e25e27bd959c = L.marker(
+                [32.8067, -86.7911],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_aa8c882d872776d6ffc303b2a8483e7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4c410f4d29831d20b268e25e27bd959c.setIcon(icon_aa8c882d872776d6ffc303b2a8483e7a);
+        
+    
+        var popup_d85ae34f75916a107f670e3bfdbbc630 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0777194ee1ac98b05c0640bdf14d4b6b = $(`<div id="html_0777194ee1ac98b05c0640bdf14d4b6b" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/alabama_elementary.html">Alabama Elementary</a></div>`)[0];
+                popup_d85ae34f75916a107f670e3bfdbbc630.setContent(html_0777194ee1ac98b05c0640bdf14d4b6b);
+            
+        
+
+        marker_4c410f4d29831d20b268e25e27bd959c.bindPopup(popup_d85ae34f75916a107f670e3bfdbbc630)
+        ;
+
+        
+    
+    
+            var marker_2d167f8c99fe801b1200fb4949425537 = L.marker(
+                [61.0167, -149.7372],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_d6a6b09e2ce60c3aa40e4c35c7e30563 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2d167f8c99fe801b1200fb4949425537.setIcon(icon_d6a6b09e2ce60c3aa40e4c35c7e30563);
+        
+    
+        var popup_4b7db69b6a1f4ad7ee6bb26f174f862b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a678bd91712bc9d5117029694c366c27 = $(`<div id="html_a678bd91712bc9d5117029694c366c27" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/alaska_elementary.html">Alaska Elementary</a></div>`)[0];
+                popup_4b7db69b6a1f4ad7ee6bb26f174f862b.setContent(html_a678bd91712bc9d5117029694c366c27);
+            
+        
+
+        marker_2d167f8c99fe801b1200fb4949425537.bindPopup(popup_4b7db69b6a1f4ad7ee6bb26f174f862b)
+        ;
+
+        
+    
+    
+            var marker_2f97b5946767ce0f2da5c7a8e5d2d57b = L.marker(
+                [33.7298, -111.4312],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_43a8bd955517a2d1f779b402eaafb35c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2f97b5946767ce0f2da5c7a8e5d2d57b.setIcon(icon_43a8bd955517a2d1f779b402eaafb35c);
+        
+    
+        var popup_aed52edd523c669f85205fd4daf931f5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de1886800ffd6a77f1ab842a16d2adcc = $(`<div id="html_de1886800ffd6a77f1ab842a16d2adcc" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/arizona_elementary.html">Arizona Elementary</a></div>`)[0];
+                popup_aed52edd523c669f85205fd4daf931f5.setContent(html_de1886800ffd6a77f1ab842a16d2adcc);
+            
+        
+
+        marker_2f97b5946767ce0f2da5c7a8e5d2d57b.bindPopup(popup_aed52edd523c669f85205fd4daf931f5)
+        ;
+
+        
+    
+    
+            var marker_9a53af84e391f1b8ea8ab88e0ac709f9 = L.marker(
+                [34.9697, -92.3731],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_52081f1e479be279b672c9f6382e5d40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9a53af84e391f1b8ea8ab88e0ac709f9.setIcon(icon_52081f1e479be279b672c9f6382e5d40);
+        
+    
+        var popup_5df447c6aac863a8686d6d49fb5b2338 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ab3ab1972c76d0af622237194c29427 = $(`<div id="html_3ab3ab1972c76d0af622237194c29427" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/arkansas_elementary.html">Arkansas Elementary</a></div>`)[0];
+                popup_5df447c6aac863a8686d6d49fb5b2338.setContent(html_3ab3ab1972c76d0af622237194c29427);
+            
+        
+
+        marker_9a53af84e391f1b8ea8ab88e0ac709f9.bindPopup(popup_5df447c6aac863a8686d6d49fb5b2338)
+        ;
+
+        
+    
+    
+            var marker_5226b15f97bbda23cdcff43c6832bd46 = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_7bbbe3e63840b7d82154b774034b2f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5226b15f97bbda23cdcff43c6832bd46.setIcon(icon_7bbbe3e63840b7d82154b774034b2f2f);
+        
+    
+        var popup_f31e7bce964ec8d21fb538ec0cbc6ca0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_140cd895b68f5aa3cb5d53367537c502 = $(`<div id="html_140cd895b68f5aa3cb5d53367537c502" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/california_Los_Angeles_elementary.html">Los Angeles Elementary</a></div>`)[0];
+                popup_f31e7bce964ec8d21fb538ec0cbc6ca0.setContent(html_140cd895b68f5aa3cb5d53367537c502);
+            
+        
+
+        marker_5226b15f97bbda23cdcff43c6832bd46.bindPopup(popup_f31e7bce964ec8d21fb538ec0cbc6ca0)
+        ;
+
+        
+    
+    
+            var marker_54f3ba9ec33c50929f4ef24f6fb8558d = L.marker(
+                [32.7157, -117.1611],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_b3f322dcdb8c2dd3cd5618a12f03324b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_54f3ba9ec33c50929f4ef24f6fb8558d.setIcon(icon_b3f322dcdb8c2dd3cd5618a12f03324b);
+        
+    
+        var popup_c665e68bc72b0fa384733aaaef1074a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_93c0e12d91121d89152f7135e9442586 = $(`<div id="html_93c0e12d91121d89152f7135e9442586" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/california_San_Diego_elementary.html">San Diego Elementary</a></div>`)[0];
+                popup_c665e68bc72b0fa384733aaaef1074a9.setContent(html_93c0e12d91121d89152f7135e9442586);
+            
+        
+
+        marker_54f3ba9ec33c50929f4ef24f6fb8558d.bindPopup(popup_c665e68bc72b0fa384733aaaef1074a9)
+        ;
+
+        
+    
+    
+            var marker_36158bad3940887277931a4e84a1b6a7 = L.marker(
+                [37.7749, -122.4194],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_2a548cd321dd236a331b21927ccb90db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_36158bad3940887277931a4e84a1b6a7.setIcon(icon_2a548cd321dd236a331b21927ccb90db);
+        
+    
+        var popup_b1d4ac694dc087132522a0e3ff4bbd83 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_deb57e76ce78e1e52c5101b757a92edb = $(`<div id="html_deb57e76ce78e1e52c5101b757a92edb" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/california_San_Francisco_elementary.html">San Francisco Elementary</a></div>`)[0];
+                popup_b1d4ac694dc087132522a0e3ff4bbd83.setContent(html_deb57e76ce78e1e52c5101b757a92edb);
+            
+        
+
+        marker_36158bad3940887277931a4e84a1b6a7.bindPopup(popup_b1d4ac694dc087132522a0e3ff4bbd83)
+        ;
+
+        
+    
+    
+            var marker_81e8df3ed955dfdf3c7b1ab1a281c624 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_7a27a0ed986484ec68643b972e2db24e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_81e8df3ed955dfdf3c7b1ab1a281c624.setIcon(icon_7a27a0ed986484ec68643b972e2db24e);
+        
+    
+        var popup_a3229024da2e88e2a9acf0d5e0d1ef9a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79ccc2c39be0cdd25546c4b56fe43b8f = $(`<div id="html_79ccc2c39be0cdd25546c4b56fe43b8f" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/california_elementary_other.html">California (Other) Elementary</a></div>`)[0];
+                popup_a3229024da2e88e2a9acf0d5e0d1ef9a.setContent(html_79ccc2c39be0cdd25546c4b56fe43b8f);
+            
+        
+
+        marker_81e8df3ed955dfdf3c7b1ab1a281c624.bindPopup(popup_a3229024da2e88e2a9acf0d5e0d1ef9a)
+        ;
+
+        
+    
+    
+            var marker_9072682fa1a89c37e4a9558b197222b7 = L.marker(
+                [39.5501, -105.7821],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_faedbdd7a66f2a2be958fa9cf1102d91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9072682fa1a89c37e4a9558b197222b7.setIcon(icon_faedbdd7a66f2a2be958fa9cf1102d91);
+        
+    
+        var popup_28496a2029bbe9f174111b701859aead = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2defef787c87870c5debbc3fd009ab95 = $(`<div id="html_2defef787c87870c5debbc3fd009ab95" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/colorado_elementary.html">Colorado Elementary</a></div>`)[0];
+                popup_28496a2029bbe9f174111b701859aead.setContent(html_2defef787c87870c5debbc3fd009ab95);
+            
+        
+
+        marker_9072682fa1a89c37e4a9558b197222b7.bindPopup(popup_28496a2029bbe9f174111b701859aead)
+        ;
+
+        
+    
+    
+            var marker_69b91a8d4e8c6b487d74ca0cad1d4114 = L.marker(
+                [41.6032, -73.0877],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_50770ffd0569887bb3f6b5a58838fbf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_69b91a8d4e8c6b487d74ca0cad1d4114.setIcon(icon_50770ffd0569887bb3f6b5a58838fbf6);
+        
+    
+        var popup_61409dd3b347991a8deebb216cbb1a18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3304e74fd606037cad5a30fc32d0a9ed = $(`<div id="html_3304e74fd606037cad5a30fc32d0a9ed" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/connecticut_elementary.html">Connecticut Elementary</a></div>`)[0];
+                popup_61409dd3b347991a8deebb216cbb1a18.setContent(html_3304e74fd606037cad5a30fc32d0a9ed);
+            
+        
+
+        marker_69b91a8d4e8c6b487d74ca0cad1d4114.bindPopup(popup_61409dd3b347991a8deebb216cbb1a18)
+        ;
+
+        
+    
+    
+            var marker_ebee4de586e2329d2656d355ce40a72b = L.marker(
+                [38.9108, -75.5277],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_bc5cd06ac2b33aec3b4618d82328db82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ebee4de586e2329d2656d355ce40a72b.setIcon(icon_bc5cd06ac2b33aec3b4618d82328db82);
+        
+    
+        var popup_35bddc180f4bf1e65c4e60ddb6305809 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d538f948e3aafff461a58df125e61bbb = $(`<div id="html_d538f948e3aafff461a58df125e61bbb" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/delaware_elementary.html">Delaware Elementary</a></div>`)[0];
+                popup_35bddc180f4bf1e65c4e60ddb6305809.setContent(html_d538f948e3aafff461a58df125e61bbb);
+            
+        
+
+        marker_ebee4de586e2329d2656d355ce40a72b.bindPopup(popup_35bddc180f4bf1e65c4e60ddb6305809)
+        ;
+
+        
+    
+    
+            var marker_421352ed988be88d0d050d0d3fb888fb = L.marker(
+                [30.3322, -81.6557],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_2040313da4000d38efdb2ea83f69aea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_421352ed988be88d0d050d0d3fb888fb.setIcon(icon_2040313da4000d38efdb2ea83f69aea0);
+        
+    
+        var popup_d1da83630dd803d76cb034ce557fdc39 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb95c4e7a9fe0b95b9bb3cdf90ed77f2 = $(`<div id="html_bb95c4e7a9fe0b95b9bb3cdf90ed77f2" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/florida_Jacksonville_elementary.html">Jacksonville Elementary</a></div>`)[0];
+                popup_d1da83630dd803d76cb034ce557fdc39.setContent(html_bb95c4e7a9fe0b95b9bb3cdf90ed77f2);
+            
+        
+
+        marker_421352ed988be88d0d050d0d3fb888fb.bindPopup(popup_d1da83630dd803d76cb034ce557fdc39)
+        ;
+
+        
+    
+    
+            var marker_0ec8407f9c3c27361713f7941c56e3b9 = L.marker(
+                [25.7617, -80.1918],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_d7c8875da05c1eec26c73ca29f285d28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0ec8407f9c3c27361713f7941c56e3b9.setIcon(icon_d7c8875da05c1eec26c73ca29f285d28);
+        
+    
+        var popup_088fc8d4914de33748244b68501fb874 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d90c8e22059708ab8203341a75c3e0a6 = $(`<div id="html_d90c8e22059708ab8203341a75c3e0a6" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/florida_Miami_elementary.html">Miami Elementary</a></div>`)[0];
+                popup_088fc8d4914de33748244b68501fb874.setContent(html_d90c8e22059708ab8203341a75c3e0a6);
+            
+        
+
+        marker_0ec8407f9c3c27361713f7941c56e3b9.bindPopup(popup_088fc8d4914de33748244b68501fb874)
+        ;
+
+        
+    
+    
+            var marker_fbc24c9a128c9f8e4410a8ca221b6299 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_d88f15492fae8083db5c805747403432 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fbc24c9a128c9f8e4410a8ca221b6299.setIcon(icon_d88f15492fae8083db5c805747403432);
+        
+    
+        var popup_c80629186e422dae3f4a8b0773ba512d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cd8bfc4df36add2328f4d22b52ca3cc9 = $(`<div id="html_cd8bfc4df36add2328f4d22b52ca3cc9" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/florida_elementary_other.html">Florida (Other) Elementary</a></div>`)[0];
+                popup_c80629186e422dae3f4a8b0773ba512d.setContent(html_cd8bfc4df36add2328f4d22b52ca3cc9);
+            
+        
+
+        marker_fbc24c9a128c9f8e4410a8ca221b6299.bindPopup(popup_c80629186e422dae3f4a8b0773ba512d)
+        ;
+
+        
+    
+    
+            var marker_af4f768193583bc63ee52b507529c830 = L.marker(
+                [33.0406, -83.6431],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_b05af67f4b375a415112a72593018220 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_af4f768193583bc63ee52b507529c830.setIcon(icon_b05af67f4b375a415112a72593018220);
+        
+    
+        var popup_b8382fae6c6e5ad76ba6435a2d2d0141 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a9ef8d9062a140d82156c7b72e18ba22 = $(`<div id="html_a9ef8d9062a140d82156c7b72e18ba22" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/georgia_elementary.html">Georgia Elementary</a></div>`)[0];
+                popup_b8382fae6c6e5ad76ba6435a2d2d0141.setContent(html_a9ef8d9062a140d82156c7b72e18ba22);
+            
+        
+
+        marker_af4f768193583bc63ee52b507529c830.bindPopup(popup_b8382fae6c6e5ad76ba6435a2d2d0141)
+        ;
+
+        
+    
+    
+            var marker_4acd5a042762ad55a09db8b939f50353 = L.marker(
+                [20.7961, -156.3319],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_729b23ef6bbe854fad24044857475d2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4acd5a042762ad55a09db8b939f50353.setIcon(icon_729b23ef6bbe854fad24044857475d2e);
+        
+    
+        var popup_990d1ea227a913d28cba22a86bebaa6b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0eee8f32f582482610ef19976322691c = $(`<div id="html_0eee8f32f582482610ef19976322691c" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/hawaii_elementary.html">Hawaii Elementary</a></div>`)[0];
+                popup_990d1ea227a913d28cba22a86bebaa6b.setContent(html_0eee8f32f582482610ef19976322691c);
+            
+        
+
+        marker_4acd5a042762ad55a09db8b939f50353.bindPopup(popup_990d1ea227a913d28cba22a86bebaa6b)
+        ;
+
+        
+    
+    
+            var marker_990db25c32a5194119947ae6773a4b10 = L.marker(
+                [44.0682, -114.742],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_a9db57e5cee10d01ae8f5b4a7f239f81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_990db25c32a5194119947ae6773a4b10.setIcon(icon_a9db57e5cee10d01ae8f5b4a7f239f81);
+        
+    
+        var popup_dce8a739b939b6ba98e66e47a898cffa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eb82b7fe33d40620fad76cce565d356f = $(`<div id="html_eb82b7fe33d40620fad76cce565d356f" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/idaho_elementary.html">Idaho Elementary</a></div>`)[0];
+                popup_dce8a739b939b6ba98e66e47a898cffa.setContent(html_eb82b7fe33d40620fad76cce565d356f);
+            
+        
+
+        marker_990db25c32a5194119947ae6773a4b10.bindPopup(popup_dce8a739b939b6ba98e66e47a898cffa)
+        ;
+
+        
+    
+    
+            var marker_66e2d3b12ec7066c332eb192d27b0e7b = L.marker(
+                [41.8755616, -87.6244212],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_c9ce322eeecb5dc0a3d4685129cefecf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_66e2d3b12ec7066c332eb192d27b0e7b.setIcon(icon_c9ce322eeecb5dc0a3d4685129cefecf);
+        
+    
+        var popup_b55d04d20cdbcb9271a2971e9ecb2091 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a57c0726dbe650c7d27bba2ed7a1d627 = $(`<div id="html_a57c0726dbe650c7d27bba2ed7a1d627" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/illinois_chicago_elementary.html">Chicago Elementary</a></div>`)[0];
+                popup_b55d04d20cdbcb9271a2971e9ecb2091.setContent(html_a57c0726dbe650c7d27bba2ed7a1d627);
+            
+        
+
+        marker_66e2d3b12ec7066c332eb192d27b0e7b.bindPopup(popup_b55d04d20cdbcb9271a2971e9ecb2091)
+        ;
+
+        
+    
+    
+            var marker_b37597a83c25c7248c80f610f7c7a2f8 = L.marker(
+                [40.3495, -88.9861],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_db8320dd557cdea808f9aba9e14e6744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b37597a83c25c7248c80f610f7c7a2f8.setIcon(icon_db8320dd557cdea808f9aba9e14e6744);
+        
+    
+        var popup_499a83d2d666b580fd0cb97d72118924 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac3e180f75f2cef89118f7dae4a85b70 = $(`<div id="html_ac3e180f75f2cef89118f7dae4a85b70" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/illinois_elementary_other.html">Illinois (Other) Elementary</a></div>`)[0];
+                popup_499a83d2d666b580fd0cb97d72118924.setContent(html_ac3e180f75f2cef89118f7dae4a85b70);
+            
+        
+
+        marker_b37597a83c25c7248c80f610f7c7a2f8.bindPopup(popup_499a83d2d666b580fd0cb97d72118924)
+        ;
+
+        
+    
+    
+            var marker_97af9bc19c9e16f0996c046421c0ffb7 = L.marker(
+                [39.8494, -86.2583],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_088c4155b7a67fe458a7e217baa4d8c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_97af9bc19c9e16f0996c046421c0ffb7.setIcon(icon_088c4155b7a67fe458a7e217baa4d8c8);
+        
+    
+        var popup_c5cfd128a04761e922f7833a51933632 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_805cdf297a1472b9da91bf9b1398f41d = $(`<div id="html_805cdf297a1472b9da91bf9b1398f41d" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/indiana_elementary.html">Indiana Elementary</a></div>`)[0];
+                popup_c5cfd128a04761e922f7833a51933632.setContent(html_805cdf297a1472b9da91bf9b1398f41d);
+            
+        
+
+        marker_97af9bc19c9e16f0996c046421c0ffb7.bindPopup(popup_c5cfd128a04761e922f7833a51933632)
+        ;
+
+        
+    
+    
+            var marker_18d12b310c7ce68ef266b9bbca530282 = L.marker(
+                [41.9383, -93.3898],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_6193df46e98dfdf3b735589ea77f5eb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_18d12b310c7ce68ef266b9bbca530282.setIcon(icon_6193df46e98dfdf3b735589ea77f5eb2);
+        
+    
+        var popup_52d4df7b74ec43fed6cfed4aea16b217 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_597247743bf55dec952fc8d961693dc1 = $(`<div id="html_597247743bf55dec952fc8d961693dc1" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/iowa_elementary.html">Iowa Elementary</a></div>`)[0];
+                popup_52d4df7b74ec43fed6cfed4aea16b217.setContent(html_597247743bf55dec952fc8d961693dc1);
+            
+        
+
+        marker_18d12b310c7ce68ef266b9bbca530282.bindPopup(popup_52d4df7b74ec43fed6cfed4aea16b217)
+        ;
+
+        
+    
+    
+            var marker_78420bb2af61e90993dc8b09857e064f = L.marker(
+                [38.4988, -98.3201],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_6366a62095e74f198881efdc8ff6bae2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_78420bb2af61e90993dc8b09857e064f.setIcon(icon_6366a62095e74f198881efdc8ff6bae2);
+        
+    
+        var popup_ad1ba38f99f43917c10a4a86d2f108db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6acf2642cc887e1670d13f7ef57c33fe = $(`<div id="html_6acf2642cc887e1670d13f7ef57c33fe" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/kansas_elementary.html">Kansas Elementary</a></div>`)[0];
+                popup_ad1ba38f99f43917c10a4a86d2f108db.setContent(html_6acf2642cc887e1670d13f7ef57c33fe);
+            
+        
+
+        marker_78420bb2af61e90993dc8b09857e064f.bindPopup(popup_ad1ba38f99f43917c10a4a86d2f108db)
+        ;
+
+        
+    
+    
+            var marker_ba580b5fb2b52374062aebf8138bf1fd = L.marker(
+                [37.8223, -85.7681],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_5622081d633ac5494006c5c9afc91c36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ba580b5fb2b52374062aebf8138bf1fd.setIcon(icon_5622081d633ac5494006c5c9afc91c36);
+        
+    
+        var popup_3bad7386ae1c482e36b98c7615b295bc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9c3f1631946b57be683312654bf14c7d = $(`<div id="html_9c3f1631946b57be683312654bf14c7d" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/kentucky_elementary.html">Kentucky Elementary</a></div>`)[0];
+                popup_3bad7386ae1c482e36b98c7615b295bc.setContent(html_9c3f1631946b57be683312654bf14c7d);
+            
+        
+
+        marker_ba580b5fb2b52374062aebf8138bf1fd.bindPopup(popup_3bad7386ae1c482e36b98c7615b295bc)
+        ;
+
+        
+    
+    
+            var marker_6eacdf5221772ef45d830d96c4d0386d = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_fa315b3cbb9c2f1cf9db47f198088d28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6eacdf5221772ef45d830d96c4d0386d.setIcon(icon_fa315b3cbb9c2f1cf9db47f198088d28);
+        
+    
+        var popup_028d9b008396ab7f26586e351485c5be = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd2fbbb6574ebe292b1af8bc3d2d00b9 = $(`<div id="html_fd2fbbb6574ebe292b1af8bc3d2d00b9" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/louisiana_elementary.html">Louisiana Elementary</a></div>`)[0];
+                popup_028d9b008396ab7f26586e351485c5be.setContent(html_fd2fbbb6574ebe292b1af8bc3d2d00b9);
+            
+        
+
+        marker_6eacdf5221772ef45d830d96c4d0386d.bindPopup(popup_028d9b008396ab7f26586e351485c5be)
+        ;
+
+        
+    
+    
+            var marker_f6309c54ee83c10f50a860e76893d186 = L.marker(
+                [45.3695, -69.2428],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_4cac199c326b97ceacfcf49b4788cad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f6309c54ee83c10f50a860e76893d186.setIcon(icon_4cac199c326b97ceacfcf49b4788cad5);
+        
+    
+        var popup_aed848761eebe4ba83a3f464d68b804b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3cc6e51f7e423ff1c9175ca17dfc0aad = $(`<div id="html_3cc6e51f7e423ff1c9175ca17dfc0aad" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/maine_elementary.html">Maine Elementary</a></div>`)[0];
+                popup_aed848761eebe4ba83a3f464d68b804b.setContent(html_3cc6e51f7e423ff1c9175ca17dfc0aad);
+            
+        
+
+        marker_f6309c54ee83c10f50a860e76893d186.bindPopup(popup_aed848761eebe4ba83a3f464d68b804b)
+        ;
+
+        
+    
+    
+            var marker_128d4c7b3c741d0a65f66b9c2585b05b = L.marker(
+                [39.055, -76.7909],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_f8131591d26b47a369bf72761059ffad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_128d4c7b3c741d0a65f66b9c2585b05b.setIcon(icon_f8131591d26b47a369bf72761059ffad);
+        
+    
+        var popup_0d07fc7d5ce6cfbe205dec231684fc29 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_513dff1067c1e865a720cc35d6af42b7 = $(`<div id="html_513dff1067c1e865a720cc35d6af42b7" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/maryland_elementary.html">Maryland Elementary</a></div>`)[0];
+                popup_0d07fc7d5ce6cfbe205dec231684fc29.setContent(html_513dff1067c1e865a720cc35d6af42b7);
+            
+        
+
+        marker_128d4c7b3c741d0a65f66b9c2585b05b.bindPopup(popup_0d07fc7d5ce6cfbe205dec231684fc29)
+        ;
+
+        
+    
+    
+            var marker_a674f8008c75462bd940be8a49f02eed = L.marker(
+                [42.2596, -71.8083],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_e53d44cfd288a7e7d33bee145473c8e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a674f8008c75462bd940be8a49f02eed.setIcon(icon_e53d44cfd288a7e7d33bee145473c8e0);
+        
+    
+        var popup_5488b6c3ef0c0682c2b89f232f6c7e10 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b38f1f138984121a6f04cd93cdbb4996 = $(`<div id="html_b38f1f138984121a6f04cd93cdbb4996" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/massachusetts_elementary.html">Massachusetts Elementary</a></div>`)[0];
+                popup_5488b6c3ef0c0682c2b89f232f6c7e10.setContent(html_b38f1f138984121a6f04cd93cdbb4996);
+            
+        
+
+        marker_a674f8008c75462bd940be8a49f02eed.bindPopup(popup_5488b6c3ef0c0682c2b89f232f6c7e10)
+        ;
+
+        
+    
+    
+            var marker_34e50e627ace523cf03601edf0b18a4f = L.marker(
+                [42.3315509, -83.0466403],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_db4a06ba19a00d58926ce3528d87b2f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_34e50e627ace523cf03601edf0b18a4f.setIcon(icon_db4a06ba19a00d58926ce3528d87b2f0);
+        
+    
+        var popup_166e4c44525d1fb660c30ec2fae3333a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6b2fb08fbfaee70cc5ea16c0e8f42220 = $(`<div id="html_6b2fb08fbfaee70cc5ea16c0e8f42220" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/michigan_detroit_elementary.html">Detroit Elementary</a></div>`)[0];
+                popup_166e4c44525d1fb660c30ec2fae3333a.setContent(html_6b2fb08fbfaee70cc5ea16c0e8f42220);
+            
+        
+
+        marker_34e50e627ace523cf03601edf0b18a4f.bindPopup(popup_166e4c44525d1fb660c30ec2fae3333a)
+        ;
+
+        
+    
+    
+            var marker_2fb1f29c184894eb6c7994c8b568edcd = L.marker(
+                [44.3467, -85.4102],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_a2769880550c42805ae7eb092ce9254d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2fb1f29c184894eb6c7994c8b568edcd.setIcon(icon_a2769880550c42805ae7eb092ce9254d);
+        
+    
+        var popup_212aba7daa772c6c0a30f2b6cdcb64f1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9335d44430d310b95ebd376d66867d59 = $(`<div id="html_9335d44430d310b95ebd376d66867d59" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/michigan_elementary_other.html">Michigan (Other) Elementary</a></div>`)[0];
+                popup_212aba7daa772c6c0a30f2b6cdcb64f1.setContent(html_9335d44430d310b95ebd376d66867d59);
+            
+        
+
+        marker_2fb1f29c184894eb6c7994c8b568edcd.bindPopup(popup_212aba7daa772c6c0a30f2b6cdcb64f1)
+        ;
+
+        
+    
+    
+            var marker_11dae66ed5ab4fa897487c0ab24a9740 = L.marker(
+                [46.2807, -94.3053],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_2ab7795e568da0aca56ea7edbbbc3bfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_11dae66ed5ab4fa897487c0ab24a9740.setIcon(icon_2ab7795e568da0aca56ea7edbbbc3bfb);
+        
+    
+        var popup_d2aff3c1ba67e8033245ccb3e5f682f9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_591aa9d3181318ca092ccf6ecf5e396b = $(`<div id="html_591aa9d3181318ca092ccf6ecf5e396b" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/minnesota_elementary.html">Minnesota Elementary</a></div>`)[0];
+                popup_d2aff3c1ba67e8033245ccb3e5f682f9.setContent(html_591aa9d3181318ca092ccf6ecf5e396b);
+            
+        
+
+        marker_11dae66ed5ab4fa897487c0ab24a9740.bindPopup(popup_d2aff3c1ba67e8033245ccb3e5f682f9)
+        ;
+
+        
+    
+    
+            var marker_ad92321ad34c2a7512ffb500f636d36c = L.marker(
+                [32.7364, -89.6678],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_9326562f89e9d43a6d8bca208184c135 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ad92321ad34c2a7512ffb500f636d36c.setIcon(icon_9326562f89e9d43a6d8bca208184c135);
+        
+    
+        var popup_f4c82643ecdf1be18cf8951674cde88c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_92d781ac8d0e78544e83c0f21dd2b5d3 = $(`<div id="html_92d781ac8d0e78544e83c0f21dd2b5d3" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/mississippi_elementary.html">Mississippi Elementary</a></div>`)[0];
+                popup_f4c82643ecdf1be18cf8951674cde88c.setContent(html_92d781ac8d0e78544e83c0f21dd2b5d3);
+            
+        
+
+        marker_ad92321ad34c2a7512ffb500f636d36c.bindPopup(popup_f4c82643ecdf1be18cf8951674cde88c)
+        ;
+
+        
+    
+    
+            var marker_241be14e44242ddfeb532301cb5d5812 = L.marker(
+                [38.3566, -92.458],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_9e68df7ea3d7c1f43ded165049476580 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_241be14e44242ddfeb532301cb5d5812.setIcon(icon_9e68df7ea3d7c1f43ded165049476580);
+        
+    
+        var popup_1196d3188231b682e810a71de641c629 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f9cae8c96e70375e2d513510d96dfce = $(`<div id="html_1f9cae8c96e70375e2d513510d96dfce" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/missouri_elementary.html">Missouri Elementary</a></div>`)[0];
+                popup_1196d3188231b682e810a71de641c629.setContent(html_1f9cae8c96e70375e2d513510d96dfce);
+            
+        
+
+        marker_241be14e44242ddfeb532301cb5d5812.bindPopup(popup_1196d3188231b682e810a71de641c629)
+        ;
+
+        
+    
+    
+            var marker_1c141f2445bf91f0e091c7015c5e62e6 = L.marker(
+                [47.0527, -109.6333],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_73eb33df700008b7e413ce2d8c1286e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1c141f2445bf91f0e091c7015c5e62e6.setIcon(icon_73eb33df700008b7e413ce2d8c1286e4);
+        
+    
+        var popup_105cc96a742f3eb8f032e10de0286397 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6d0a04ad853c7f733db87a03544cfb8 = $(`<div id="html_d6d0a04ad853c7f733db87a03544cfb8" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/montana_elementary.html">Montana Elementary</a></div>`)[0];
+                popup_105cc96a742f3eb8f032e10de0286397.setContent(html_d6d0a04ad853c7f733db87a03544cfb8);
+            
+        
+
+        marker_1c141f2445bf91f0e091c7015c5e62e6.bindPopup(popup_105cc96a742f3eb8f032e10de0286397)
+        ;
+
+        
+    
+    
+            var marker_22c54b17326d65514870cafd981df45d = L.marker(
+                [41.5378, -99.7951],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_93fac9e87af10f5e03d16e061ce2bdeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_22c54b17326d65514870cafd981df45d.setIcon(icon_93fac9e87af10f5e03d16e061ce2bdeb);
+        
+    
+        var popup_6a576827ede47d367854e3a6e2aca4ac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc38f2192a9568c501eabadc4620c2a2 = $(`<div id="html_dc38f2192a9568c501eabadc4620c2a2" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/nebraska_elementary.html">Nebraska Elementary</a></div>`)[0];
+                popup_6a576827ede47d367854e3a6e2aca4ac.setContent(html_dc38f2192a9568c501eabadc4620c2a2);
+            
+        
+
+        marker_22c54b17326d65514870cafd981df45d.bindPopup(popup_6a576827ede47d367854e3a6e2aca4ac)
+        ;
+
+        
+    
+    
+            var marker_97d9404b1b71b003c04c1afe95549578 = L.marker(
+                [39.3289, -116.6312],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_9682edcd4c8ee38574246eae67194e44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_97d9404b1b71b003c04c1afe95549578.setIcon(icon_9682edcd4c8ee38574246eae67194e44);
+        
+    
+        var popup_335b87b2b6e5cddc6171016b90fa3f3e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f06f481c2da303bad34927979381b3f8 = $(`<div id="html_f06f481c2da303bad34927979381b3f8" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/nevada_elementary.html">Nevada Elementary</a></div>`)[0];
+                popup_335b87b2b6e5cddc6171016b90fa3f3e.setContent(html_f06f481c2da303bad34927979381b3f8);
+            
+        
+
+        marker_97d9404b1b71b003c04c1afe95549578.bindPopup(popup_335b87b2b6e5cddc6171016b90fa3f3e)
+        ;
+
+        
+    
+    
+            var marker_02e4d273823d6863b2675bbc0e391abf = L.marker(
+                [43.6805, -71.5811],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_5b105f9328d1192baadfe1e474a58e0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_02e4d273823d6863b2675bbc0e391abf.setIcon(icon_5b105f9328d1192baadfe1e474a58e0d);
+        
+    
+        var popup_d0918c8cf8ba4b43590680c96833a4a5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8013a2be6547e0ab7a45cab257eee980 = $(`<div id="html_8013a2be6547e0ab7a45cab257eee980" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/new_hampshire_elementary.html">New Hampshire Elementary</a></div>`)[0];
+                popup_d0918c8cf8ba4b43590680c96833a4a5.setContent(html_8013a2be6547e0ab7a45cab257eee980);
+            
+        
+
+        marker_02e4d273823d6863b2675bbc0e391abf.bindPopup(popup_d0918c8cf8ba4b43590680c96833a4a5)
+        ;
+
+        
+    
+    
+            var marker_abfd3028065ce0d347a3de2abdd75701 = L.marker(
+                [40.735657, -74.1723667],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_970b2b360a82b0c1ccb4c1b6b52dff81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_abfd3028065ce0d347a3de2abdd75701.setIcon(icon_970b2b360a82b0c1ccb4c1b6b52dff81);
+        
+    
+        var popup_6be7922c9fb2eb28e94aa89029f76f12 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_23f63567db5f091cae344a654bf63174 = $(`<div id="html_23f63567db5f091cae344a654bf63174" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/new_jersey_newark_elementary.html">Newark Elementary</a></div>`)[0];
+                popup_6be7922c9fb2eb28e94aa89029f76f12.setContent(html_23f63567db5f091cae344a654bf63174);
+            
+        
+
+        marker_abfd3028065ce0d347a3de2abdd75701.bindPopup(popup_6be7922c9fb2eb28e94aa89029f76f12)
+        ;
+
+        
+    
+    
+            var marker_4e6d723a908ad9ddc828e7a55c1a7652 = L.marker(
+                [40.1907, -74.6728],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_f32e25abb56edc33e2112ddc2e898097 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4e6d723a908ad9ddc828e7a55c1a7652.setIcon(icon_f32e25abb56edc33e2112ddc2e898097);
+        
+    
+        var popup_05d8ba4a5878320dc20e558f1923faa7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_303904c8fd0f8c75974c97e0839c0ff4 = $(`<div id="html_303904c8fd0f8c75974c97e0839c0ff4" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/new_jersey_elementary_other.html">New Jersey (Other) Elementary</a></div>`)[0];
+                popup_05d8ba4a5878320dc20e558f1923faa7.setContent(html_303904c8fd0f8c75974c97e0839c0ff4);
+            
+        
+
+        marker_4e6d723a908ad9ddc828e7a55c1a7652.bindPopup(popup_05d8ba4a5878320dc20e558f1923faa7)
+        ;
+
+        
+    
+    
+            var marker_4e2dd2d8b8d018705125de5441259fc9 = L.marker(
+                [34.4071, -106.1126],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_e9b96890d45cc9c92c4dfd08fb337d57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4e2dd2d8b8d018705125de5441259fc9.setIcon(icon_e9b96890d45cc9c92c4dfd08fb337d57);
+        
+    
+        var popup_3e129f8cd52c00e379c6666755feded9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_418806aeee9db1e6c820cc192a04d973 = $(`<div id="html_418806aeee9db1e6c820cc192a04d973" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/new_mexico_elementary.html">New Mexico Elementary</a></div>`)[0];
+                popup_3e129f8cd52c00e379c6666755feded9.setContent(html_418806aeee9db1e6c820cc192a04d973);
+            
+        
+
+        marker_4e2dd2d8b8d018705125de5441259fc9.bindPopup(popup_3e129f8cd52c00e379c6666755feded9)
+        ;
+
+        
+    
+    
+            var marker_2504ee20038ad4a7eca92d04813f064a = L.marker(
+                [40.79224, -72.63826],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_03911c28bd421fb8f9d17b79143b40db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2504ee20038ad4a7eca92d04813f064a.setIcon(icon_03911c28bd421fb8f9d17b79143b40db);
+        
+    
+        var popup_2d8c896e1f09dd390d2a7450bfbf72eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9e6b99838eaf568a12685744d46f711f = $(`<div id="html_9e6b99838eaf568a12685744d46f711f" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/new_york_long_island_elementary.html">Long Island Elementary</a></div>`)[0];
+                popup_2d8c896e1f09dd390d2a7450bfbf72eb.setContent(html_9e6b99838eaf568a12685744d46f711f);
+            
+        
+
+        marker_2504ee20038ad4a7eca92d04813f064a.bindPopup(popup_2d8c896e1f09dd390d2a7450bfbf72eb)
+        ;
+
+        
+    
+    
+            var marker_b805889efae1e3af015802fb700014e5 = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_4616a43eda164e7d49d56dd461fc00e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b805889efae1e3af015802fb700014e5.setIcon(icon_4616a43eda164e7d49d56dd461fc00e6);
+        
+    
+        var popup_5ec8c3b72da7e242d7577b750da33555 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ec9a67c6e6590e88acd2d35de6cf31b = $(`<div id="html_8ec9a67c6e6590e88acd2d35de6cf31b" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/new_york_new_york_city_elementary.html">New York City Elementary</a></div>`)[0];
+                popup_5ec8c3b72da7e242d7577b750da33555.setContent(html_8ec9a67c6e6590e88acd2d35de6cf31b);
+            
+        
+
+        marker_b805889efae1e3af015802fb700014e5.bindPopup(popup_5ec8c3b72da7e242d7577b750da33555)
+        ;
+
+        
+    
+    
+            var marker_285b0e298dcc2eae36ed8e412c039d4b = L.marker(
+                [42.9538, -75.5268],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_e957ec0b05ea59e00a1d45f486a0f4a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_285b0e298dcc2eae36ed8e412c039d4b.setIcon(icon_e957ec0b05ea59e00a1d45f486a0f4a1);
+        
+    
+        var popup_ec7cac1d2f3be161556e78e4324ddf0e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_82f64b829779d0b70f016112ffb39eca = $(`<div id="html_82f64b829779d0b70f016112ffb39eca" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/new_york_elementary_other.html">New York (Other) Elementary</a></div>`)[0];
+                popup_ec7cac1d2f3be161556e78e4324ddf0e.setContent(html_82f64b829779d0b70f016112ffb39eca);
+            
+        
+
+        marker_285b0e298dcc2eae36ed8e412c039d4b.bindPopup(popup_ec7cac1d2f3be161556e78e4324ddf0e)
+        ;
+
+        
+    
+    
+            var marker_aad6cb9f4c525be6fa48a779cfc3100c = L.marker(
+                [35.5557, -79.3877],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_44c560319e412c052bcb261083cf3c77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_aad6cb9f4c525be6fa48a779cfc3100c.setIcon(icon_44c560319e412c052bcb261083cf3c77);
+        
+    
+        var popup_209687423c01b9fcfb56cb1c929058c4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2e34454afd985a6f2ca40e4e9ff801a4 = $(`<div id="html_2e34454afd985a6f2ca40e4e9ff801a4" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/north_carolina_elementary.html">North Carolina Elementary</a></div>`)[0];
+                popup_209687423c01b9fcfb56cb1c929058c4.setContent(html_2e34454afd985a6f2ca40e4e9ff801a4);
+            
+        
+
+        marker_aad6cb9f4c525be6fa48a779cfc3100c.bindPopup(popup_209687423c01b9fcfb56cb1c929058c4)
+        ;
+
+        
+    
+    
+            var marker_1bc20440e2bd4b509bf823a8c1b0d962 = L.marker(
+                [47.4501, -100.4659],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_4c75ff897ed98d05fe820f654a18784e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1bc20440e2bd4b509bf823a8c1b0d962.setIcon(icon_4c75ff897ed98d05fe820f654a18784e);
+        
+    
+        var popup_8d732f8dfc81c6fa5d05292260d9175c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fae37e634ac10b5d99a4b03f2b2bab4a = $(`<div id="html_fae37e634ac10b5d99a4b03f2b2bab4a" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/north_dakota_elementary.html">North Dakota Elementary</a></div>`)[0];
+                popup_8d732f8dfc81c6fa5d05292260d9175c.setContent(html_fae37e634ac10b5d99a4b03f2b2bab4a);
+            
+        
+
+        marker_1bc20440e2bd4b509bf823a8c1b0d962.bindPopup(popup_8d732f8dfc81c6fa5d05292260d9175c)
+        ;
+
+        
+    
+    
+            var marker_6e4b614e46093fa9c8f1fac59fe18d20 = L.marker(
+                [40.2862, -82.7937],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_03a00327bdb03dc2d18038141ba11a41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6e4b614e46093fa9c8f1fac59fe18d20.setIcon(icon_03a00327bdb03dc2d18038141ba11a41);
+        
+    
+        var popup_6536b4c854020e5e3b301b8b5ba376cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3071677a0986da953d53f51835806b9b = $(`<div id="html_3071677a0986da953d53f51835806b9b" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/ohio_elementary.html">Ohio Elementary</a></div>`)[0];
+                popup_6536b4c854020e5e3b301b8b5ba376cb.setContent(html_3071677a0986da953d53f51835806b9b);
+            
+        
+
+        marker_6e4b614e46093fa9c8f1fac59fe18d20.bindPopup(popup_6536b4c854020e5e3b301b8b5ba376cb)
+        ;
+
+        
+    
+    
+            var marker_d7af4abec5783a8183d4f13ee406df29 = L.marker(
+                [35.5889, -97.4943],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_799960469560c8938114bf069902159a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d7af4abec5783a8183d4f13ee406df29.setIcon(icon_799960469560c8938114bf069902159a);
+        
+    
+        var popup_8d84629021302d6724b76b08c55aa721 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99a8a789c042cecf084873e1744ad738 = $(`<div id="html_99a8a789c042cecf084873e1744ad738" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/oklahoma_elementary.html">Oklahoma Elementary</a></div>`)[0];
+                popup_8d84629021302d6724b76b08c55aa721.setContent(html_99a8a789c042cecf084873e1744ad738);
+            
+        
+
+        marker_d7af4abec5783a8183d4f13ee406df29.bindPopup(popup_8d84629021302d6724b76b08c55aa721)
+        ;
+
+        
+    
+    
+            var marker_e18b35b2c1b410b2216e7645315d68fa = L.marker(
+                [43.9336, -120.5583],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_5842fc4a7296f61b34de02b2e9884aa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e18b35b2c1b410b2216e7645315d68fa.setIcon(icon_5842fc4a7296f61b34de02b2e9884aa6);
+        
+    
+        var popup_6b6b439829a04aa8012f22ca5a971bb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_617fcd0a62f130e35c96fb1e892c8a56 = $(`<div id="html_617fcd0a62f130e35c96fb1e892c8a56" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/oregon_elementary.html">Oregon Elementary</a></div>`)[0];
+                popup_6b6b439829a04aa8012f22ca5a971bb8.setContent(html_617fcd0a62f130e35c96fb1e892c8a56);
+            
+        
+
+        marker_e18b35b2c1b410b2216e7645315d68fa.bindPopup(popup_6b6b439829a04aa8012f22ca5a971bb8)
+        ;
+
+        
+    
+    
+            var marker_52c3ab5bedaa1ffb806b9072844e1f4e = L.marker(
+                [39.9527237, -75.1635262],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_6b15e20fd13fef23353f29eced0e3348 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_52c3ab5bedaa1ffb806b9072844e1f4e.setIcon(icon_6b15e20fd13fef23353f29eced0e3348);
+        
+    
+        var popup_4b90131fd0f705ea5e6c7bc4947649ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_faa8712d4e93622ba4e7fbb463d3d72f = $(`<div id="html_faa8712d4e93622ba4e7fbb463d3d72f" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/pennsylvania_philadelphia_elementary.html">Philadelphia Elementary</a></div>`)[0];
+                popup_4b90131fd0f705ea5e6c7bc4947649ec.setContent(html_faa8712d4e93622ba4e7fbb463d3d72f);
+            
+        
+
+        marker_52c3ab5bedaa1ffb806b9072844e1f4e.bindPopup(popup_4b90131fd0f705ea5e6c7bc4947649ec)
+        ;
+
+        
+    
+    
+            var marker_467b0bb88603b407705476585e2c5f94 = L.marker(
+                [40.8781, -77.7996],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_4dc232c1f8cd1eb9264d5a0bc930d13f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_467b0bb88603b407705476585e2c5f94.setIcon(icon_4dc232c1f8cd1eb9264d5a0bc930d13f);
+        
+    
+        var popup_7a4b5971062d48ced6bc9e0e1750c750 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_268f9420750d6a38c16d9529e03a698c = $(`<div id="html_268f9420750d6a38c16d9529e03a698c" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/pennsylvania_elementary_other.html">Pennsylvania (Other) Elementary</a></div>`)[0];
+                popup_7a4b5971062d48ced6bc9e0e1750c750.setContent(html_268f9420750d6a38c16d9529e03a698c);
+            
+        
+
+        marker_467b0bb88603b407705476585e2c5f94.bindPopup(popup_7a4b5971062d48ced6bc9e0e1750c750)
+        ;
+
+        
+    
+    
+            var marker_d05a3e1b6335b59eb66c21713ec3bbbb = L.marker(
+                [41.6762, -71.5562],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_bedb449cda8002c74c3776f4427e9894 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d05a3e1b6335b59eb66c21713ec3bbbb.setIcon(icon_bedb449cda8002c74c3776f4427e9894);
+        
+    
+        var popup_aac8dad95ae179e8109d3159c226bc90 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8d1c651136bc72e2a84634a7a93040e6 = $(`<div id="html_8d1c651136bc72e2a84634a7a93040e6" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/rhode_island_elementary.html">Rhode Island Elementary</a></div>`)[0];
+                popup_aac8dad95ae179e8109d3159c226bc90.setContent(html_8d1c651136bc72e2a84634a7a93040e6);
+            
+        
+
+        marker_d05a3e1b6335b59eb66c21713ec3bbbb.bindPopup(popup_aac8dad95ae179e8109d3159c226bc90)
+        ;
+
+        
+    
+    
+            var marker_3b08f2afcc454fb33b968d7742880fe6 = L.marker(
+                [33.9169, -80.8964],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_7d0be8eefeb0826ad700c13bc4e0dce9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3b08f2afcc454fb33b968d7742880fe6.setIcon(icon_7d0be8eefeb0826ad700c13bc4e0dce9);
+        
+    
+        var popup_16596e4cf0543610156cc6f519d0d2c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ebb25542d6d02c7ea697c17f0d785b5d = $(`<div id="html_ebb25542d6d02c7ea697c17f0d785b5d" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/south_carolina_elementary.html">South Carolina Elementary</a></div>`)[0];
+                popup_16596e4cf0543610156cc6f519d0d2c1.setContent(html_ebb25542d6d02c7ea697c17f0d785b5d);
+            
+        
+
+        marker_3b08f2afcc454fb33b968d7742880fe6.bindPopup(popup_16596e4cf0543610156cc6f519d0d2c1)
+        ;
+
+        
+    
+    
+            var marker_215fa834687cd023e1580921e7c7aaf4 = L.marker(
+                [44.4443, -100.2263],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_a2dacb5ef0297efff513fb777aa48e18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_215fa834687cd023e1580921e7c7aaf4.setIcon(icon_a2dacb5ef0297efff513fb777aa48e18);
+        
+    
+        var popup_83f3d2fdb48494493b743cc4604cdae3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5656987223bd8fc895ea720b443ffeb = $(`<div id="html_b5656987223bd8fc895ea720b443ffeb" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/south_dakota_elementary.html">South Dakota Elementary</a></div>`)[0];
+                popup_83f3d2fdb48494493b743cc4604cdae3.setContent(html_b5656987223bd8fc895ea720b443ffeb);
+            
+        
+
+        marker_215fa834687cd023e1580921e7c7aaf4.bindPopup(popup_83f3d2fdb48494493b743cc4604cdae3)
+        ;
+
+        
+    
+    
+            var marker_dc6c182f175e450aaa3200cbf48425d9 = L.marker(
+                [35.858, -86.3505],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_8b58808e2ea92abf651562ae5eb85e13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_dc6c182f175e450aaa3200cbf48425d9.setIcon(icon_8b58808e2ea92abf651562ae5eb85e13);
+        
+    
+        var popup_3edb973dc717857365a870222810066d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbc0519b2c2b06fe7b50a806d24c65e1 = $(`<div id="html_bbc0519b2c2b06fe7b50a806d24c65e1" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/tennessee_elementary.html">Tennessee Elementary</a></div>`)[0];
+                popup_3edb973dc717857365a870222810066d.setContent(html_bbc0519b2c2b06fe7b50a806d24c65e1);
+            
+        
+
+        marker_dc6c182f175e450aaa3200cbf48425d9.bindPopup(popup_3edb973dc717857365a870222810066d)
+        ;
+
+        
+    
+    
+            var marker_bce3f160508f8e7b1d65b32328d1db81 = L.marker(
+                [30.2672, -97.7431],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_d4441b9cc1a97e44b586b35815005700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_bce3f160508f8e7b1d65b32328d1db81.setIcon(icon_d4441b9cc1a97e44b586b35815005700);
+        
+    
+        var popup_184f28fb98ec3391402f0f263980d025 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e8db2e23956683334dbe5d9c117eff7 = $(`<div id="html_6e8db2e23956683334dbe5d9c117eff7" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_Austin_elementary.html">Austin Elementary</a></div>`)[0];
+                popup_184f28fb98ec3391402f0f263980d025.setContent(html_6e8db2e23956683334dbe5d9c117eff7);
+            
+        
+
+        marker_bce3f160508f8e7b1d65b32328d1db81.bindPopup(popup_184f28fb98ec3391402f0f263980d025)
+        ;
+
+        
+    
+    
+            var marker_527bde107ea82327858d8ce18ccc83e0 = L.marker(
+                [27.8006, -97.3964],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_d2c385f626693c330d352dd725644496 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_527bde107ea82327858d8ce18ccc83e0.setIcon(icon_d2c385f626693c330d352dd725644496);
+        
+    
+        var popup_8631f11e6591aa7aef94f62dab8a5d21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b8cae17da887960f9834583ed4b78806 = $(`<div id="html_b8cae17da887960f9834583ed4b78806" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_Corpus_Christi_elementary.html">Corpus Christi Elementary</a></div>`)[0];
+                popup_8631f11e6591aa7aef94f62dab8a5d21.setContent(html_b8cae17da887960f9834583ed4b78806);
+            
+        
+
+        marker_527bde107ea82327858d8ce18ccc83e0.bindPopup(popup_8631f11e6591aa7aef94f62dab8a5d21)
+        ;
+
+        
+    
+    
+            var marker_4b2e0ba00d0a58f0429bcc0800d7954a = L.marker(
+                [32.7767, -96.797],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_a7adc57f0af03e0f9e39fbc1537bea24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4b2e0ba00d0a58f0429bcc0800d7954a.setIcon(icon_a7adc57f0af03e0f9e39fbc1537bea24);
+        
+    
+        var popup_413b23f201020337002cb27987a35b04 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22df0e4622603ca66811e86c5db61c06 = $(`<div id="html_22df0e4622603ca66811e86c5db61c06" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_Dallas_elementary.html">Dallas Elementary</a></div>`)[0];
+                popup_413b23f201020337002cb27987a35b04.setContent(html_22df0e4622603ca66811e86c5db61c06);
+            
+        
+
+        marker_4b2e0ba00d0a58f0429bcc0800d7954a.bindPopup(popup_413b23f201020337002cb27987a35b04)
+        ;
+
+        
+    
+    
+            var marker_414e575046fd77c4a5b26c105158de77 = L.marker(
+                [31.7619, -106.485],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_b28ec889abd45add1ad55d54f64c92e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_414e575046fd77c4a5b26c105158de77.setIcon(icon_b28ec889abd45add1ad55d54f64c92e7);
+        
+    
+        var popup_85b303ec168ec70c624478b96c03a379 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e0ed43b2a22155fa77efe4b8f131eec = $(`<div id="html_1e0ed43b2a22155fa77efe4b8f131eec" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_El_Paso_elementary.html">El Paso Elementary</a></div>`)[0];
+                popup_85b303ec168ec70c624478b96c03a379.setContent(html_1e0ed43b2a22155fa77efe4b8f131eec);
+            
+        
+
+        marker_414e575046fd77c4a5b26c105158de77.bindPopup(popup_85b303ec168ec70c624478b96c03a379)
+        ;
+
+        
+    
+    
+            var marker_52465dcb80a041fcfb7bd862238f48c0 = L.marker(
+                [29.7604, -95.3698],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_2fb61f063bc75cfa36b0f0efa8f28958 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_52465dcb80a041fcfb7bd862238f48c0.setIcon(icon_2fb61f063bc75cfa36b0f0efa8f28958);
+        
+    
+        var popup_6ae663962549e27e7d9dd6a4bc9eaa0b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa0ace8d6c5c403ad45c1389d8818218 = $(`<div id="html_fa0ace8d6c5c403ad45c1389d8818218" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_Houston_elementary.html">Houston Elementary</a></div>`)[0];
+                popup_6ae663962549e27e7d9dd6a4bc9eaa0b.setContent(html_fa0ace8d6c5c403ad45c1389d8818218);
+            
+        
+
+        marker_52465dcb80a041fcfb7bd862238f48c0.bindPopup(popup_6ae663962549e27e7d9dd6a4bc9eaa0b)
+        ;
+
+        
+    
+    
+            var marker_c1bf5dbcbee67049f21f9c62f4f6b0d2 = L.marker(
+                [33.5779, -101.8552],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_76e089866b1ff3fcfb63621cb3e0bf93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c1bf5dbcbee67049f21f9c62f4f6b0d2.setIcon(icon_76e089866b1ff3fcfb63621cb3e0bf93);
+        
+    
+        var popup_2fb2fc40f71bfa4fb4f92aee11927fe9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9d6cdd26c2606612a043ee14b75a9bb2 = $(`<div id="html_9d6cdd26c2606612a043ee14b75a9bb2" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_Lubbock_elementary.html">Lubbock Elementary</a></div>`)[0];
+                popup_2fb2fc40f71bfa4fb4f92aee11927fe9.setContent(html_9d6cdd26c2606612a043ee14b75a9bb2);
+            
+        
+
+        marker_c1bf5dbcbee67049f21f9c62f4f6b0d2.bindPopup(popup_2fb2fc40f71bfa4fb4f92aee11927fe9)
+        ;
+
+        
+    
+    
+            var marker_4d34d9074e680a9d9c1ad5b5c1e4b07b = L.marker(
+                [31.9974, -102.0779],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_0a77c68db634345c979cd697d238b2c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4d34d9074e680a9d9c1ad5b5c1e4b07b.setIcon(icon_0a77c68db634345c979cd697d238b2c0);
+        
+    
+        var popup_32ad001998b75c5070efe13fcf483b33 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_03f7fff048501b59a85ebe9dc1563cc4 = $(`<div id="html_03f7fff048501b59a85ebe9dc1563cc4" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_Midland_elementary.html">Midland Elementary</a></div>`)[0];
+                popup_32ad001998b75c5070efe13fcf483b33.setContent(html_03f7fff048501b59a85ebe9dc1563cc4);
+            
+        
+
+        marker_4d34d9074e680a9d9c1ad5b5c1e4b07b.bindPopup(popup_32ad001998b75c5070efe13fcf483b33)
+        ;
+
+        
+    
+    
+            var marker_6f259cc8b5e2330860cb328a20fbd087 = L.marker(
+                [29.4241, -98.4936],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_6d0ac533b9e59d6d8d3eb504963625cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6f259cc8b5e2330860cb328a20fbd087.setIcon(icon_6d0ac533b9e59d6d8d3eb504963625cd);
+        
+    
+        var popup_244f1948b3fc462f288359142d9076ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2b7c22cada969702d61d3b0536e405ba = $(`<div id="html_2b7c22cada969702d61d3b0536e405ba" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_San_Antonio_elementary.html">San Antonio Elementary</a></div>`)[0];
+                popup_244f1948b3fc462f288359142d9076ae.setContent(html_2b7c22cada969702d61d3b0536e405ba);
+            
+        
+
+        marker_6f259cc8b5e2330860cb328a20fbd087.bindPopup(popup_244f1948b3fc462f288359142d9076ae)
+        ;
+
+        
+    
+    
+            var marker_350b948585c5c90b99211d4363d70d88 = L.marker(
+                [31.4757, -99.3312],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_77b186396e78c49154f4889908c8b13e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_350b948585c5c90b99211d4363d70d88.setIcon(icon_77b186396e78c49154f4889908c8b13e);
+        
+    
+        var popup_22e1ca3736dcd709146615b50b56be8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5964c82172b9c81415f8b92f827eca97 = $(`<div id="html_5964c82172b9c81415f8b92f827eca97" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/texas_elementary_other.html">Texas (Other) Elementary</a></div>`)[0];
+                popup_22e1ca3736dcd709146615b50b56be8c.setContent(html_5964c82172b9c81415f8b92f827eca97);
+            
+        
+
+        marker_350b948585c5c90b99211d4363d70d88.bindPopup(popup_22e1ca3736dcd709146615b50b56be8c)
+        ;
+
+        
+    
+    
+            var marker_7995e320535631db155bbf08cbde85e1 = L.marker(
+                [39.3055, -111.6703],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_d5474165b1960d4c29e4744cafecb90c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_7995e320535631db155bbf08cbde85e1.setIcon(icon_d5474165b1960d4c29e4744cafecb90c);
+        
+    
+        var popup_37f72b7859ccb85e3a32d97d73673f82 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5c1cfed5bc2c72784b4bc49ae919ff43 = $(`<div id="html_5c1cfed5bc2c72784b4bc49ae919ff43" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/utah_elementary.html">Utah Elementary</a></div>`)[0];
+                popup_37f72b7859ccb85e3a32d97d73673f82.setContent(html_5c1cfed5bc2c72784b4bc49ae919ff43);
+            
+        
+
+        marker_7995e320535631db155bbf08cbde85e1.bindPopup(popup_37f72b7859ccb85e3a32d97d73673f82)
+        ;
+
+        
+    
+    
+            var marker_eaf1e2924707e1ddd80f87a2f6e6c906 = L.marker(
+                [44.0682, -72.6658],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_51be7dde85ac4cf7093acf12dafefbc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_eaf1e2924707e1ddd80f87a2f6e6c906.setIcon(icon_51be7dde85ac4cf7093acf12dafefbc4);
+        
+    
+        var popup_20d1e77632e1688717d431be7f2a2701 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1205ce18cd66fbb7ef32e805a31d039f = $(`<div id="html_1205ce18cd66fbb7ef32e805a31d039f" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/vermont_elementary.html">Vermont Elementary</a></div>`)[0];
+                popup_20d1e77632e1688717d431be7f2a2701.setContent(html_1205ce18cd66fbb7ef32e805a31d039f);
+            
+        
+
+        marker_eaf1e2924707e1ddd80f87a2f6e6c906.bindPopup(popup_20d1e77632e1688717d431be7f2a2701)
+        ;
+
+        
+    
+    
+            var marker_21662b7f936d77db7d3c0f2a46c4ace2 = L.marker(
+                [37.5215, -78.8537],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_534267f09226bc825c60be134c60f0f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_21662b7f936d77db7d3c0f2a46c4ace2.setIcon(icon_534267f09226bc825c60be134c60f0f4);
+        
+    
+        var popup_ff3f52fdef3d3680f05246a24c0115df = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5b3d36d9dc9313d678b4501cc3605a4 = $(`<div id="html_b5b3d36d9dc9313d678b4501cc3605a4" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/virginia_elementary.html">Virginia Elementary</a></div>`)[0];
+                popup_ff3f52fdef3d3680f05246a24c0115df.setContent(html_b5b3d36d9dc9313d678b4501cc3605a4);
+            
+        
+
+        marker_21662b7f936d77db7d3c0f2a46c4ace2.bindPopup(popup_ff3f52fdef3d3680f05246a24c0115df)
+        ;
+
+        
+    
+    
+            var marker_4d9792ff55ab4f8ef6517f0ed9f353b3 = L.marker(
+                [47.3826, -120.4472],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_ab5be8412352e35f590c26332e65794a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4d9792ff55ab4f8ef6517f0ed9f353b3.setIcon(icon_ab5be8412352e35f590c26332e65794a);
+        
+    
+        var popup_1aed10d2a15345a4b5134a0d7392c152 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2f9cbaff0eabc3a1a48940de3e30b93 = $(`<div id="html_f2f9cbaff0eabc3a1a48940de3e30b93" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/washington_elementary.html">Washington Elementary</a></div>`)[0];
+                popup_1aed10d2a15345a4b5134a0d7392c152.setContent(html_f2f9cbaff0eabc3a1a48940de3e30b93);
+            
+        
+
+        marker_4d9792ff55ab4f8ef6517f0ed9f353b3.bindPopup(popup_1aed10d2a15345a4b5134a0d7392c152)
+        ;
+
+        
+    
+    
+            var marker_a9685be0a835b924a083a5c0313dab31 = L.marker(
+                [38.6401, -80.6227],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_49d9d8e1c73afe3c9f2a659ce6a37280 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a9685be0a835b924a083a5c0313dab31.setIcon(icon_49d9d8e1c73afe3c9f2a659ce6a37280);
+        
+    
+        var popup_6a3e63c02e494cb4c86cdc5779534e24 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0338bdbe58fbb128dedd170bd15a771d = $(`<div id="html_0338bdbe58fbb128dedd170bd15a771d" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/west_virginia_elementary.html">West Virginia Elementary</a></div>`)[0];
+                popup_6a3e63c02e494cb4c86cdc5779534e24.setContent(html_0338bdbe58fbb128dedd170bd15a771d);
+            
+        
+
+        marker_a9685be0a835b924a083a5c0313dab31.bindPopup(popup_6a3e63c02e494cb4c86cdc5779534e24)
+        ;
+
+        
+    
+    
+            var marker_ac1c3800665f09a4199ffcff7c1a40ed = L.marker(
+                [44.6243, -89.9941],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_3f50c68ea054978525d0cbc2aa26f3f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ac1c3800665f09a4199ffcff7c1a40ed.setIcon(icon_3f50c68ea054978525d0cbc2aa26f3f3);
+        
+    
+        var popup_2ae31ce25e2effb13a91f65e64a073a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f43bdf95903f88f467156f953d429b4e = $(`<div id="html_f43bdf95903f88f467156f953d429b4e" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/wisconsin_elementary.html">Wisconsin Elementary</a></div>`)[0];
+                popup_2ae31ce25e2effb13a91f65e64a073a1.setContent(html_f43bdf95903f88f467156f953d429b4e);
+            
+        
+
+        marker_ac1c3800665f09a4199ffcff7c1a40ed.bindPopup(popup_2ae31ce25e2effb13a91f65e64a073a1)
+        ;
+
+        
+    
+    
+            var marker_41f45352d7e99ac85e783b41eb2aefb1 = L.marker(
+                [42.9957, -107.5512],
+                {}
+            ).addTo(map_5e782f7edf0dec18129f99ee63095354);
+        
+    
+            var icon_cf1bf1ddc9b40f5e4653839477221e59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_41f45352d7e99ac85e783b41eb2aefb1.setIcon(icon_cf1bf1ddc9b40f5e4653839477221e59);
+        
+    
+        var popup_f45479a91601a5aa6669f080a079dbb1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_08b03ca6bdc0168774445e8bb6a5aa77 = $(`<div id="html_08b03ca6bdc0168774445e8bb6a5aa77" style="width: 100.0%; height: 100.0%;"><a href="https://eric-yim.github.io/demos/wyoming_elementary.html">Wyoming Elementary</a></div>`)[0];
+                popup_f45479a91601a5aa6669f080a079dbb1.setContent(html_08b03ca6bdc0168774445e8bb6a5aa77);
+            
+        
+
+        marker_41f45352d7e99ac85e783b41eb2aefb1.bindPopup(popup_f45479a91601a5aa6669f080a079dbb1)
+        ;
+
+        
+    
+</script>
 </html>
