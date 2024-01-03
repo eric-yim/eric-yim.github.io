@@ -1,5 +1,5 @@
 function generateQuiz(event) {
-    const ENDPOINT = 'https://v12tnnnyee.execute-api.us-west-1.amazonaws.com/prod';
+    const ENDPOINT = 'https://v12tnnnyee.execute-api.us-west-1.amazonaws.com/prod/chatGptWrapper';
     // Prevent the default form submission
     event.preventDefault();
 
