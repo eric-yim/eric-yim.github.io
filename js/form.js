@@ -7,8 +7,6 @@ function generateQuiz(event) {
     var selectedNumber = document.getElementById("selectNumber").value;
     var content = document.getElementById("inputContent").value;
     // Perform any additional logic or actions here (e.g., generate quiz based on the input)
-    console.log("Selected Number:", selectedNumber);
-    console.log("Content:", content);
 
     var quizData = {
         number: selectedNumber,
