@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+
+    <title>Quiz AI</title>
+
+    <link rel="canonical" href="#">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bs/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bs/signin.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Quiz me, AI!</h1>
+      <label for="selectNumber">Number of Questions:</label>
+        <select id="selectNumber" class="form-control" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+      <label for="inputContent" class="sr-only">Password</label>
+      <input type="text" id="inputContent" class="form-control" placeholder="Content" required>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="generateQuiz(event)">Generate Quiz</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
+    </form>
+    <script src="js/form.js" defer></script>
+  </body>
+</html>
