@@ -1,5 +1,5 @@
 function generateQuiz(event) {
-    const ENDPOINT = 'http://localhost:5000/api/items';
+    const ENDPOINT = 'https://v12tnnnyee.execute-api.us-west-1.amazonaws.com/prod';
     // Prevent the default form submission
     event.preventDefault();
 
