@@ -12,7 +12,7 @@ function generateQuiz(event) {
         number: selectedNumber,
         content: content
     };
-
+    var quizElement = document.getElementById("generatedQuiz");
     fetch(ENDPOINT, {
         method: 'POST',
         headers: {
@@ -28,6 +28,7 @@ function generateQuiz(event) {
       })
       .then(data => {
         console.log(data);
+        quizElement.innerHTML = data;
       })
       .catch(error => {
         console.error('Error:', error);
