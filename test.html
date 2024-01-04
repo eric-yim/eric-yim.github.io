@@ -21,7 +21,7 @@
 
   <body class="text-center">
     <form class="form-signin">
-      <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      
       <h1 class="h3 mb-3 font-weight-normal">Quiz me, AI!</h1>
       <label for="selectNumber">Number of Questions:</label>
         <select id="selectNumber" class="form-control" required>
@@ -36,7 +36,7 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
-      <label for="inputContent" class="sr-only">Password</label>
+      <label for="inputContent" >Content</label>
       <input type="text" id="inputContent" class="form-control" placeholder="Content" required>
 
       <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="generateQuiz(event)">Generate Quiz</button>
@@ -44,8 +44,8 @@
     </form>
     <script src="js/form.js" defer></script>
 
-    <div class="generated-quiz">
-      
+    <div id="generatedQuiz">
+
     </div>
   </body>
 </html>
