@@ -28,7 +28,7 @@ function generateQuiz(event) {
       })
       .then(data => {
         console.log(data);
-        quizElement.innerHTML = data;
+        quizElement.innerHTML = data.innerHTML;
       })
       .catch(error => {
         console.error('Error:', error);
