@@ -1,5 +1,8 @@
     const creatorId = "@codingai";
     const ENDPOINT = 'https://ikkiiktxp6.execute-api.us-east-1.amazonaws.com/prod/ragBotResource/' + creatorId;
+    const STATIC_MESSAGE = '<button type="" class="">' +
+    "Hi! I'm CodingAI's link bot.<br>Ask me questions about software, tech, and AI.<br>I can help you find interesting content by CodingAI." +
+    '</button>';
     function getPins() {
 
       // Make a GET request using fetch
@@ -29,6 +32,20 @@
       .catch(error => {
         console.error('Error:', error);
       });
+    }
+
+    function getStaticMessage() {
+
+      
+      // Update the HTML of the element with id 'dataDisplay' with the fetched data
+      const customPins = document.getElementById('custom-pins');
+      
+      const contentElement = document.createElement('div');
+      contentElement.className = "btn-container";
+      contentElement.innerHTML = STATIC_MESSAGE;
+      customPins.appendChild(contentElement);
+      
+
     }
 
     function inputMessage() {
