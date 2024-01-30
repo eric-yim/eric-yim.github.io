@@ -54,3 +54,6 @@ old-body {
   margin-bottom: 10px; /* Add margin to separate highlighted answers */
 }
 
+.hidden {
+  display: none;
+}

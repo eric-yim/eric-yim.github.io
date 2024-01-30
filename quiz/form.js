@@ -10,8 +10,12 @@ function generateQuiz(event) {
 
     const alertElement = document.getElementById("alertElement")
     alertElement.innerHTML = "";
+    alertElement.classList.add("hidden");
     if (content.length > 15000) {
+      
       alertElement.innerHTML = "Your content is long and may be truncated. Try shortening it.";
+      alertElement.classList.add("alert", "alert-danger", "rounded");
+      alertElement.classList.remove("hidden");
     }
     console.log(content.length);
 
