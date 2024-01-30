@@ -8,6 +8,12 @@ function generateQuiz(event) {
     var content = document.getElementById("inputContent").value;
     // Perform any additional logic or actions here (e.g., generate quiz based on the input)
 
+    const alertElement = document.getElementById("alertElement")
+    alertElement.innerHTML = "";
+    if (content.length > 15000) {
+      alertElement.innerHTML = "Your content is long and may be truncated. Try shortening it.";
+    }
+
     var quizData = {
         number: selectedNumber,
         content: content
