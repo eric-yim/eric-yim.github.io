@@ -13,6 +13,7 @@ function generateQuiz(event) {
     if (content.length > 15000) {
       alertElement.innerHTML = "Your content is long and may be truncated. Try shortening it.";
     }
+    console.log(content.length);
 
     var quizData = {
         number: selectedNumber,
@@ -33,7 +34,7 @@ function generateQuiz(event) {
         return response.json();
       })
       .then(data => {
-        console.log(data);
+        // console.log(data);
         quizElement.innerHTML = data.innerHTML;
       })
       .catch(error => {
