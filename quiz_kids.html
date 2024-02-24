@@ -170,12 +170,13 @@
 
     <script>    
         var MY_PROBLEM_SET = {};
-        console.log("V11");
+        console.log("V12");
         getQuizSet('easy-single-digit-sums')
             .then(chooseRandomProblems)
+            .then(populateAnswers)
             .catch((error => console.error("Quiz selection problem", error)));
         setBackgroundImage(getImageUrlParameter());
-        populateAnswers();
+        // populateAnswers();
         dislayRandomProblem();
     </script>
 

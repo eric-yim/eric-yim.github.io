@@ -39,16 +39,17 @@ function chooseRandomProblems(whole_problem_set) {
           MY_PROBLEM_SET[whole_problem_set[i]['question']] = whole_problem_set[i]['answer'];
                 
         }
+        return MY_PROBLEM_SET
 }
-function populateAnswers() {
-        var keysArray = Object.keys(MY_PROBLEM_SET);
+function populateAnswers(my_problem_set) {
+        var keysArray = Object.keys(my_problem_set);
         keysArray = shuffleArray(keysArray);
         var answerId = "";
         var answerString = "";
         var retrievedElement;
         for (var i = 1; i <= NUM_PROB; i++) {
                 answerId = "answer" + i;
-                answerString = MY_PROBLEM_SET[keysArray[i-1]];
+                answerString = my_problem_set[keysArray[i-1]];
                 retrievedElement = document.getElementById(answerId);
                 retrievedElement.innerText = answerString;
 
