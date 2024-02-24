@@ -39,35 +39,7 @@
           color: #ffffff;
         }
     </style>
-    <script>
-        function getConstantsUrlParameter() {
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('constantsUrl')) {
-                return urlParams.get('constantsUrl');
-            }
-            return 'quiz_kids/add_prob_other.js'
-        }
-
-
-        function loadScript() {
-            const scriptUrl = getConstantsUrlParameter();
-            if (scriptUrl) {
-                const scriptElement = document.createElement('script');
-                scriptElement.src = scriptUrl;
-                document.head.appendChild(scriptElement);
-            } else {
-                console.error('Script URL not provided in the URL parameters.');
-            }
-        }
-        function getImageUrlParameter() {
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('imageUrl')) {
-                return urlParams.get('imageUrl');
-            }
-            return 'testimg.png';
-        }
-        loadScript();
-    </script>
+    
 </head>
 <body>
 
@@ -184,11 +156,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+        function getImageUrlParameter() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('imageUrl')) {
+                return urlParams.get('imageUrl');
+            }
+            return 'testimg.png';
+        }
+    </script>
     <script src="quiz_kids/quiz.js"></script>
 
     <script>    
         var MY_PROBLEM_SET = {};
-        console.log(NUM_PROB);
+        var WHOLE_PROBLEM_SET = getQuizSet();
         setBackgroundImage(getImageUrlParameter());
         chooseRandomProblems(WHOLE_PROBLEM_SET);
         populateAnswers();
