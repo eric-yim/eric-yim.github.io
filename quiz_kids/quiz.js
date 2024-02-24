@@ -1,31 +1,38 @@
 const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/quizApp/';
 const NUM_PROB = 16;
-function getQuizSet() {
-
+async function getQuizSet() {
+  try {
+    const response = await fetch(ENDPOINT + "easy-single-digit-sums");
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("ErrGetQuizSet", error);
+    throw error;
+  }
   // Make a GET request using fetch
-  fetch(ENDPOINT + "easy-single-digit-sums", {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json', // Adjust based on the API requirements
-    },
-  }).then(response => {
-    // Check if the response is successful (status code 200-299)
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
+//   fetch(ENDPOINT + "easy-single-digit-sums", {
+//     method: 'GET',
+//     headers: {
+//       'Content-Type': 'application/json', // Adjust based on the API requirements
+//     },
+//   }).then(response => {
+//     // Check if the response is successful (status code 200-299)
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok');
+//     }
     
-    return response.json(); // or response.json() if the response is in JSON format
-  }).then(data => {
-        console.log(data);
-        var whole_set = {}
+//     return response.json(); // or response.json() if the response is in JSON format
+//   }).then(data => {
+//         console.log(data);
+//         var whole_set = {}
 
-        data.forEach(item => {
-          whole_set[item['question']] = whole_set[item['answer']]
-        });
-        return whole_set
-  }).catch(error => {
-        console.error('Error:', error);
-  });
+//         data.forEach(item => {
+//           whole_set[item['question']] = whole_set[item['answer']]
+//         });
+//         return whole_set
+//   }).catch(error => {
+//         console.error('Error:', error);
+//   });
 }
 
 
@@ -40,6 +47,7 @@ function shuffleArray(array) {
         return array;
 }
 function chooseRandomProblems(whole_problem_set) {
+        console.log(whole_problem_set);
         MY_PROBLEM_SET = {};
         var keysArray = Object.keys(whole_problem_set);
         keysArray = shuffleArray(keysArray);
