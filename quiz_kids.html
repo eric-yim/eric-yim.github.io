@@ -172,6 +172,18 @@
             }
             return 'easy-single-digit-sums';
         }
+        function getQuizIdParameter(quizId) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                  const data = await response.json();
+                  resolve(urlParams.get('quizId'));
+                } catch (error) {
+                  console.error('Error in function1:', error);
+                  resolve('easy-single-digit-sums');
+                }
+                reject(error);
+            });}
     </script>
     <script src="quiz_kids/quiz.js"></script>
 
