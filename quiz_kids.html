@@ -170,9 +170,10 @@
 
     <script>    
         var MY_PROBLEM_SET = {};
-        var WHOLE_PROBLEM_SET = getQuizSet();
+        getQuizSet()
+            .then(chooseRandomProblems)
+            .catch((error => console.error("Quiz selection problem", error)));
         setBackgroundImage(getImageUrlParameter());
-        chooseRandomProblems(WHOLE_PROBLEM_SET);
         populateAnswers();
         dislayRandomProblem();
     </script>
