@@ -1,13 +1,12 @@
-const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/imageCreate/';
+const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/quizApp/';
 const NUM_PROB = 16;
 function getQuizSet() {
 
   // Make a GET request using fetch
-  fetch(ENDPOINT, {
+  fetch(ENDPOINT + "easy-single-digit-sums", {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json', // Adjust based on the API requirements
-      'body': {"quiz_name":"easy-single-digit-sums"}
     },
   }).then(response => {
     // Check if the response is successful (status code 200-299)
