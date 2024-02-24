@@ -47,7 +47,9 @@ function shuffleArray(array) {
         return array;
 }
 function chooseRandomProblems(whole_problem_set) {
+        console.log("choose");
         console.log(whole_problem_set);
+        
         MY_PROBLEM_SET = {};
         
         whole_problem_set = shuffleArray(whole_problem_set);
