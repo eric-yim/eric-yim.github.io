@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Page</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quiz_kids/quiz.css">
+    <style>
+        /* Add custom styles here if needed */
+        body {
+            background-color: #f8f9fa; /* Bootstrap background color */
+
+        }
+        .header {
+            text-align: center;
+            padding: 60px;
+            background-color: #007bff; /* Bootstrap primary color */
+            color: #ffffff; /* Bootstrap text color */
+            height: 20vh; /* Set a fixed percentage height for the header */
+        }
+        .content {
+            /* background-image: url('IMG_7835.jpeg'); Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 80vh; /* Set the remaining percentage height for the content */
+            padding: 20px;
+            color: #ffffff; /* Set text color for better visibility */
+        }
+        
+        .hrow-4 {
+          height: 20vh;
+          padding-top: 6vh;
+          font-size: 4vh;
+        }
+        .backlink {
+          float: left;
+          color: #ffffff;
+        }
+    </style>
+    <script>
+        function getConstantsUrlParameter() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('constantsUrl')) {
+                return urlParams.get('constantsUrl');
+            }
+            return 'quiz_kids/add_prob_other.js'
+        }
+
+
+        function loadScript() {
+            const scriptUrl = getConstantsUrlParameter();
+            if (scriptUrl) {
+                const scriptElement = document.createElement('script');
+                scriptElement.src = scriptUrl;
+                document.head.appendChild(scriptElement);
+            } else {
+                console.error('Script URL not provided in the URL parameters.');
+            }
+        }
+        function getImageUrlParameter() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('imageUrl')) {
+                return urlParams.get('imageUrl');
+            }
+            return 'testimg.png';
+        }
+        loadScript();
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+      <!-- <h4 class="backlink">Go back</h4>   -->
+      <h2  id="dynamicHeader">Your Page Title</h2>
+        
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content-background" class="content p-0">
+        
+        <div class="row p-0">
+          <!-- First Row of 4 Divs -->
+          <div class="col-3 p-0  hrow-4">
+              <div id="answer1" class="rounded border border-success bg-success text-center  hrow-4" onclick="buttonClick('answer1')">
+                  Green
+              </div>
+          </div>
+          <div class="col-3 p-0">
+            <div id="answer2" class="rounded border border-danger bg-danger text-center hrow-4" onclick="buttonClick('answer2')">
+                Red
+            </div>
+          </div>
+          <div class="col-3 p-0">
+              <div id="answer3" class="rounded bg-dark border border-dark text-center hrow-4" onclick="buttonClick('answer3')">
+                  Black
+              </div>
+          </div>
+          <div class="col-3 p-0">
+            <div id="answer4" class="rounded bg-warning border border-warning text-center hrow-4" onclick="buttonClick('answer4')">
+                Yellow
+            </div>
+          </div>
+      </div>
+      <div class="row p-0  hrow-4">
+        <!-- 2 Row of 4 Divs -->
+        <div class="col-3 p-0">
+            <div id="answer8" class="rounded bg-warning border border-warning text-center hrow-4" onclick="buttonClick('answer8')">
+                Yellow
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div id="answer5" class="rounded border border-success bg-success text-center hrow-4" onclick="buttonClick('answer5')">
+                Green
+            </div>
+        </div>
+        <div class="col-3 p-0">
+          <div id="answer6" class="rounded border border-danger bg-danger text-center hrow-4" onclick="buttonClick('answer6')">
+              Red
+          </div>
+        </div>
+        <div class="col-3 p-0">
+            <div id="answer7" class="rounded bg-dark border border-dark text-center hrow-4" onclick="buttonClick('answer7')">
+                Black
+            </div>
+        </div>
+        
+      </div>
+      <div class="row p-0  hrow-4">
+        <!-- 3 Row of 4 Divs -->
+        <div class="col-3 p-0">
+            <div id="answer11" class="rounded bg-dark border border-dark text-center hrow-4" onclick="buttonClick('answer11')">
+                Black
+            </div>
+        </div>
+        <div class="col-3 p-0">
+          <div id="answer12" class="rounded bg-warning border border-warning text-center hrow-4" onclick="buttonClick('answer12')">
+              Yellow
+          </div>
+        </div>
+        <div class="col-3 p-0">
+            <div id="answer9" class="rounded border border-success bg-success text-center hrow-4" onclick="buttonClick('answer9')">
+                Green
+            </div>
+        </div>
+        <div class="col-3 p-0">
+          <div id="answer10" class="rounded border border-danger bg-danger text-center hrow-4" onclick="buttonClick('answer10')">
+              Red
+          </div>
+        </div>
+        
+      </div>
+      <div class="row p-0  hrow-4">
+        <!-- 4 Row of 4 Divs -->
+        <div class="col-3 p-0">
+            <div id="answer14" class="rounded border border-danger bg-danger text-center hrow-4" onclick="buttonClick('answer14')">
+                Red
+            </div>
+        </div>
+        <div class="col-3 p-0">
+              <div id="answer15" class="rounded bg-dark border border-dark text-center hrow-4" onclick="buttonClick('answer15')">
+                  Black
+              </div>
+        </div>
+        <div class="col-3 p-0">
+            <div id="answer16" class="rounded bg-warning border border-warning text-center hrow-4" onclick="buttonClick('answer16')">
+                Yellow
+            </div>
+        </div>
+        <div class="col-3 p-0" >
+            <div id="answer13" class="rounded border border-success bg-success text-center hrow-4" onclick="buttonClick('answer13')">
+                Green
+            </div>
+        </div>
+        
+      </div>
+  
+     
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="quiz_kids/quiz.js"></script>
+
+    <script>    
+        var MY_PROBLEM_SET = {};
+        console.log(NUM_PROB);
+        setBackgroundImage(getImageUrlParameter());
+        chooseRandomProblems(WHOLE_PROBLEM_SET);
+        populateAnswers();
+        dislayRandomProblem();
+    </script>
+
+</body>
+</html>

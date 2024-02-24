@@ -1,0 +1,103 @@
+const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/imageCreate/';
+
+function getQuizSet() {
+
+  // Make a GET request using fetch
+  fetch(ENDPOINT, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json', // Adjust based on the API requirements
+      'body': {"quiz_name":"easy-single-digit-sums"}
+    },
+  }).then(response => {
+    // Check if the response is successful (status code 200-299)
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    console.log(response.json());
+    return response.json(); // or response.json() if the response is in JSON format
+  }).then(data => {
+        var whole_set = {}
+
+        data.forEach(item => {
+          whole_set[item['question']] = whole_set[item['answer']]
+        });
+        return whole_set
+  }).catch(error => {
+        console.error('Error:', error);
+  });
+}
+
+
+// Fisher-Yates (Knuth) shuffle algorithm
+function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+}
+function chooseRandomProblems(whole_problem_set) {
+        MY_PROBLEM_SET = {};
+        var keysArray = Object.keys(whole_problem_set);
+        keysArray = shuffleArray(keysArray);
+        for (var i = 0; i < NUM_PROB; i++) {
+                // console.log(i + ' ' + keysArray[i]);
+                MY_PROBLEM_SET[keysArray[i]] = whole_problem_set[keysArray[i]];
+                
+        }
+}
+function populateAnswers() {
+        var keysArray = Object.keys(MY_PROBLEM_SET);
+        keysArray = shuffleArray(keysArray);
+        var answerId = "";
+        var answerString = "";
+        var retrievedElement;
+        for (var i = 1; i <= NUM_PROB; i++) {
+                answerId = "answer" + i;
+                answerString = MY_PROBLEM_SET[keysArray[i-1]];
+                retrievedElement = document.getElementById(answerId);
+                retrievedElement.innerText = answerString;
+
+        }
+}
+function buttonClick(buttonId) {
+        
+        // Retrieve the text from the clicked button
+        var buttonElement = document.getElementById(buttonId);
+        var clickedAnswer = buttonElement.innerText;
+
+        // Get correct answer
+        var problemString =  document.getElementById("dynamicHeader").innerText;
+        var correctAnswer = MY_PROBLEM_SET[problemString];
+
+        if (clickedAnswer == correctAnswer) {
+                // Add the 'hidden' class to the retrieved element
+                buttonElement.classList.add("hidden");
+                delete MY_PROBLEM_SET[problemString];
+        }
+
+        dislayRandomProblem();
+}
+function dislayRandomProblem() {
+        // Get the dynamicHeader element by its ID
+        var dynamicHeader = document.getElementById("dynamicHeader");
+        var keysArray = Object.keys(MY_PROBLEM_SET);
+        if (keysArray.length == 0) {
+                dynamicHeader.innerText = "All Done!";
+                return;
+        }
+        keysArray = shuffleArray(keysArray);
+        dynamicHeader.innerText = keysArray[0];
+}
+function setBackgroundImage(imageUrl) {
+        const elementId = 'content-background';
+        var element = document.getElementById(elementId);
+        if (element) {
+            element.style.backgroundImage = 'url(' + imageUrl + ')';
+        } else {
+            console.error('Element with ID "' + elementId + '" not found.');
+        }
+}
