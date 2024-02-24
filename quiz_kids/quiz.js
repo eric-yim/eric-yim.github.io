@@ -49,11 +49,11 @@ function shuffleArray(array) {
 function chooseRandomProblems(whole_problem_set) {
         console.log(whole_problem_set);
         MY_PROBLEM_SET = {};
-        var keysArray = Object.keys(whole_problem_set);
-        keysArray = shuffleArray(keysArray);
+        
+        whole_problem_set = shuffleArray(whole_problem_set);
         for (var i = 0; i < NUM_PROB; i++) {
-                // console.log(i + ' ' + keysArray[i]);
-                MY_PROBLEM_SET[keysArray[i]] = whole_problem_set[keysArray[i]];
+          // console.log(i + ' ' + keysArray[i]);
+          MY_PROBLEM_SET[whole_problem_set[i]['question']] = whole_problem_set[i]['answer'];
                 
         }
 }
