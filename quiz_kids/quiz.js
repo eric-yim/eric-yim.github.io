@@ -1,5 +1,5 @@
 const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/imageCreate/';
-
+const NUM_PROB = 16;
 function getQuizSet() {
 
   // Make a GET request using fetch
