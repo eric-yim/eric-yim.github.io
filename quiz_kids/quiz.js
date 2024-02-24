@@ -4,7 +4,16 @@ const NUM_PROB = 16;
 function getQuizSet(quizId) {
         return new Promise(async (resolve, reject) => {
                 try {
-                  const response = await fetch(ENDPOINT + quizId);
+                  const response = await fetch(ENDPOINT + quizId,{
+                        method: "GET", // *GET, POST, PUT, DELETE, etc.
+                        mode: "cors", // no-cors, *cors, same-origin
+                        headers: {
+                          "Content-Type": "application/json",
+                          // 'Content-Type': 'application/x-www-form-urlencoded',
+                        }
+                        }
+
+                        );
                   const data = await response.json();
                   resolve(data);
                 } catch (error) {
