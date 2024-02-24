@@ -170,8 +170,8 @@
 
     <script>    
         var MY_PROBLEM_SET = {};
-        console.log("V10");
-        getQuizSet()
+        console.log("V11");
+        getQuizSet('easy-single-digit-sums')
             .then(chooseRandomProblems)
             .catch((error => console.error("Quiz selection problem", error)));
         setBackgroundImage(getImageUrlParameter());
