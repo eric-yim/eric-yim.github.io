@@ -13,9 +13,10 @@ function getQuizSet() {
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    console.log(response.json());
+    
     return response.json(); // or response.json() if the response is in JSON format
   }).then(data => {
+        console.log(data);
         var whole_set = {}
 
         data.forEach(item => {
