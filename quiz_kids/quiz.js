@@ -1,10 +1,10 @@
-const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/quizApp/';
+const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/quizApp/easy-single-digit-sums';
 const NUM_PROB = 16;
-const url =ENDPOINT + 'easy-single-digit-sums';
-function getQuizSet(url) {
+
+function getQuizSet() {
         return new Promise(async (resolve, reject) => {
                 try {
-                  const response = await fetch(ENDPOINT + url);
+                  const response = await fetch(ENDPOINT);
                   const data = await response.json();
                   resolve(data);
                 } catch (error) {
