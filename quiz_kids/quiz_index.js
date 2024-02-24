@@ -1,8 +1,5 @@
-function goToQuiz(event) {
-    const ENDPOINT = 'https://v12tnnnyee.execute-api.us-west-1.amazonaws.com/prod/chatGptWrapper';
-    // Prevent the default form submission
-    event.preventDefault();
-
+function goToQuiz() {
+    
     // Get the selected number of questions and content from the form
     var quizId = document.getElementById("selectNumber").value;
     var content = document.getElementById("inputContent").value;
