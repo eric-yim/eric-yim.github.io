@@ -165,17 +165,26 @@
             }
             return 'testimg.png';
         }
+        function getQuizIdParameter() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('quizId')) {
+                return urlParams.get('quizId');
+            }
+            return 'easy-single-digit-sums';
+        }
     </script>
     <script src="quiz_kids/quiz.js"></script>
 
     <script>    
         var MY_PROBLEM_SET = {};
         console.log("V12");
-        getQuizSet('easy-single-digit-sums')
+        getQuizIdParameter()
+            .then(getQuizSet)
             .then(chooseRandomProblems)
             .then(populateAnswers)
             .catch((error => console.error("Quiz selection problem", error)));
         setBackgroundImage(getImageUrlParameter());
+
         // populateAnswers();
         dislayRandomProblem();
     </script>
