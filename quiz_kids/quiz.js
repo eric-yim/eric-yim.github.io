@@ -1,6 +1,6 @@
 const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/quizApp/';
 const NUM_PROB = 16;
-async function getQuizSet() {
+function getQuizSet() {
         return new Promise(async (resolve, reject) => {
                 try {
                   const response = await fetch(url);
@@ -12,30 +12,7 @@ async function getQuizSet() {
                 }
               });
         }
-  // Make a GET request using fetch
-//   fetch(ENDPOINT + "easy-single-digit-sums", {
-//     method: 'GET',
-//     headers: {
-//       'Content-Type': 'application/json', // Adjust based on the API requirements
-//     },
-//   }).then(response => {
-//     // Check if the response is successful (status code 200-299)
-//     if (!response.ok) {
-//       throw new Error('Network response was not ok');
-//     }
-    
-//     return response.json(); // or response.json() if the response is in JSON format
-//   }).then(data => {
-//         console.log(data);
-//         var whole_set = {}
 
-//         data.forEach(item => {
-//           whole_set[item['question']] = whole_set[item['answer']]
-//         });
-//         return whole_set
-//   }).catch(error => {
-//         console.error('Error:', error);
-//   });
 
 
 
