@@ -192,7 +192,6 @@
         console.log("V13");
         
         getQuizSet(getQuizIdParameter())
-            .then(getQuizSet)
             .then(chooseRandomProblems)
             .then(populateAnswers)
             .catch((error => console.error("Quiz selection problem", error)));
