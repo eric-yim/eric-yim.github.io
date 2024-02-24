@@ -1,14 +1,17 @@
 const ENDPOINT = 'https://h6aprpp99i.execute-api.us-west-2.amazonaws.com/prod/quizApp/';
 const NUM_PROB = 16;
 async function getQuizSet() {
-  try {
-    const response = await fetch(ENDPOINT + "easy-single-digit-sums");
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("ErrGetQuizSet", error);
-    throw error;
-  }
+        return new Promise(async (resolve, reject) => {
+                try {
+                  const response = await fetch(url);
+                  const data = await response.json();
+                  resolve(data);
+                } catch (error) {
+                  console.error('Error in function1:', error);
+                  reject(error); // You can handle errors as needed
+                }
+              });
+        }
   // Make a GET request using fetch
 //   fetch(ENDPOINT + "easy-single-digit-sums", {
 //     method: 'GET',
@@ -33,7 +36,7 @@ async function getQuizSet() {
 //   }).catch(error => {
 //         console.error('Error:', error);
 //   });
-}
+
 
 
 // Fisher-Yates (Knuth) shuffle algorithm
