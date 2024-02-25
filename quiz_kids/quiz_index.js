@@ -8,5 +8,5 @@ function goToQuiz() {
     console.log(targetLocation);
     // Perform any additional logic or actions here (e.g., generate quiz based on the input)
 
-    window.location.href = targetLocation;
+    // window.location.href = targetLocation;
 }
