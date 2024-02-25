@@ -17,7 +17,7 @@ function generateQuiz(event) {
       alertElement.classList.add("alert", "alert-danger", "rounded");
       alertElement.classList.remove("hidden");
     }
-    console.log(content.length);
+    // console.log(content.length);
 
     var quizData = {
         number: selectedNumber,
