@@ -87,7 +87,7 @@ function dislayRandomProblem() {
         var dynamicHeader = document.getElementById("dynamicHeader");
         var keysArray = Object.keys(MY_PROBLEM_SET);
         if (keysArray.length == 0) {
-                dynamicHeader.innerText = "All Done!";
+                dynamicHeader.innerHTML = "All Done!<br><a href='https://eric-yim.github.io/quiz_kids_index'>New Quiz</a>";
                 return;
         }
         keysArray = shuffleArray(keysArray);
