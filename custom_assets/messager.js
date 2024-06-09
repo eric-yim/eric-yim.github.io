@@ -1,7 +1,7 @@
     const creatorId = "@codingai";
-    const ENDPOINT = 'https://ikkiiktxp6.execute-api.us-east-1.amazonaws.com/prod/ragBotResource/' + creatorId;
+    const ENDPOINT = 'https://APIGWIDHERE.execute-api.us-east-1.amazonaws.com/prod/ragBotResource/' + creatorId;
     const STATIC_MESSAGE = '<button type="" class="">' +
-    "Hi! I'm CodingAI's link bot.<br>Ask me questions about software, tech, and AI.<br>I can help you find interesting content by CodingAI." +
+    "Hi! I'm CodingAI's link bot.<br>Ask me questions about software, tech, and AI.<br>I can help you find interesting content by CodingAI. NOTE THIS DEMO HAS BEEN DEPRECATED" +
     '</button>';
     function getPins() {
 
