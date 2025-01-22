@@ -1,0 +1,9 @@
+{
+    "client_id": "https://eric-yim.github.io/client-metadata.json",
+    "application_type": "native",
+    "grant_types": ["authorization_code", "refresh_token"],
+    "scope": "atproto transition:generic transition:chat.bsky",
+    "response_types": ["code"],
+    "dpop_bound_access_tokens": true,
+    "client_name": "codingai"
+}
